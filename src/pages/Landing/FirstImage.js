@@ -19,10 +19,10 @@ export default function FirstImage() {
           flexDirection: "column",
           alignItems: "flex-start",
           justifyContent: "center",
-          pl: 10,
+          // pl: 10,
         }}
       >
-        <Box sx={{ display: "flex" }}>
+        <Box sx={{ display: "flex", ml: 10 }}>
           <Typography fontSize={64} fontWeight="bold" color="white" mr={2}>
             The
           </Typography>
@@ -33,7 +33,7 @@ export default function FirstImage() {
             you expect
           </Typography>
         </Box>
-        <Box sx={{ display: "flex" }}>
+        <Box sx={{ display: "flex", ml: 10 }}>
           <Typography fontSize={64} fontWeight="bold" color="white" mr={2}>
             The
           </Typography>
@@ -44,7 +44,7 @@ export default function FirstImage() {
             you deserve
           </Typography>
         </Box>
-        <Box sx={{ display: "flex", flexDirection: "column" }}>
+        <Box sx={{ display: "flex", flexDirection: "column", ml: 10 }}>
           <Box sx={{ display: "flex" }}>
             <Typography fontSize={24} fontWeight="regular" color="white" mr={1}>
               Trust

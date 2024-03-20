@@ -20,7 +20,7 @@ export default function SecondService() {
         alignItems: "center",
       }}
     >
-      <Typography fontSize={32} fontWeight="bold">
+      <Typography fontSize={32} fontWeight="bold" gutterBottom>
         Handyman Services
       </Typography>
       <Typography
@@ -36,6 +36,7 @@ export default function SecondService() {
           display: "flex",
           justifyContent: "space-around",
           width: "80%",
+          marginBottom: "80px",
         }}
       >
         <Box
@@ -44,6 +45,7 @@ export default function SecondService() {
             flexDirection: "column",
             alignItems: "center",
             width: 250,
+            marginX: "10px",
           }}
         >
           <Avatar
@@ -70,7 +72,7 @@ export default function SecondService() {
             flexDirection: "column",
             alignItems: "center",
             width: 250,
-            marginBottom: "80px",
+            marginX: "10px",
           }}
         >
           <Avatar
@@ -97,6 +99,7 @@ export default function SecondService() {
             flexDirection: "column",
             alignItems: "center",
             width: 250,
+            marginX: "10px",
           }}
         >
           <Avatar
@@ -123,6 +126,7 @@ export default function SecondService() {
             flexDirection: "column",
             alignItems: "center",
             width: 250,
+            marginX: "10px",
           }}
         >
           <Avatar
