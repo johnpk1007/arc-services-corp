@@ -16,7 +16,7 @@ export default function ThirdWhy() {
   return (
     <Box
       sx={{
-        height: "700px",
+        minHeight: "700px",
         width: "100%",
         display: "flex",
         flexDirection: "column",
@@ -38,13 +38,18 @@ export default function ThirdWhy() {
         We provide services spanning from Key Largo through Dade County to
         Broward County. Below are our top service areas in demand.
       </Typography>
+
       <Grid container justifyContent="center">
-        <Grid item xs={10} md={8} lg={6}>
+        <Grid item xs={10} sm={8} md={10} lg={6}>
           <Grid container spacing={3} justifyContent="center">
             <Grid item xs={12} sm={6} md={4}>
               <Card sx={{ position: "relative" }}>
                 <CardMedia
-                  sx={{ height: 240, width: "100%", filter: "brightness(80%)" }}
+                  sx={{
+                    height: 240,
+                    width: "100%",
+                    filter: "brightness(80%)",
+                  }}
                   image={Brickell}
                   title="brickell"
                 />
@@ -75,7 +80,11 @@ export default function ThirdWhy() {
             <Grid item xs={12} sm={6} md={4}>
               <Card sx={{ position: "relative" }}>
                 <CardMedia
-                  sx={{ height: 240, width: "100%", filter: "brightness(80%)" }}
+                  sx={{
+                    height: 240,
+                    width: "100%",
+                    filter: "brightness(80%)",
+                  }}
                   image={MiamiBeach}
                   title="miamiBeach"
                 />
@@ -106,7 +115,11 @@ export default function ThirdWhy() {
             <Grid item xs={12} sm={6} md={4}>
               <Card sx={{ position: "relative" }}>
                 <CardMedia
-                  sx={{ height: 240, width: "100%", filter: "brightness(80%)" }}
+                  sx={{
+                    height: 240,
+                    width: "100%",
+                    filter: "brightness(80%)",
+                  }}
                   image={Kendall}
                   title="kendall"
                 />
@@ -137,7 +150,11 @@ export default function ThirdWhy() {
             <Grid item xs={12} sm={6} md={4}>
               <Card sx={{ position: "relative" }}>
                 <CardMedia
-                  sx={{ height: 240, width: "100%", filter: "brightness(80%)" }}
+                  sx={{
+                    height: 240,
+                    width: "100%",
+                    filter: "brightness(80%)",
+                  }}
                   image={CoralGables}
                   title="coral gables"
                 />
@@ -165,11 +182,14 @@ export default function ThirdWhy() {
                 </Box>
               </Card>
             </Grid>
-            <Grid item xs={12} sm={4}>
-              {" "}
+            <Grid item xs={12} sm={6} md={4}>
               <Card sx={{ position: "relative" }}>
                 <CardMedia
-                  sx={{ height: 240, width: "100%", filter: "brightness(80%)" }}
+                  sx={{
+                    height: 240,
+                    width: "100%",
+                    filter: "brightness(80%)",
+                  }}
                   image={Hialeah}
                   title="hialeah"
                 />
@@ -197,10 +217,14 @@ export default function ThirdWhy() {
                 </Box>
               </Card>
             </Grid>
-            <Grid item xs={12} sm={4}>
+            <Grid item xs={12} sm={6} md={4}>
               <Card sx={{ position: "relative" }}>
                 <CardMedia
-                  sx={{ height: 240, width: "100%", filter: "brightness(80%)" }}
+                  sx={{
+                    height: 240,
+                    width: "100%",
+                    filter: "brightness(80%)",
+                  }}
                   image={KeyLargo}
                   title="Key Largo"
                 />

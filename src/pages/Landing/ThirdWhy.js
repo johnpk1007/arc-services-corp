@@ -28,7 +28,7 @@ export default function ThirdWhy() {
   return (
     <Box
       sx={{
-        height: "800px",
+        minHeight: "800px",
         width: "100%",
         display: "flex",
         flexDirection: "column",
@@ -53,14 +53,7 @@ export default function ThirdWhy() {
         importance of trust, reliability, and craftsmanship. Here's why you
         should choose us:
       </Typography>
-      {/* <Box
-        sx={{
-          minWidth: "70%",
-          display: "flex",
-          justifyContent: "space-between",
-          marginBottom: "60px",
-        }}
-      > */}
+
       <ThemeProvider theme={theme}>
         <Grid
           container
@@ -71,7 +64,6 @@ export default function ThirdWhy() {
           <Grid item xs={12} sm={8} md={5} lg={3} xl={2}>
             <Card
               sx={{
-                // width: 320,
                 minHeight: 400,
               }}
             >
@@ -106,7 +98,6 @@ export default function ThirdWhy() {
           <Grid item xs={12} sm={8} md={5} lg={3} xl={2}>
             <Card
               sx={{
-                // width: 320,
                 minHeight: 400,
               }}
             >
@@ -141,7 +132,6 @@ export default function ThirdWhy() {
           <Grid item xs={12} sm={8} md={5} lg={3} xl={2}>
             <Card
               sx={{
-                // width: 320,
                 minHeight: 400,
               }}
             >
@@ -176,7 +166,6 @@ export default function ThirdWhy() {
           <Grid item xs={12} sm={8} md={5} lg={3} xl={2}>
             <Card
               sx={{
-                // width: 320,
                 minHeight: 400,
               }}
             >
@@ -208,12 +197,16 @@ export default function ThirdWhy() {
               </CardContent>
             </Card>
           </Grid>
-          {/* </Box> */}
         </Grid>
       </ThemeProvider>
       <Button
         variant="outlined"
-        sx={{ borderColor: "#F14C48", color: "#F14C48", fontSize: 20 }}
+        sx={{
+          borderColor: "#F14C48",
+          color: "#F14C48",
+          fontSize: 20,
+          marginBottom: "80px",
+        }}
         disableElevation
       >
         Learn more

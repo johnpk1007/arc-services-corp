@@ -12,7 +12,7 @@ export default function Landing() {
       <SecondService />
       <ThirdWhy />
       <FourthArea />
-      {/* <LastPart /> */}
+      <LastPart />
     </Box>
   );
 }
