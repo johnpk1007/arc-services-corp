@@ -2,6 +2,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
+import Grid from "@mui/material/Grid";
 
 import HandymanIcon from "@mui/icons-material/Handyman";
 import CleaningServicesIcon from "@mui/icons-material/CleaningServices";
@@ -13,7 +14,7 @@ export default function SecondService() {
     <Box
       sx={{
         mt: "140px",
-        height: "700px",
+        minHeight: "700px",
         width: "100%",
         display: "flex",
         flexDirection: "column",
@@ -28,24 +29,26 @@ export default function SecondService() {
         fontWeight="regular"
         color="#777777"
         marginBottom="80px"
+        width="80%"
+        textAlign="center"
       >
         Explore the range of handyman services we bring to your doorstep.
       </Typography>
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "space-around",
-          width: "80%",
-          marginBottom: "80px",
-        }}
+      <Grid
+        container
+        spacing={3}
+        justifyContent="center"
+        sx={{ width: "90%", marginBottom: "80px" }}
       >
-        <Box
+        <Grid
+          item
+          xs={12}
+          sm={6}
+          md={3}
           sx={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            width: 250,
-            marginX: "10px",
           }}
         >
           <Avatar
@@ -65,14 +68,16 @@ export default function SecondService() {
             Discover convenience and quality with our expert installation
             service
           </Typography>
-        </Box>
-        <Box
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          sm={6}
+          md={3}
           sx={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            width: 250,
-            marginX: "10px",
           }}
         >
           <Avatar
@@ -92,14 +97,16 @@ export default function SecondService() {
             Renovate your space seamlessly with our professional remodeling
             expertise
           </Typography>
-        </Box>
-        <Box
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          sm={6}
+          md={3}
           sx={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            width: 250,
-            marginX: "10px",
           }}
         >
           <Avatar
@@ -115,25 +122,31 @@ export default function SecondService() {
           >
             REPAIR
           </Typography>
-          <Typography fontSize={16} fontWeight="regular" color="#777777">
+          <Typography
+            fontSize={16}
+            fontWeight="regular"
+            color="#777777"
+            align="center"
+          >
             Trust our experts to handle your repairs with precision and care
           </Typography>
-        </Box>
-
-        <Box
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          sm={6}
+          md={3}
           sx={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            width: 250,
-            marginX: "10px",
           }}
         >
           <Avatar
             sx={{ bgcolor: "#F14C48", width: 60, height: 60, mb: "20px" }}
           >
             <CleaningServicesIcon sx={{ width: 35, height: 35 }} />
-          </Avatar>{" "}
+          </Avatar>
           <Typography fontSize={20} fontWeight="regular" marginBottom="20px">
             CLEANING
           </Typography>
@@ -145,11 +158,12 @@ export default function SecondService() {
           >
             Experience a spotless home with our expert cleaning solutions
           </Typography>
-        </Box>
-      </Box>
+        </Grid>
+      </Grid>
+
       <Button
         variant="contained"
-        sx={{ bgcolor: "#F14C48", fontSize: 20 }}
+        sx={{ bgcolor: "#F14C48", fontSize: 20, mb: "80px" }}
         disableElevation
       >
         Learn more
