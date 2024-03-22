@@ -1,4 +1,4 @@
-import ServiceImage from "../../images/services.jpg";
+import ServiceImage from "../../images/firstImage/services.jpg";
 
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -25,7 +25,7 @@ export default function FirstImage() {
           width: "100%",
           display: "flex",
           flexDirection: "column",
-          alignItems: "flex-start",
+          alignItems: "center",
           justifyContent: { xs: "flex-end", sm: "center" },
         }}
       >
@@ -36,7 +36,7 @@ export default function FirstImage() {
             color="white"
             mr={2}
           >
-            The
+            Let's get to
           </Typography>
           <Typography
             sx={{ fontSize: { xs: 32, sm: 40, md: 48, lg: 64 } }}
@@ -44,46 +44,15 @@ export default function FirstImage() {
             color="#F14C48"
             mr={2}
           >
-            quality
-          </Typography>
-          <Typography
-            sx={{ fontSize: { xs: 32, sm: 40, md: 48, lg: 64 } }}
-            fontWeight="bold"
-            color="white"
-          >
-            you expect
+            work
           </Typography>
         </Box>
-        <Box sx={{ display: "flex", ml: { xs: 5, md: 10 } }}>
-          <Typography
-            sx={{ fontSize: { xs: 32, sm: 40, md: 48, lg: 64 } }}
-            fontWeight="bold"
-            color="white"
-            mr={2}
-          >
-            The
-          </Typography>
-          <Typography
-            sx={{ fontSize: { xs: 32, sm: 40, md: 48, lg: 64 } }}
-            fontWeight="bold"
-            color="#F14C48"
-            mr={2}
-          >
-            service
-          </Typography>
-          <Typography
-            sx={{ fontSize: { xs: 32, sm: 40, md: 48, lg: 64 } }}
-            fontWeight="bold"
-            color="white"
-          >
-            you deserve
-          </Typography>
-        </Box>
+
         <Box
           sx={{
             display: "flex",
             flexDirection: "column",
-            ml: { xs: 5, md: 10 },
+            alignItems: "center",
             mb: 10,
           }}
         >
@@ -94,7 +63,7 @@ export default function FirstImage() {
               color="white"
               mr={1}
             >
-              Trust
+              At
             </Typography>
             <Typography
               sx={{ fontSize: { xs: 18, sm: 20, md: 22, lg: 24 } }}
@@ -102,14 +71,14 @@ export default function FirstImage() {
               color="#F14C48"
               mr={1}
             >
-              ANG Service Corp
+              ANG Service Corp,
             </Typography>
             <Typography
               sx={{ fontSize: { xs: 18, sm: 20, md: 22, lg: 24 } }}
               fontWeight="regular"
               color="white"
             >
-              for all your
+              it's About More Than Just Services.
             </Typography>
           </Box>
           <Typography
@@ -117,21 +86,7 @@ export default function FirstImage() {
             fontWeight="regular"
             color="white"
           >
-            repair and renovation needs,
-          </Typography>
-          <Typography
-            sx={{ fontSize: { xs: 18, sm: 20, md: 22, lg: 24 } }}
-            fontWeight="regular"
-            color="white"
-          >
-            with comprehensive expertise in
-          </Typography>
-          <Typography
-            sx={{ fontSize: { xs: 18, sm: 20, md: 22, lg: 24 } }}
-            fontWeight="regular"
-            color="white"
-          >
-            services tailored to you
+            Explore our Process and Hear from Satisfied Clients
           </Typography>
         </Box>
       </Box>

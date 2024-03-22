@@ -2,7 +2,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Divider from "@mui/material/Divider";
-import ColorLogo from "../images/colorLogo.svg";
+import ColorLogo from "../images/logo/colorLogo.svg";
 
 export default function ThirdWhy() {
   return (

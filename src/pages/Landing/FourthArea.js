@@ -5,12 +5,12 @@ import CardMedia from "@mui/material/CardMedia";
 import PlaceIcon from "@mui/icons-material/Place";
 import Grid from "@mui/material/Grid";
 
-import Brickell from "../../images/brickell.jpg";
-import MiamiBeach from "../../images/miamiBeach.jpg";
-import Kendall from "../../images/kendall.jpg";
-import CoralGables from "../../images/coralGables.jpg";
-import Hialeah from "../../images/hialeah.jpg";
-import KeyLargo from "../../images/keyLargo.jpg";
+import Brickell from "../../images/area/brickell.jpg";
+import MiamiBeach from "../../images/area/miamiBeach.jpg";
+import Kendall from "../../images/area/kendall.jpg";
+import CoralGables from "../../images/area/coralGables.jpg";
+import Hialeah from "../../images/area/hialeah.jpg";
+import KeyLargo from "../../images/area/keyLargo.jpg";
 
 export default function ThirdWhy() {
   return (
