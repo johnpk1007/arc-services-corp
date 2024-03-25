@@ -1,16 +1,18 @@
-import ServiceImage from "../../images/firstImage/services.jpg";
-
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
+import CssBaseline from "@mui/material/CssBaseline";
+
+import AboutUs from "../../images/firstImage/aboutus.jpg";
 
 export default function FirstImage() {
   return (
     <Box>
+      <CssBaseline />
       <Box
         sx={{
           height: 800,
           width: "100%",
-          backgroundImage: `url(${ServiceImage})`,
+          backgroundImage: `url(${AboutUs})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           filter: "brightness(80%)",
@@ -25,9 +27,9 @@ export default function FirstImage() {
           width: "100%",
           display: "flex",
           flexDirection: "column",
-          alignItems: { xs: "flex-start", sm: "center" },
+          alignItems: { xs: "flex-start", sm: "flex-end" },
           justifyContent: { xs: "flex-end", sm: "center" },
-          paddingX: 3,
+          paddingRight: 10,
           paddingBottom: 10,
         }}
       >
@@ -35,26 +37,29 @@ export default function FirstImage() {
           sx={{ fontSize: { xs: 32, sm: 40, md: 48, lg: 64 } }}
           fontWeight="bold"
           color="white"
-          gutterBottom
         >
-          Let's get to
-          <span style={{ color: "#F14C48" }}> work</span>
+          We're a<span style={{ color: "#F14C48" }}> different </span>
+          kind of
         </Typography>
         <Typography
-          sx={{ fontSize: { xs: 18, sm: 20, md: 22, lg: 24 } }}
-          fontWeight="regular"
+          sx={{ fontSize: { xs: 32, sm: 40, md: 48, lg: 64 } }}
+          fontWeight="bold"
           color="white"
         >
-          At
-          <span style={{ color: "#F14C48" }}> ANG Service Corp, </span>
-          it's About More Than Just Services.
+          handyman service
         </Typography>
         <Typography
-          sx={{ fontSize: { xs: 18, sm: 20, md: 22, lg: 24 } }}
+          sx={{
+            fontSize: { xs: 18, sm: 20, md: 22, lg: 24 },
+            width: { xs: "100%", sm: "50%" },
+          }}
           fontWeight="regular"
           color="white"
+          textAlign="right"
         >
-          Explore our Process and Hear from Satisfied Clients
+          At<span style={{ color: "#F14C48" }}> ANG Services Corp, </span> we
+          are more than just a handyman service. We're your trusted partner in
+          creating the home of your dreams.
         </Typography>
       </Box>
     </Box>

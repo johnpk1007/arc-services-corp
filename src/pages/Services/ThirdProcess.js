@@ -13,7 +13,7 @@ export default function SecondServices() {
   return (
     <Box
       sx={{
-        minHeight: "800px",
+        minHeight: "600px",
         width: "100%",
         display: "flex",
         flexDirection: "column",
@@ -35,29 +35,45 @@ export default function SecondServices() {
         Discover our streamlined process for efficient, transparent, and
         satisfying home improvement.
       </Typography>
+
       <Grid
         container
-        sx={{ width: "80%", display: { xs: "none", lg: "flex" } }}
+        sx={{
+          width: "80%",
+          display: { xs: "none", lg: "flex" },
+        }}
       >
         <Grid item lg={2} sx={{ display: { xs: "none", lg: "block" } }} />
         <Grid
           item
-          sx={{ border: "solid #F14C48", display: { xs: "none", lg: "block" } }}
+          sx={{
+            border: "solid #F14C48",
+            display: { xs: "none", lg: "block" },
+          }}
           lg={2}
         />
         <Grid
           item
-          sx={{ border: "solid #F14C48", display: { xs: "none", lg: "block" } }}
+          sx={{
+            border: "solid #F14C48",
+            display: { xs: "none", lg: "block" },
+          }}
           lg={2}
         />
         <Grid
           item
-          sx={{ border: "solid #F14C48", display: { xs: "none", lg: "block" } }}
+          sx={{
+            border: "solid #F14C48",
+            display: { xs: "none", lg: "block" },
+          }}
           lg={2}
         />
         <Grid
           item
-          sx={{ border: "solid #F14C48", display: { xs: "none", lg: "block" } }}
+          sx={{
+            border: "solid #F14C48",
+            display: { xs: "none", lg: "block" },
+          }}
           lg={2}
         />
         <Grid item lg={2} sx={{ display: { xs: "none", lg: "block" } }} />
@@ -69,6 +85,7 @@ export default function SecondServices() {
         sx={{
           width: "80%",
           marginBottom: "80px",
+          marginLeft: { xs: 0, sm: "20%", lg: 0 },
         }}
       >
         <Grid item xs={12} lg={1}></Grid>
