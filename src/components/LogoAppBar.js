@@ -14,8 +14,8 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 import { cloneElement, useState } from "react";
 
-import WhiteLogo from "../images/whiteLogo.svg";
-import ColorLogo from "../images/colorLogo.svg";
+import WhiteLogo from "../images/logo/whiteLogo.svg";
+import ColorLogo from "../images/logo/colorLogo.svg";
 
 function Scroll({ children }) {
   const trigger = useScrollTrigger({

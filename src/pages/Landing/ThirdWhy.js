@@ -7,10 +7,10 @@ import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
-import CleanService from "../../images/cleanService.jpg";
-import ProfessionalService from "../../images/professionalService.jpg";
-import FreeService from "../../images/freeService.jpg";
-import QuickService from "../../images/quickService.jpg";
+import CleanService from "../../images/why/cleanService.jpg";
+import ProfessionalService from "../../images/why/professionalService.jpg";
+import FreeService from "../../images/why/freeService.jpg";
+import QuickService from "../../images/why/quickService.jpg";
 
 export default function ThirdWhy() {
   const theme = createTheme({

@@ -1,4 +1,4 @@
-import LandingImage from "../../images/landing.jpg";
+import LandingImage from "../../images/firstImage/landing.jpg";
 
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";

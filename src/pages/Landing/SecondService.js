@@ -6,8 +6,8 @@ import Grid from "@mui/material/Grid";
 
 import HandymanIcon from "@mui/icons-material/Handyman";
 import CleaningServicesIcon from "@mui/icons-material/CleaningServices";
-import RemodelingIcon from "../../images/remodelingIcon.svg";
-import InstallationIcon from "../../images/installationIcon.svg";
+import RemodelingIcon from "../../images/icon/remodelingIcon.svg";
+import InstallationIcon from "../../images/icon/installationIcon.svg";
 
 export default function SecondService() {
   return (
