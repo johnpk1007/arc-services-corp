@@ -27,6 +27,7 @@ function Scroll({ children }) {
     elevation: trigger ? 4 : 0,
     style: {
       backgroundColor: trigger ? "#F14C48" : "transparent",
+      color: trigger ? "white" : "black",
     },
   });
 }
@@ -55,7 +56,7 @@ export default function LogoAppBar() {
               variant="text"
               sx={{
                 fontWeight: "bold",
-                color: "white",
+                color: "inherit",
                 display: { xs: "none", sm: "block" },
               }}
             >
@@ -65,7 +66,7 @@ export default function LogoAppBar() {
               variant="text"
               sx={{
                 fontWeight: "bold",
-                color: "white",
+                color: "inherit",
                 display: { xs: "none", sm: "block" },
               }}
             >
@@ -75,7 +76,7 @@ export default function LogoAppBar() {
               variant="text"
               sx={{
                 fontWeight: "bold",
-                color: "white",
+                color: "inherit",
                 display: { xs: "none", sm: "block" },
               }}
             >
