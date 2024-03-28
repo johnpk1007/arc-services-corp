@@ -7,10 +7,10 @@ import ContactUs from "./pages/ContactUs/ContactUs";
 function App() {
   return (
     <div className="App">
-      {/* <Landing /> */}
+      <Landing />
       {/* <Services /> */}
       {/* <AboutUs /> */}
-      <ContactUs />
+      {/* <ContactUs /> */}
     </div>
   );
 }

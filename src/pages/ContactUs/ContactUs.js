@@ -23,7 +23,7 @@ export default function Contact() {
       }}
     >
       <CssBaseline />
-      <LogoAppBar />
+      <LogoAppBar color="black" />
       <Grid container>
         <Grid item xs={12} sm={3}>
           <Box

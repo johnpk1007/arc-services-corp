@@ -9,6 +9,11 @@ import CleaningServicesIcon from "@mui/icons-material/CleaningServices";
 import RemodelingIcon from "../../images/icon/remodelingIcon.svg";
 import InstallationIcon from "../../images/icon/installationIcon.svg";
 
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
+
 export default function SecondService() {
   return (
     <Box
@@ -21,13 +26,13 @@ export default function SecondService() {
         alignItems: "center",
       }}
     >
-      <Typography fontSize={32} fontWeight="bold" gutterBottom>
+      <Typography fontSize={32} fontWeight="700" gutterBottom>
         Handyman Services
       </Typography>
       <Typography
         fontSize={20}
         fontWeight="regular"
-        color="#777777"
+        color="text.secondary"
         marginBottom="80px"
         width="80%"
         textAlign="center"
@@ -61,8 +66,8 @@ export default function SecondService() {
           </Typography>
           <Typography
             fontSize={16}
-            fontWeight="regular"
-            color="#777777"
+            fontWeight="light"
+            color="text.secondary"
             align="center"
           >
             Discover convenience and quality with our expert installation
@@ -90,8 +95,8 @@ export default function SecondService() {
           </Typography>
           <Typography
             fontSize={16}
-            fontWeight="regular"
-            color="#777777"
+            fontWeight="light"
+            color="text.secondary"
             align="center"
           >
             Renovate your space seamlessly with our professional remodeling
@@ -124,8 +129,8 @@ export default function SecondService() {
           </Typography>
           <Typography
             fontSize={16}
-            fontWeight="regular"
-            color="#777777"
+            fontWeight="light"
+            color="text.secondary"
             align="center"
           >
             Trust our experts to handle your repairs with precision and care
@@ -152,8 +157,8 @@ export default function SecondService() {
           </Typography>
           <Typography
             fontSize={16}
-            fontWeight="regular"
-            color="#777777"
+            fontWeight="light"
+            color="text.secondary"
             align="center"
           >
             Experience a spotless home with our expert cleaning solutions
@@ -163,7 +168,14 @@ export default function SecondService() {
 
       <Button
         variant="contained"
-        sx={{ bgcolor: "#F14C48", fontSize: 20, mb: "80px" }}
+        sx={{
+          bgcolor: "#F14C48",
+          fontSize: 20,
+          mb: "80px",
+          "&:hover": {
+            backgroundColor: "#d84440",
+          },
+        }}
         disableElevation
       >
         Learn more

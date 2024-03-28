@@ -4,11 +4,16 @@ import Button from "@mui/material/Button";
 import Divider from "@mui/material/Divider";
 import ColorLogo from "../images/logo/colorLogo.svg";
 
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
+
 export default function ThirdWhy() {
   return (
     <Box
       sx={{
-        height: "700px",
+        height: "500px",
         width: "100%",
         display: "flex",
         flexDirection: "column",
@@ -22,7 +27,7 @@ export default function ThirdWhy() {
       <Typography
         fontSize={20}
         fontWeight="regular"
-        color="#777777"
+        color="text.secondary"
         marginBottom="80px"
         textAlign="center"
         width="80%"
@@ -33,7 +38,14 @@ export default function ThirdWhy() {
       </Typography>
       <Button
         variant="contained"
-        sx={{ bgcolor: "#F14C48", fontSize: 20, marginBottom: "90px" }}
+        sx={{
+          bgcolor: "#F14C48",
+          fontSize: 20,
+          marginBottom: "90px",
+          "&:hover": {
+            backgroundColor: "#d84440",
+          },
+        }}
         disableElevation
       >
         Contact us
@@ -43,13 +55,13 @@ export default function ThirdWhy() {
         display="flex"
         justifyContent="center"
         alignItems="center"
-        sx={{ height: "200px" }}
+        sx={{ height: "10px" }}
       >
         <img src={ColorLogo} alt="color logo" />
         <Typography
           fontSize={20}
           fontWeight="regular"
-          color="#777777"
+          color="text.secondary"
           textAlign="center"
           width="80%"
           marginLeft="10px"

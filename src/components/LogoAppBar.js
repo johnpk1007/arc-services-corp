@@ -32,7 +32,7 @@ function Scroll({ children }) {
   });
 }
 
-export default function LogoAppBar() {
+export default function LogoAppBar({ color }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
@@ -56,7 +56,7 @@ export default function LogoAppBar() {
               variant="text"
               sx={{
                 fontWeight: "bold",
-                color: "inherit",
+                color: color ? "inherit" : "white",
                 display: { xs: "none", sm: "block" },
               }}
             >
@@ -66,7 +66,7 @@ export default function LogoAppBar() {
               variant="text"
               sx={{
                 fontWeight: "bold",
-                color: "inherit",
+                color: color ? "inherit" : "white",
                 display: { xs: "none", sm: "block" },
               }}
             >
@@ -76,7 +76,7 @@ export default function LogoAppBar() {
               variant="text"
               sx={{
                 fontWeight: "bold",
-                color: "inherit",
+                color: color ? "inherit" : "white",
                 display: { xs: "none", sm: "block" },
               }}
             >

@@ -12,15 +12,20 @@ import ProfessionalService from "../../images/why/professionalService.jpg";
 import FreeService from "../../images/why/freeService.jpg";
 import QuickService from "../../images/why/quickService.jpg";
 
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
+
 export default function ThirdWhy() {
   const theme = createTheme({
     breakpoints: {
       values: {
-        xs: 0, // 기본 값
-        sm: 600, // 변경된 값
-        md: 750, // 변경된 값
-        lg: 1100, // 변경된 값
-        xl: 1920, // 기본 값
+        xs: 0,
+        sm: 600,
+        md: 750,
+        lg: 1100,
+        xl: 1920,
       },
     },
   });
@@ -64,7 +69,7 @@ export default function ThirdWhy() {
           <Grid item xs={12} sm={8} md={5} lg={3} xl={2}>
             <Card
               sx={{
-                minHeight: 400,
+                minHeight: 420,
               }}
             >
               <CardMedia
@@ -85,9 +90,9 @@ export default function ThirdWhy() {
                 <Typography
                   fontSize={16}
                   color="text.secondary"
-                  fontWeight="regular"
+                  fontWeight="light"
                   textAlign="center"
-                  lineHeight="1"
+                  lineHeight="19px"
                 >
                   We ensure your home, business, or condo is left immaculate
                   after every project or repair.
@@ -98,7 +103,7 @@ export default function ThirdWhy() {
           <Grid item xs={12} sm={8} md={5} lg={3} xl={2}>
             <Card
               sx={{
-                minHeight: 400,
+                minHeight: 420,
               }}
             >
               <CardMedia
@@ -119,9 +124,9 @@ export default function ThirdWhy() {
                 <Typography
                   fontSize={16}
                   color="text.secondary"
-                  fontWeight="regular"
+                  fontWeight="light"
                   textAlign="center"
-                  lineHeight="1"
+                  lineHeight="19px"
                 >
                   Our team consists of diligent professionals who maintain a
                   high standard of professionalism.
@@ -132,7 +137,7 @@ export default function ThirdWhy() {
           <Grid item xs={12} sm={8} md={5} lg={3} xl={2}>
             <Card
               sx={{
-                minHeight: 400,
+                minHeight: 420,
               }}
             >
               <CardMedia
@@ -153,9 +158,9 @@ export default function ThirdWhy() {
                 <Typography
                   fontSize={16}
                   color="text.secondary"
-                  fontWeight="regular"
+                  fontWeight="light"
                   textAlign="center"
-                  lineHeight="1"
+                  lineHeight="19px"
                 >
                   We offer complimentary estimates for all your repair or
                   renovation requirements.
@@ -166,7 +171,7 @@ export default function ThirdWhy() {
           <Grid item xs={12} sm={8} md={5} lg={3} xl={2}>
             <Card
               sx={{
-                minHeight: 400,
+                minHeight: 420,
               }}
             >
               <CardMedia
@@ -187,9 +192,9 @@ export default function ThirdWhy() {
                 <Typography
                   fontSize={16}
                   color="text.secondary"
-                  fontWeight="regular"
+                  fontWeight="light"
                   textAlign="center"
-                  lineHeight="1"
+                  lineHeight="19px"
                 >
                   We are committed to promptly addressing your service
                   inquiries.
@@ -206,6 +211,10 @@ export default function ThirdWhy() {
           color: "#F14C48",
           fontSize: 20,
           marginBottom: "80px",
+          "&:hover": {
+            backgroundColor: "rgba(241, 76, 72, 0.04)",
+            borderColor: "#d84440",
+          },
         }}
         disableElevation
       >
