@@ -8,6 +8,11 @@ import CardMedia from "@mui/material/CardMedia";
 import Nancy from "../../images/team/nancy.jpeg";
 import Ariel from "../../images/team/ariel.jpeg";
 
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
+
 export default function FirstImage() {
   return (
     <Box
@@ -67,12 +72,15 @@ export default function FirstImage() {
                     justifyContent: "space-around",
                   }}
                 >
-                  <Typography fontSize={24}>President</Typography>
+                  <Typography fontWeight="regular" fontSize={24}>
+                    President
+                  </Typography>
                   <Typography fontSize={36} fontWeight="bold">
                     Nancy Garcia
                   </Typography>
                   <Typography
                     fontSize={20}
+                    fontWeight="light"
                     sx={{ display: { xs: "none", sm: "block" } }}
                   >
                     Leads strategic planning, oversees all operations, manages
@@ -89,7 +97,7 @@ export default function FirstImage() {
                   display: { xs: "block", sm: "none" },
                 }}
               >
-                <Typography fontSize={20}>
+                <Typography fontSize={20} fontWeight="light">
                   Leads strategic planning, oversees all operations, manages
                   finances and personnel, and handles customer relations.
                 </Typography>
@@ -134,13 +142,16 @@ export default function FirstImage() {
                     justifyContent: "space-around",
                   }}
                 >
-                  <Typography fontSize={24}>General Manager</Typography>
+                  <Typography fontSize={24} fontWeight="regular">
+                    General Manager
+                  </Typography>
                   <Typography fontSize={36} fontWeight="bold">
                     Ariel Soto
                   </Typography>
                   <Typography
                     fontSize={20}
                     sx={{ display: { xs: "none", sm: "block" } }}
+                    fontWeight="light"
                   >
                     Oversees day-to-day operations, coordinates projects,
                     performs repairs and maintenance tasks, and ensures work
@@ -157,7 +168,7 @@ export default function FirstImage() {
                   display: { xs: "block", sm: "none" },
                 }}
               >
-                <Typography fontSize={20}>
+                <Typography fontSize={20} fontWeight="light">
                   Leads strategic planning, oversees all operations, manages
                   finances and personnel, and handles customer relations.
                 </Typography>

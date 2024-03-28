@@ -4,6 +4,11 @@ import CssBaseline from "@mui/material/CssBaseline";
 
 import AboutUs from "../../images/firstImage/aboutus.jpg";
 
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
+
 export default function FirstImage() {
   return (
     <Box>
@@ -27,9 +32,9 @@ export default function FirstImage() {
           width: "100%",
           display: "flex",
           flexDirection: "column",
-          alignItems: { xs: "flex-start", sm: "flex-end" },
+          alignItems: "flex-end",
           justifyContent: { xs: "flex-end", sm: "center" },
-          paddingRight: 10,
+          paddingRight: { xs: 5, sm: 10 },
           paddingBottom: 10,
         }}
       >

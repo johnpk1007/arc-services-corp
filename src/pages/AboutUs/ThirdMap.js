@@ -12,6 +12,11 @@ import Map from "./OpenStreetMap";
 
 import CurvedMap from "../../images/map/curvedMap.svg";
 
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
+
 export default function ThirdMap() {
   return (
     <Box
@@ -47,16 +52,17 @@ export default function ThirdMap() {
             <Typography fontWeight="bold" fontSize={32} gutterBottom>
               Contact Us
             </Typography>
-            <Typography fontSize={20}>
+            <Typography fontSize={20} fontWeight="light">
               Our home office is located in Brickell
             </Typography>
-            <Typography fontSize={20}>
+            <Typography fontSize={20} fontWeight="light">
               You may contact us day or night
             </Typography>
           </Box>
           <Box>
             <Typography
               fontSize={20}
+              fontWeight="medium"
               sx={{ display: "flex", alignItems: "center" }}
             >
               <CallIcon fontSize="small" sx={{ marginRight: "10px" }} />
@@ -64,6 +70,7 @@ export default function ThirdMap() {
             </Typography>
             <Typography
               fontSize={20}
+              fontWeight="medium"
               sx={{ display: "flex", alignItems: "center" }}
             >
               <EmailIcon fontSize="small" sx={{ marginRight: "10px" }} />
