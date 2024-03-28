@@ -54,7 +54,7 @@ export default function FirstImage() {
       >
         <Typography
           sx={{ fontSize: { xs: 18, sm: 20, md: 22, lg: 24 } }}
-          fontWeight="400"
+          fontWeight="regular"
           color="white"
           mr={1}
         >
@@ -64,21 +64,21 @@ export default function FirstImage() {
 
         <Typography
           sx={{ fontSize: { xs: 18, sm: 20, md: 22, lg: 24 } }}
-          fontWeight="400"
+          fontWeight="regular"
           color="white"
         >
           repair and renovation needs,
         </Typography>
         <Typography
           sx={{ fontSize: { xs: 18, sm: 20, md: 22, lg: 24 } }}
-          fontWeight="400"
+          fontWeight="regular"
           color="white"
         >
           with comprehensive expertise in
         </Typography>
         <Typography
           sx={{ fontSize: { xs: 18, sm: 20, md: 22, lg: 24 } }}
-          fontWeight="400"
+          fontWeight="regular"
           color="white"
         >
           services tailored to you

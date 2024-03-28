@@ -7,8 +7,8 @@ import ContactUs from "./pages/ContactUs/ContactUs";
 function App() {
   return (
     <div className="App">
-      <Landing />
-      {/* <Services /> */}
+      {/* <Landing /> */}
+      <Services />
       {/* <AboutUs /> */}
       {/* <ContactUs /> */}
     </div>

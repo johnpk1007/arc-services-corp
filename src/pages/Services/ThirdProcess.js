@@ -9,6 +9,11 @@ import MoneyOffIcon from "@mui/icons-material/MoneyOff";
 import EventAvailableIcon from "@mui/icons-material/EventAvailable";
 import HandymanIcon from "@mui/icons-material/Handyman";
 
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
+
 export default function SecondServices() {
   return (
     <Box
@@ -27,7 +32,7 @@ export default function SecondServices() {
       <Typography
         fontSize={20}
         fontWeight="regular"
-        color="#777777"
+        color="text.secondary"
         marginBottom="110px"
         textAlign="center"
         width="80%"
@@ -117,7 +122,7 @@ export default function SecondServices() {
           </Avatar>
           <Typography
             fontSize={20}
-            fontWeight="regular"
+            fontWeight="medium"
             gutterBottom
             align="center"
             sx={{ mt: { xs: 0, lg: "70px" }, ml: { xs: 5, lg: 0 } }}
@@ -127,7 +132,7 @@ export default function SecondServices() {
           <Typography
             fontSize={16}
             fontWeight="regular"
-            color="#777777"
+            color="text.secondary"
             sx={{
               ml: { xs: 5, lg: 0 },
               textAlign: { xs: "left", lg: "center" },
@@ -164,7 +169,7 @@ export default function SecondServices() {
           </Avatar>
           <Typography
             fontSize={20}
-            fontWeight="regular"
+            fontWeight="medium"
             sx={{ mt: { xs: 0, lg: "70px" }, ml: { xs: 5, lg: 0 } }}
             gutterBottom
           >
@@ -173,7 +178,7 @@ export default function SecondServices() {
           <Typography
             fontSize={16}
             fontWeight="regular"
-            color="#777777"
+            color="text.secondary"
             align="center"
             sx={{
               ml: { xs: 5, lg: 0 },
@@ -211,7 +216,7 @@ export default function SecondServices() {
           </Avatar>
           <Typography
             fontSize={20}
-            fontWeight="regular"
+            fontWeight="medium"
             sx={{ mt: { xs: 0, lg: "70px" }, ml: { xs: 5, lg: 0 } }}
             gutterBottom
             align="center"
@@ -221,7 +226,7 @@ export default function SecondServices() {
           <Typography
             fontSize={16}
             fontWeight="regular"
-            color="#777777"
+            color="text.secondary"
             align="center"
             sx={{
               ml: { xs: 5, lg: 0 },
@@ -259,7 +264,7 @@ export default function SecondServices() {
           </Avatar>
           <Typography
             fontSize={20}
-            fontWeight="regular"
+            fontWeight="medium"
             sx={{ mt: { xs: 0, lg: "70px" }, ml: { xs: 5, lg: 0 } }}
             gutterBottom
           >
@@ -268,7 +273,7 @@ export default function SecondServices() {
           <Typography
             fontSize={16}
             fontWeight="regular"
-            color="#777777"
+            color="text.secondary"
             align="center"
             sx={{
               ml: { xs: 5, lg: 0 },
@@ -306,7 +311,7 @@ export default function SecondServices() {
           </Avatar>
           <Typography
             fontSize={20}
-            fontWeight="regular"
+            fontWeight="medium"
             sx={{ mt: { xs: 0, lg: "70px" }, ml: { xs: 5, lg: 0 } }}
             gutterBottom
           >
@@ -315,7 +320,7 @@ export default function SecondServices() {
           <Typography
             fontSize={16}
             fontWeight="regular"
-            color="#777777"
+            color="text.secondary"
             align="center"
             sx={{
               ml: { xs: 5, lg: 0 },

@@ -12,6 +12,11 @@ import Painting from "../../images/realImage/painting.jpeg";
 import Wallpaper from "../../images/realImage/wallpaper.jpeg";
 import GeneralRepair from "../../images/realImage/general.jpeg";
 
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
+
 export default function SecondServices() {
   return (
     <Box
@@ -52,7 +57,7 @@ export default function SecondServices() {
                 />
                 <CardContent
                   sx={{
-                    height: 100,
+                    height: 150,
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "center",
@@ -73,7 +78,7 @@ export default function SecondServices() {
                     color="text.secondary"
                     fontWeight="regular"
                     textAlign="center"
-                    lineHeight="1"
+                    lineHeight="19px"
                   >
                     Installation services for wood, vinyl tile, tile, and gym
                     floors.
@@ -82,11 +87,7 @@ export default function SecondServices() {
               </Card>
             </Grid>
             <Grid item xs={12} sm={6} md={6} lg={3}>
-              <Card
-                sx={{
-                  minHeight: 300,
-                }}
-              >
+              <Card>
                 <CardMedia
                   sx={{ height: 200 }}
                   image={Wallpaper}
@@ -94,7 +95,7 @@ export default function SecondServices() {
                 />
                 <CardContent
                   sx={{
-                    height: 100,
+                    height: 150,
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "center",
@@ -115,7 +116,7 @@ export default function SecondServices() {
                     color="text.secondary"
                     fontWeight="regular"
                     textAlign="center"
-                    lineHeight="1"
+                    lineHeight="19px"
                   >
                     Removal of old wallpaper, patching, and installation of new
                     wallpaper.
@@ -124,11 +125,7 @@ export default function SecondServices() {
               </Card>
             </Grid>
             <Grid item xs={12} sm={6} md={6} lg={3}>
-              <Card
-                sx={{
-                  minHeight: 300,
-                }}
-              >
+              <Card>
                 <CardMedia
                   sx={{ height: 200 }}
                   image={Painting}
@@ -136,7 +133,7 @@ export default function SecondServices() {
                 />
                 <CardContent
                   sx={{
-                    height: 100,
+                    height: 150,
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "center",
@@ -157,7 +154,7 @@ export default function SecondServices() {
                     color="text.secondary"
                     fontWeight="regular"
                     textAlign="center"
-                    lineHeight="1"
+                    lineHeight="19px"
                   >
                     Patching, Sanding, and applying fresh coats of paint.
                   </Typography>
@@ -165,11 +162,7 @@ export default function SecondServices() {
               </Card>
             </Grid>
             <Grid item xs={12} sm={6} md={6} lg={3}>
-              <Card
-                sx={{
-                  minHeight: 300,
-                }}
-              >
+              <Card>
                 <CardMedia
                   sx={{ height: 200 }}
                   image={Drywall}
@@ -177,7 +170,7 @@ export default function SecondServices() {
                 />
                 <CardContent
                   sx={{
-                    height: 100,
+                    height: 150,
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "center",
@@ -198,7 +191,7 @@ export default function SecondServices() {
                     color="text.secondary"
                     fontWeight="regular"
                     textAlign="center"
-                    lineHeight="1"
+                    lineHeight="19px"
                   >
                     Partial repair or total drywall replacement.
                   </Typography>
@@ -206,11 +199,7 @@ export default function SecondServices() {
               </Card>
             </Grid>
             <Grid item xs={12} sm={6} md={6} lg={3}>
-              <Card
-                sx={{
-                  minHeight: 300,
-                }}
-              >
+              <Card>
                 <CardMedia
                   sx={{ height: 200, backgroundColor: "gray" }}
                   image={GeneralRepair}
@@ -218,7 +207,7 @@ export default function SecondServices() {
                 />
                 <CardContent
                   sx={{
-                    height: 100,
+                    height: 150,
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "center",
@@ -239,7 +228,7 @@ export default function SecondServices() {
                     color="text.secondary"
                     fontWeight="regular"
                     textAlign="center"
-                    lineHeight="1"
+                    lineHeight="19px"
                   >
                     General handyman services and janitorial & maintenance
                     services for condos under contract.
@@ -248,11 +237,7 @@ export default function SecondServices() {
               </Card>
             </Grid>
             <Grid item xs={12} sm={6} md={6} lg={3}>
-              <Card
-                sx={{
-                  minHeight: 300,
-                }}
-              >
+              <Card>
                 <CardMedia
                   sx={{ height: 200, backgroundColor: "gray" }}
                   //   image={Drywall}
@@ -260,7 +245,7 @@ export default function SecondServices() {
                 />
                 <CardContent
                   sx={{
-                    height: 100,
+                    height: 150,
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "center",
@@ -281,7 +266,7 @@ export default function SecondServices() {
                     color="text.secondary"
                     fontWeight="regular"
                     textAlign="center"
-                    lineHeight="1"
+                    lineHeight="19px"
                   >
                     Commercial and residential pressure cleaning services.
                   </Typography>
@@ -289,11 +274,7 @@ export default function SecondServices() {
               </Card>
             </Grid>
             <Grid item xs={12} sm={6} md={6} lg={3}>
-              <Card
-                sx={{
-                  minHeight: 300,
-                }}
-              >
+              <Card>
                 <CardMedia
                   sx={{ height: 200 }}
                   image={Janitorial}
@@ -301,7 +282,7 @@ export default function SecondServices() {
                 />
                 <CardContent
                   sx={{
-                    height: 100,
+                    height: 150,
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "center",
@@ -322,7 +303,7 @@ export default function SecondServices() {
                     color="text.secondary"
                     fontWeight="regular"
                     textAlign="center"
-                    lineHeight="1"
+                    lineHeight="19px"
                   >
                     Commercial and residential janitorial services.
                   </Typography>
@@ -330,11 +311,7 @@ export default function SecondServices() {
               </Card>
             </Grid>
             <Grid item xs={12} sm={6} md={6} lg={3}>
-              <Card
-                sx={{
-                  minHeight: 300,
-                }}
-              >
+              <Card>
                 <CardMedia
                   sx={{ height: 200, backgroundColor: "gray" }}
                   //   image={Drywall}
@@ -342,7 +319,7 @@ export default function SecondServices() {
                 />
                 <CardContent
                   sx={{
-                    height: 100,
+                    height: 150,
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "center",
@@ -363,7 +340,7 @@ export default function SecondServices() {
                     color="text.secondary"
                     fontWeight="regular"
                     textAlign="center"
-                    lineHeight="1"
+                    lineHeight="19px"
                   >
                     All plumbing installation and repairs
                   </Typography>

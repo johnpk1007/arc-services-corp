@@ -10,6 +10,11 @@ import Typing1 from "../../images/testimony/typing1.jpeg";
 import Typing2 from "../../images/testimony/typing2.jpeg";
 import Typing3 from "../../images/testimony/typing3.jpeg";
 
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
+
 export default function FourthTestimonial() {
   return (
     <Box
@@ -28,7 +33,7 @@ export default function FourthTestimonial() {
       <Typography
         fontSize={20}
         fontWeight="regular"
-        color="#777777"
+        color="text.secondary"
         marginBottom="110px"
         textAlign="center"
         width="80%"
@@ -67,7 +72,7 @@ export default function FourthTestimonial() {
                     fontSize={24}
                     textAlign="right"
                     color="white"
-                    sx={{ fontWeight: "regular" }}
+                    fontWeight="bold"
                   >
                     Proin cursus feugiat tortor
                   </Typography>
@@ -118,7 +123,7 @@ export default function FourthTestimonial() {
                     fontSize={24}
                     textAlign="left"
                     color="white"
-                    sx={{ fontWeight: "regular" }}
+                    fontWeight="bold"
                     gutterBottom
                   >
                     Proin cursus feugiat tortor
@@ -170,7 +175,7 @@ export default function FourthTestimonial() {
                     fontSize={24}
                     textAlign="right"
                     color="white"
-                    sx={{ fontWeight: "regular" }}
+                    fontWeight="bold"
                     gutterBottom
                   >
                     Proin cursus feugiat tortor
