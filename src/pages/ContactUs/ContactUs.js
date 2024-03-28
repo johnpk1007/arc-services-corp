@@ -14,6 +14,11 @@ import LogoAppBar from "../../components/LogoAppBar";
 import ContactUs from "../../images/firstImage/contactus.jpg";
 import ColorLogo from "../../images/logo/colorLogo.svg";
 
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
+
 export default function Contact() {
   return (
     <Box
@@ -59,7 +64,12 @@ export default function Contact() {
             >
               Contact Us
             </Typography>
-            <Typography fontSize={20} textAlign="left" color="white">
+            <Typography
+              fontSize={20}
+              textAlign="left"
+              color="white"
+              fontWeight="regular"
+            >
               Don’t hesitate to reach out to us for your complimentary estimate
               or any general inquiries.
             </Typography>
@@ -91,6 +101,8 @@ export default function Contact() {
             fontSize={20}
             sx={{ display: { xs: "none", sm: "block" } }}
             textAlign="center"
+            fontWeight="regular"
+            color="text.secondary"
           >
             Don’t hesitate to reach out to us for your complimentary estimate or
             any general inquiries.
@@ -112,8 +124,16 @@ export default function Contact() {
                 marginBottom: { xs: "30px", sm: "100px" },
               }}
             >
-              <Typography fontSize={20}>Call Us</Typography>
-              <Typography fontSize={20}>(305) 632-1377</Typography>
+              <Typography fontSize={20} fontWeight="bold">
+                Call Us
+              </Typography>
+              <Typography
+                fontSize={20}
+                color="text.secondary"
+                fontWeight="medium"
+              >
+                (305) 632-1377
+              </Typography>
             </Box>
 
             <Button
@@ -124,6 +144,9 @@ export default function Contact() {
                 height: "50px",
                 marginBottom: { xs: "100px", sm: "0px" },
                 width: { xs: "100%", sm: "150px" },
+                "&:hover": {
+                  backgroundColor: "#d84440",
+                },
               }}
               disableElevation
               endIcon={<CallIcon />}
@@ -195,6 +218,9 @@ export default function Contact() {
                 fontSize: 16,
                 height: "50px",
                 width: { xs: "100%", sm: "150px" },
+                "&:hover": {
+                  backgroundColor: "#d84440",
+                },
               }}
               disableElevation
               endIcon={<EmailIcon />}
@@ -210,6 +236,7 @@ export default function Contact() {
         fullWidth
         height="200px"
         display="flex"
+        flexDirection="row"
         justifyContent="center"
         alignItems="center"
       >
@@ -219,7 +246,6 @@ export default function Contact() {
           fontWeight="regular"
           color="#777777"
           textAlign="center"
-          width="80%"
           marginLeft="10px"
           paddingTop="20px"
         >
