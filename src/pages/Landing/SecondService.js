@@ -5,7 +5,7 @@ import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 
 import HandymanIcon from "@mui/icons-material/Handyman";
-import CleaningServicesIcon from "@mui/icons-material/CleaningServices";
+import CleaningServicesIcon from "../../images/icon/clean.svg";
 import RemodelingIcon from "../../images/icon/remodelingIcon.svg";
 import InstallationIcon from "../../images/icon/installationIcon.svg";
 
@@ -150,7 +150,7 @@ export default function SecondService() {
           <Avatar
             sx={{ bgcolor: "#F14C48", width: 60, height: 60, mb: "20px" }}
           >
-            <CleaningServicesIcon sx={{ width: 35, height: 35 }} />
+            <img src={CleaningServicesIcon} alt="cleaning" />
           </Avatar>
           <Typography fontSize={20} fontWeight="regular" marginBottom="20px">
             CLEANING
@@ -169,6 +169,7 @@ export default function SecondService() {
       <Button
         variant="contained"
         sx={{
+          width: { xs: "90%", sm: "160px" },
           bgcolor: "#F14C48",
           fontSize: 20,
           mb: "80px",

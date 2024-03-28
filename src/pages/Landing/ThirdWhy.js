@@ -207,6 +207,7 @@ export default function ThirdWhy() {
       <Button
         variant="outlined"
         sx={{
+          width: { xs: "90%", sm: "160px" },
           borderColor: "#F14C48",
           color: "#F14C48",
           fontSize: 20,

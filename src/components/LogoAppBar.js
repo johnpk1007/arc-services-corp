@@ -8,6 +8,8 @@ import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 
+import { Link } from "react-router-dom";
+
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -48,6 +50,8 @@ export default function LogoAppBar({ color }) {
               edge="start"
               aria-label="menu"
               sx={{ mr: 2 }}
+              component={Link}
+              to="/"
             >
               <img src={WhiteLogo} alt="white Logo" />
             </IconButton>
@@ -59,6 +63,8 @@ export default function LogoAppBar({ color }) {
                 color: color ? "inherit" : "white",
                 display: { xs: "none", sm: "block" },
               }}
+              component={Link}
+              to="/services"
             >
               SERVICES
             </Button>
@@ -69,6 +75,8 @@ export default function LogoAppBar({ color }) {
                 color: color ? "inherit" : "white",
                 display: { xs: "none", sm: "block" },
               }}
+              component={Link}
+              to="/aboutus"
             >
               ABOUT US
             </Button>
@@ -79,6 +87,8 @@ export default function LogoAppBar({ color }) {
                 color: color ? "inherit" : "white",
                 display: { xs: "none", sm: "block" },
               }}
+              component={Link}
+              to="/contactus"
             >
               CONTACT US
             </Button>
@@ -117,17 +127,17 @@ export default function LogoAppBar({ color }) {
         >
           <List>
             <ListItem disablePadding>
-              <ListItemButton>
+              <ListItemButton component={Link} to="/services">
                 <ListItemText primary="SERVICES" />
               </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
-              <ListItemButton>
+              <ListItemButton component={Link} to="/aboutus">
                 <ListItemText primary="ABOUT US" />
               </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
-              <ListItemButton>
+              <ListItemButton component={Link} to="/contactus">
                 <ListItemText primary="CONTACT US" />
               </ListItemButton>
             </ListItem>

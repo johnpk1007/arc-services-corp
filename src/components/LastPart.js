@@ -39,6 +39,7 @@ export default function ThirdWhy() {
       <Button
         variant="contained"
         sx={{
+          width: { xs: "90%", sm: "160px" },
           bgcolor: "#F14C48",
           fontSize: 20,
           marginBottom: "90px",
