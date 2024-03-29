@@ -7,10 +7,10 @@ import ThirdMap from "./ThirdMap";
 import FourthTeam from "./FourthTeam";
 import LastPart from "../../components/LastPart";
 
-export default function Landing() {
+export default function AboutUs() {
   return (
     <Box>
-      <LogoAppBar />
+      <LogoAppBar location="aboutus" />
       <FirstImage />
       <SecondDescription />
       <ThirdMap />

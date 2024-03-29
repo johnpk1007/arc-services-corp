@@ -6,6 +6,8 @@ import TextField from "@mui/material/TextField";
 import Divider from "@mui/material/Divider";
 import CssBaseline from "@mui/material/CssBaseline";
 
+import { useState } from "react";
+
 import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
 
@@ -20,6 +22,18 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
 export default function Contact() {
+  const [formState, setFormState] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    message: "",
+  });
+
+  const changeHandler = (event) => {
+    setFormState({ ...formState, [event.target.name]: event.target.value });
+  };
+  console.log(formState);
+
   return (
     <Box
       sx={{
@@ -28,7 +42,7 @@ export default function Contact() {
       }}
     >
       <CssBaseline />
-      <LogoAppBar color="black" />
+      <LogoAppBar color="black" location="contactus" />
       <Grid container>
         <Grid item xs={12} sm={3}>
           <Box
@@ -169,36 +183,51 @@ export default function Contact() {
           <Grid container spacing={1}>
             <Grid item xs={6}>
               <TextField
-                fullWidth
+                sx={{ width: "100%" }}
                 id="first-name-textfield"
+                name="firstname"
                 label="First Name"
                 variant="outlined"
+                onBlur={changeHandler}
+                error={!formState.firstname.match(/^(?:[a-zA-Z]+|)$/)}
               />
             </Grid>
             <Grid item xs={6}>
               <TextField
-                fullWidth
+                sx={{ width: "100%" }}
                 id="last-name-textfield"
+                name="lastname"
                 label="Last Name"
                 variant="outlined"
+                onBlur={changeHandler}
+                error={!formState.lastname.match(/^(?:[a-zA-Z]+|)$/)}
               />
             </Grid>
             <Grid item xs={12}>
               <TextField
-                fullWidth
+                sx={{ width: "100%" }}
                 id="your-email-address"
+                name="email"
                 label="Your Email Address"
                 variant="outlined"
+                onBlur={changeHandler}
+                error={
+                  !formState.email.match(
+                    /^([\w-.]+@([\w-]+\.)+[\w-]{2,4})?$|^$/
+                  )
+                }
               />
             </Grid>
             <Grid item xs={12}>
               <TextField
-                fullWidth
+                sx={{ width: "100%" }}
                 id="message"
+                name="message"
                 label="Message"
                 variant="outlined"
                 multiline
                 rows={10}
+                onBlur={changeHandler}
               />
             </Grid>
           </Grid>
@@ -231,9 +260,9 @@ export default function Contact() {
         </Grid>
         <Grid item xs={1} md={2} lg={3} />
       </Grid>
-      <Divider fullWidth />
+      <Divider sx={{ width: "100%" }} />
       <Box
-        fullWidth
+        sx={{ width: "100%" }}
         height="200px"
         display="flex"
         flexDirection="row"

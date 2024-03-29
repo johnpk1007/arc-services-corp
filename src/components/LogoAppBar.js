@@ -34,7 +34,7 @@ function Scroll({ children }) {
   });
 }
 
-export default function LogoAppBar({ color }) {
+export default function LogoAppBar({ color, location }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
@@ -61,7 +61,10 @@ export default function LogoAppBar({ color }) {
               sx={{
                 fontWeight: "bold",
                 color: color ? "inherit" : "white",
-                display: { xs: "none", sm: "block" },
+                display:
+                  location === "services"
+                    ? "none"
+                    : { xs: "none", sm: "block" },
               }}
               component={Link}
               to="/services"
@@ -73,7 +76,8 @@ export default function LogoAppBar({ color }) {
               sx={{
                 fontWeight: "bold",
                 color: color ? "inherit" : "white",
-                display: { xs: "none", sm: "block" },
+                display:
+                  location === "aboutus" ? "none" : { xs: "none", sm: "block" },
               }}
               component={Link}
               to="/aboutus"
@@ -85,7 +89,10 @@ export default function LogoAppBar({ color }) {
               sx={{
                 fontWeight: "bold",
                 color: color ? "inherit" : "white",
-                display: { xs: "none", sm: "block" },
+                display:
+                  location === "contactus"
+                    ? "none"
+                    : { xs: "none", sm: "block" },
               }}
               component={Link}
               to="/contactus"
@@ -126,17 +133,26 @@ export default function LogoAppBar({ color }) {
           }}
         >
           <List>
-            <ListItem disablePadding>
+            <ListItem
+              disablePadding
+              sx={{ display: location === "services" ? "none" : "block" }}
+            >
               <ListItemButton component={Link} to="/services">
                 <ListItemText primary="SERVICES" />
               </ListItemButton>
             </ListItem>
-            <ListItem disablePadding>
+            <ListItem
+              disablePadding
+              sx={{ display: location === "aboutus" ? "none" : "block" }}
+            >
               <ListItemButton component={Link} to="/aboutus">
                 <ListItemText primary="ABOUT US" />
               </ListItemButton>
             </ListItem>
-            <ListItem disablePadding>
+            <ListItem
+              disablePadding
+              sx={{ display: location === "contactus" ? "none" : "block" }}
+            >
               <ListItemButton component={Link} to="/contactus">
                 <ListItemText primary="CONTACT US" />
               </ListItemButton>
