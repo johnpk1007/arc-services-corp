@@ -17,6 +17,8 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
+import { Link } from "react-router-dom";
+
 export default function ThirdWhy() {
   const theme = createTheme({
     breakpoints: {
@@ -42,22 +44,32 @@ export default function ThirdWhy() {
         paddingTop: "70px",
       }}
     >
-      <Typography fontSize={32} fontWeight="bold" gutterBottom>
-        Why Hire Us
-      </Typography>
-      <Typography
-        fontSize={20}
-        fontWeight="regular"
-        color="#777777"
-        marginBottom="80px"
-        textAlign="center"
-        width="80%"
+      <Box
+        data-aos="fade-up"
+        data-aos-once="true"
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
       >
-        At ANG, we bring a personalized touch to every project. As a
-        family-owned and operated business since 2017, we understand the
-        importance of trust, reliability, and craftsmanship. Here's why you
-        should choose us:
-      </Typography>
+        <Typography fontSize={32} fontWeight="bold" gutterBottom>
+          Why Hire Us
+        </Typography>
+        <Typography
+          fontSize={20}
+          fontWeight="regular"
+          color="#777777"
+          marginBottom="80px"
+          textAlign="center"
+          width="80%"
+        >
+          At ANG, we bring a personalized touch to every project. As a
+          family-owned and operated business since 2017, we understand the
+          importance of trust, reliability, and craftsmanship. Here's why you
+          should choose us:
+        </Typography>
+      </Box>
 
       <ThemeProvider theme={theme}>
         <Grid
@@ -66,7 +78,18 @@ export default function ThirdWhy() {
           justifyContent="center"
           sx={{ width: "90%", marginBottom: "80px" }}
         >
-          <Grid item xs={12} sm={8} md={5} lg={3} xl={2}>
+          <Grid
+            data-aos="fade-up"
+            data-aos-delay="0"
+            data-aos-once="true"
+            data-a0s-offset="100"
+            item
+            xs={12}
+            sm={8}
+            md={5}
+            lg={3}
+            xl={2}
+          >
             <Card
               sx={{
                 minHeight: 420,
@@ -100,7 +123,18 @@ export default function ThirdWhy() {
               </CardContent>
             </Card>
           </Grid>
-          <Grid item xs={12} sm={8} md={5} lg={3} xl={2}>
+          <Grid
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-once="true"
+            data-a0s-offset="100"
+            item
+            xs={12}
+            sm={8}
+            md={5}
+            lg={3}
+            xl={2}
+          >
             <Card
               sx={{
                 minHeight: 420,
@@ -134,7 +168,18 @@ export default function ThirdWhy() {
               </CardContent>
             </Card>
           </Grid>
-          <Grid item xs={12} sm={8} md={5} lg={3} xl={2}>
+          <Grid
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-once="true"
+            data-a0s-offset="100"
+            item
+            xs={12}
+            sm={8}
+            md={5}
+            lg={3}
+            xl={2}
+          >
             <Card
               sx={{
                 minHeight: 420,
@@ -168,7 +213,18 @@ export default function ThirdWhy() {
               </CardContent>
             </Card>
           </Grid>
-          <Grid item xs={12} sm={8} md={5} lg={3} xl={2}>
+          <Grid
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-once="true"
+            data-a0s-offset="100"
+            item
+            xs={12}
+            sm={8}
+            md={5}
+            lg={3}
+            xl={2}
+          >
             <Card
               sx={{
                 minHeight: 420,
@@ -205,6 +261,10 @@ export default function ThirdWhy() {
         </Grid>
       </ThemeProvider>
       <Button
+        component={Link}
+        to="/aboutus"
+        data-aos="fade-up"
+        data-aos-once="true"
         variant="outlined"
         sx={{
           width: { xs: "90%", sm: "160px" },

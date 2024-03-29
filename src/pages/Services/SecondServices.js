@@ -30,25 +30,45 @@ export default function SecondServices() {
         paddingTop: "130px",
       }}
     >
-      <Typography fontSize={32} fontWeight="bold" gutterBottom>
-        Handyman Services
-      </Typography>
-      <Typography
-        fontSize={20}
-        fontWeight="regular"
-        color="#777777"
-        marginBottom="80px"
-        textAlign="center"
-        width="80%"
+      <Box
+        data-aos="fade-up"
+        data-aos-once="true"
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
       >
-        Explore our diverse range of expert handyman services designed to
-        address all your home improvement needs
-      </Typography>
+        <Typography fontSize={32} fontWeight="bold" gutterBottom>
+          Handyman Services
+        </Typography>
+        <Typography
+          fontSize={20}
+          fontWeight="regular"
+          color="#777777"
+          marginBottom="80px"
+          textAlign="center"
+          width="80%"
+        >
+          Explore our diverse range of expert handyman services designed to
+          address all your home improvement needs
+        </Typography>
+      </Box>
 
       <Grid container justifyContent="center" sx={{ marginBottom: "180px" }}>
         <Grid item xs={10} sm={11} md={7} lg={10} xl={8}>
           <Grid container spacing={3} justifyContent="center">
-            <Grid item xs={12} sm={6} md={6} lg={3}>
+            <Grid
+              data-aos="fade-up"
+              data-aos-delay="0"
+              data-aos-once="true"
+              data-a0s-offset="100"
+              item
+              xs={12}
+              sm={6}
+              md={6}
+              lg={3}
+            >
               <Card>
                 <CardMedia
                   sx={{ height: 200 }}
@@ -86,7 +106,17 @@ export default function SecondServices() {
                 </CardContent>
               </Card>
             </Grid>
-            <Grid item xs={12} sm={6} md={6} lg={3}>
+            <Grid
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-once="true"
+              data-a0s-offset="100"
+              item
+              xs={12}
+              sm={6}
+              md={6}
+              lg={3}
+            >
               <Card>
                 <CardMedia
                   sx={{ height: 200 }}
@@ -124,7 +154,17 @@ export default function SecondServices() {
                 </CardContent>
               </Card>
             </Grid>
-            <Grid item xs={12} sm={6} md={6} lg={3}>
+            <Grid
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-once="true"
+              data-a0s-offset="100"
+              item
+              xs={12}
+              sm={6}
+              md={6}
+              lg={3}
+            >
               <Card>
                 <CardMedia
                   sx={{ height: 200 }}
@@ -161,7 +201,17 @@ export default function SecondServices() {
                 </CardContent>
               </Card>
             </Grid>
-            <Grid item xs={12} sm={6} md={6} lg={3}>
+            <Grid
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-once="true"
+              data-a0s-offset="100"
+              item
+              xs={12}
+              sm={6}
+              md={6}
+              lg={3}
+            >
               <Card>
                 <CardMedia
                   sx={{ height: 200 }}
@@ -198,7 +248,17 @@ export default function SecondServices() {
                 </CardContent>
               </Card>
             </Grid>
-            <Grid item xs={12} sm={6} md={6} lg={3}>
+            <Grid
+              data-aos="fade-up"
+              data-aos-delay="400"
+              data-aos-once="true"
+              data-a0s-offset="100"
+              item
+              xs={12}
+              sm={6}
+              md={6}
+              lg={3}
+            >
               <Card>
                 <CardMedia
                   sx={{ height: 200, backgroundColor: "gray" }}
@@ -236,7 +296,17 @@ export default function SecondServices() {
                 </CardContent>
               </Card>
             </Grid>
-            <Grid item xs={12} sm={6} md={6} lg={3}>
+            <Grid
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-once="true"
+              data-a0s-offset="100"
+              item
+              xs={12}
+              sm={6}
+              md={6}
+              lg={3}
+            >
               <Card>
                 <CardMedia
                   sx={{ height: 200, backgroundColor: "gray" }}
@@ -273,7 +343,17 @@ export default function SecondServices() {
                 </CardContent>
               </Card>
             </Grid>
-            <Grid item xs={12} sm={6} md={6} lg={3}>
+            <Grid
+              data-aos="fade-up"
+              data-aos-delay="600"
+              data-aos-once="true"
+              data-a0s-offset="100"
+              item
+              xs={12}
+              sm={6}
+              md={6}
+              lg={3}
+            >
               <Card>
                 <CardMedia
                   sx={{ height: 200 }}
@@ -310,7 +390,17 @@ export default function SecondServices() {
                 </CardContent>
               </Card>
             </Grid>
-            <Grid item xs={12} sm={6} md={6} lg={3}>
+            <Grid
+              data-aos="fade-up"
+              data-aos-delay="700"
+              data-aos-once="true"
+              data-a0s-offset="100"
+              item
+              xs={12}
+              sm={6}
+              md={6}
+              lg={3}
+            >
               <Card>
                 <CardMedia
                   sx={{ height: 200, backgroundColor: "gray" }}

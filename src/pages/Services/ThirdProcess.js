@@ -26,21 +26,30 @@ export default function SecondServices() {
         paddingTop: "130px",
       }}
     >
-      <Typography fontSize={32} fontWeight="bold" gutterBottom>
-        How The Process Works
-      </Typography>
-      <Typography
-        fontSize={20}
-        fontWeight="regular"
-        color="text.secondary"
-        marginBottom="110px"
-        textAlign="center"
-        width="80%"
+      <Box
+        data-aos="fade-up"
+        data-aos-once="true"
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
       >
-        Discover our streamlined process for efficient, transparent, and
-        satisfying home improvement.
-      </Typography>
-
+        <Typography fontSize={32} fontWeight="bold" gutterBottom>
+          How The Process Works
+        </Typography>
+        <Typography
+          fontSize={20}
+          fontWeight="regular"
+          color="text.secondary"
+          marginBottom="110px"
+          textAlign="center"
+          width="80%"
+        >
+          Discover our streamlined process for efficient, transparent, and
+          satisfying home improvement.
+        </Typography>
+      </Box>
       <Grid
         container
         sx={{
@@ -52,35 +61,63 @@ export default function SecondServices() {
         <Grid
           item
           sx={{
-            border: "solid #F14C48",
             display: { xs: "none", lg: "block" },
           }}
           lg={2}
-        />
+        >
+          <div
+            data-aos="grow-animation"
+            data-aos-delay="100"
+            data-aos-once="true"
+            data-a0s-offset="100"
+            style={{ width: "100%", border: "solid #F14C48" }}
+          />
+        </Grid>
         <Grid
           item
           sx={{
-            border: "solid #F14C48",
             display: { xs: "none", lg: "block" },
           }}
           lg={2}
-        />
+        >
+          <div
+            data-aos="grow-animation"
+            data-aos-delay="1000"
+            data-aos-once="true"
+            data-a0s-offset="100"
+            style={{ width: "100%", border: "solid #F14C48" }}
+          />
+        </Grid>
         <Grid
           item
           sx={{
-            border: "solid #F14C48",
             display: { xs: "none", lg: "block" },
           }}
           lg={2}
-        />
+        >
+          <div
+            data-aos="grow-animation"
+            data-aos-delay="400"
+            data-aos-once="true"
+            data-a0s-offset="100"
+            style={{ width: "100%", border: "solid #F14C48" }}
+          />
+        </Grid>
         <Grid
           item
           sx={{
-            border: "solid #F14C48",
             display: { xs: "none", lg: "block" },
           }}
           lg={2}
-        />
+        >
+          <div
+            data-aos="grow-animation"
+            data-aos-delay="600"
+            data-aos-once="true"
+            data-a0s-offset="100"
+            style={{ width: "100%", border: "solid #F14C48" }}
+          />
+        </Grid>
         <Grid item lg={2} sx={{ display: { xs: "none", lg: "block" } }} />
       </Grid>
       <Grid
@@ -95,6 +132,10 @@ export default function SecondServices() {
       >
         <Grid item xs={12} lg={1}></Grid>
         <Grid
+          data-aos="zoom-in"
+          data-aos-delay="0"
+          data-aos-once="true"
+          data-a0s-offset="100"
           item
           xs={12}
           lg={2}
@@ -142,6 +183,10 @@ export default function SecondServices() {
           </Typography>
         </Grid>
         <Grid
+          data-aos="zoom-in"
+          data-aos-delay="200"
+          data-aos-once="true"
+          data-a0s-offset="100"
           item
           xs={12}
           lg={2}
@@ -189,6 +234,10 @@ export default function SecondServices() {
           </Typography>
         </Grid>
         <Grid
+          data-aos="zoom-in"
+          data-aos-delay="400"
+          data-aos-once="true"
+          data-a0s-offset="100"
           item
           xs={12}
           lg={2}
@@ -237,6 +286,10 @@ export default function SecondServices() {
           </Typography>
         </Grid>
         <Grid
+          data-aos="zoom-in"
+          data-aos-delay="600"
+          data-aos-once="true"
+          data-a0s-offset="100"
           item
           xs={12}
           lg={2}
@@ -285,6 +338,10 @@ export default function SecondServices() {
           </Typography>
         </Grid>
         <Grid
+          data-aos="zoom-in"
+          data-aos-delay="800"
+          data-aos-once="true"
+          data-a0s-offset="100"
           item
           xs={12}
           lg={2}

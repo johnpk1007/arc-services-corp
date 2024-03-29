@@ -24,6 +24,8 @@ export default function FirstImage() {
       }}
     >
       <Box
+        data-aos="fade-right"
+        data-aos-once="true"
         sx={{ display: "flex", flexDirection: "column", ml: { xs: 5, md: 10 } }}
       >
         <Typography
@@ -45,6 +47,8 @@ export default function FirstImage() {
       </Box>
 
       <Box
+        data-aos="fade-right"
+        data-aos-once="true"
         sx={{
           display: "flex",
           flexDirection: "column",

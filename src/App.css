@@ -138,3 +138,22 @@ table {
     height: 100%;
     width: 100%;
   }
+
+
+  @keyframes grow {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+[data-aos="grow-animation"]{
+    display:"none"
+}
+  
+[data-aos="grow-animation"].aos-animate{
+    display:"block";
+    animation: grow 2s 1;
+}

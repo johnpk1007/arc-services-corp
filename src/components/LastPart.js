@@ -9,6 +9,8 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
+import { Link } from "react-router-dom";
+
 export default function ThirdWhy() {
   return (
     <Box
@@ -21,22 +23,36 @@ export default function ThirdWhy() {
         paddingTop: "200px",
       }}
     >
-      <Typography fontSize={32} fontWeight="bold" gutterBottom>
-        Get In Touch
-      </Typography>
-      <Typography
-        fontSize={20}
-        fontWeight="regular"
-        color="text.secondary"
-        marginBottom="80px"
-        textAlign="center"
-        width="80%"
+      <Box
+        data-aos="fade-up"
+        data-aos-once="true"
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
       >
-        For inquiries, estimates, or to schedule a service, please don't
-        hesitate to reach out to us. Our team is here to assist you with all
-        your home improvement needs.
-      </Typography>
+        <Typography fontSize={32} fontWeight="bold" gutterBottom>
+          Get In Touch
+        </Typography>
+        <Typography
+          fontSize={20}
+          fontWeight="regular"
+          color="text.secondary"
+          marginBottom="80px"
+          textAlign="center"
+          width="80%"
+        >
+          For inquiries, estimates, or to schedule a service, please don't
+          hesitate to reach out to us. Our team is here to assist you with all
+          your home improvement needs.
+        </Typography>
+      </Box>
       <Button
+        component={Link}
+        to="/contactus"
+        data-aos="fade-up"
+        data-aos-once="true"
         variant="contained"
         sx={{
           width: { xs: "90%", sm: "160px" },

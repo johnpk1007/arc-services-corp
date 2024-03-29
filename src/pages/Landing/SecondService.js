@@ -14,6 +14,8 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
+import { Link } from "react-router-dom";
+
 export default function SecondService() {
   return (
     <Box
@@ -26,19 +28,29 @@ export default function SecondService() {
         alignItems: "center",
       }}
     >
-      <Typography fontSize={32} fontWeight="700" gutterBottom>
-        Handyman Services
-      </Typography>
-      <Typography
-        fontSize={20}
-        fontWeight="regular"
-        color="text.secondary"
-        marginBottom="80px"
-        width="80%"
-        textAlign="center"
+      <Box
+        data-aos="fade-up"
+        data-aos-once="true"
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
       >
-        Explore the range of handyman services we bring to your doorstep.
-      </Typography>
+        <Typography fontSize={32} fontWeight="700" gutterBottom>
+          Handyman Services
+        </Typography>
+        <Typography
+          fontSize={20}
+          fontWeight="regular"
+          color="text.secondary"
+          marginBottom="80px"
+          width="80%"
+          textAlign="center"
+        >
+          Explore the range of handyman services we bring to your doorstep.
+        </Typography>
+      </Box>
       <Grid
         container
         spacing={3}
@@ -46,6 +58,10 @@ export default function SecondService() {
         sx={{ width: "90%", marginBottom: "80px" }}
       >
         <Grid
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-once="true"
+          data-a0s-offset="100"
           item
           xs={12}
           sm={6}
@@ -75,6 +91,10 @@ export default function SecondService() {
           </Typography>
         </Grid>
         <Grid
+          data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-once="true"
+          data-a0s-offset="100"
           item
           xs={12}
           sm={6}
@@ -104,6 +124,10 @@ export default function SecondService() {
           </Typography>
         </Grid>
         <Grid
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-once="true"
+          data-a0s-offset="100"
           item
           xs={12}
           sm={6}
@@ -137,6 +161,10 @@ export default function SecondService() {
           </Typography>
         </Grid>
         <Grid
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-once="true"
+          data-a0s-offset="100"
           item
           xs={12}
           sm={6}
@@ -167,6 +195,10 @@ export default function SecondService() {
       </Grid>
 
       <Button
+        component={Link}
+        to="/services"
+        data-aos="fade-up"
+        data-aos-once="true"
         variant="contained"
         sx={{
           width: { xs: "90%", sm: "160px" },
