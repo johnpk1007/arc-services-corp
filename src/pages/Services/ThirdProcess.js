@@ -67,25 +67,14 @@ export default function SecondServices() {
         >
           <div
             data-aos="grow-animation"
-            data-aos-delay="100"
+            data-aos-delay="0"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"
             data-aos-once="true"
             data-a0s-offset="100"
-            style={{ width: "100%", border: "solid #F14C48" }}
-          />
-        </Grid>
-        <Grid
-          item
-          sx={{
-            display: { xs: "none", lg: "block" },
-          }}
-          lg={2}
-        >
-          <div
-            data-aos="grow-animation"
-            data-aos-delay="1000"
-            data-aos-once="true"
-            data-a0s-offset="100"
-            style={{ width: "100%", border: "solid #F14C48" }}
+            style={{
+              border: "solid #F14C48",
+            }}
           />
         </Grid>
         <Grid
@@ -98,9 +87,13 @@ export default function SecondServices() {
           <div
             data-aos="grow-animation"
             data-aos-delay="400"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"
             data-aos-once="true"
             data-a0s-offset="100"
-            style={{ width: "100%", border: "solid #F14C48" }}
+            style={{
+              border: "solid #F14C48",
+            }}
           />
         </Grid>
         <Grid
@@ -112,10 +105,33 @@ export default function SecondServices() {
         >
           <div
             data-aos="grow-animation"
-            data-aos-delay="600"
+            data-aos-delay="800"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"
             data-aos-once="true"
             data-a0s-offset="100"
-            style={{ width: "100%", border: "solid #F14C48" }}
+            style={{
+              border: "solid #F14C48",
+            }}
+          />
+        </Grid>
+        <Grid
+          item
+          sx={{
+            display: { xs: "none", lg: "block" },
+          }}
+          lg={2}
+        >
+          <div
+            data-aos="grow-animation"
+            data-aos-delay="1200"
+            data-aos-duration="800"
+            data-aos-easing="ease-in-out"
+            data-aos-once="true"
+            data-a0s-offset="100"
+            style={{
+              border: "solid #F14C48",
+            }}
           />
         </Grid>
         <Grid item lg={2} sx={{ display: { xs: "none", lg: "block" } }} />
@@ -134,6 +150,7 @@ export default function SecondServices() {
         <Grid
           data-aos="zoom-in"
           data-aos-delay="0"
+          data-aos-duration="400"
           data-aos-once="true"
           data-a0s-offset="100"
           item
@@ -184,7 +201,8 @@ export default function SecondServices() {
         </Grid>
         <Grid
           data-aos="zoom-in"
-          data-aos-delay="200"
+          data-aos-delay="400"
+          data-aos-duration="400"
           data-aos-once="true"
           data-a0s-offset="100"
           item
@@ -235,7 +253,8 @@ export default function SecondServices() {
         </Grid>
         <Grid
           data-aos="zoom-in"
-          data-aos-delay="400"
+          data-aos-delay="800"
+          data-aos-duration="400"
           data-aos-once="true"
           data-a0s-offset="100"
           item
@@ -287,7 +306,8 @@ export default function SecondServices() {
         </Grid>
         <Grid
           data-aos="zoom-in"
-          data-aos-delay="600"
+          data-aos-delay="1200"
+          data-aos-duration="400"
           data-aos-once="true"
           data-a0s-offset="100"
           item
@@ -339,7 +359,8 @@ export default function SecondServices() {
         </Grid>
         <Grid
           data-aos="zoom-in"
-          data-aos-delay="800"
+          data-aos-delay="1600"
+          data-aos-duration="400"
           data-aos-once="true"
           data-a0s-offset="100"
           item

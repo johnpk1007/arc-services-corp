@@ -140,20 +140,13 @@ table {
   }
 
 
-  @keyframes grow {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 100%;
-    }
-}
 
 [data-aos="grow-animation"]{
-    display:"none"
+    width: 0%;
+    opacity: 0%;
 }
   
 [data-aos="grow-animation"].aos-animate{
-    display:"block";
-    animation: grow 2s 1;
+    width: 100%;
+    opacity: 100%;
 }

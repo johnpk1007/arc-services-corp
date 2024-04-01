@@ -27,19 +27,29 @@ export default function FourthTestimonial() {
       }}
     >
       <CssBaseline />
-      <Typography fontSize={32} fontWeight="bold" gutterBottom>
-        Testimonial
-      </Typography>
-      <Typography
-        fontSize={20}
-        fontWeight="regular"
-        color="text.secondary"
-        marginBottom="110px"
-        textAlign="center"
-        width="80%"
+      <Box
+        data-aos="fade-up"
+        data-aos-once="true"
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
       >
-        Here are a few testimonials from satisfied customers
-      </Typography>
+        <Typography fontSize={32} fontWeight="bold" gutterBottom>
+          Testimonial
+        </Typography>
+        <Typography
+          fontSize={20}
+          fontWeight="regular"
+          color="text.secondary"
+          marginBottom="110px"
+          textAlign="center"
+          width="80%"
+        >
+          Here are a few testimonials from satisfied customers
+        </Typography>
+      </Box>
       <Grid container justifyContent="center">
         <Grid item xs={11} sm={10} md={6}>
           <Grid container spacing={3}>
@@ -55,6 +65,8 @@ export default function FourthTestimonial() {
                   title="typing1"
                 />
                 <Box
+                  data-aos="fade-left"
+                  data-aos-once="true"
                   sx={{
                     position: "absolute",
                     top: 0,
@@ -106,6 +118,8 @@ export default function FourthTestimonial() {
                   title="typing2"
                 />
                 <Box
+                  data-aos="fade-right"
+                  data-aos-once="true"
                   sx={{
                     position: "absolute",
                     top: 0,
@@ -158,6 +172,8 @@ export default function FourthTestimonial() {
                   title="typing3"
                 />
                 <Box
+                  data-aos="fade-left"
+                  data-aos-once="true"
                   sx={{
                     position: "absolute",
                     top: 0,

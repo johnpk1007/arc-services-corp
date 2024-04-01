@@ -15,10 +15,11 @@ export default function ThirdWhy() {
   return (
     <Box
       sx={{
-        height: "500px",
+        minHeight: "400px",
         width: "100%",
         display: "flex",
         flexDirection: "column",
+        justifyContent: "center",
         alignItems: "center",
         paddingTop: "200px",
       }}
@@ -67,12 +68,12 @@ export default function ThirdWhy() {
       >
         Contact us
       </Button>
-      <Divider sx={{ width: "100%", marginBottom: "90px" }} />
+      <Divider sx={{ width: "100%" }} />
       <Box
+        height="150px"
         display="flex"
         justifyContent="center"
         alignItems="center"
-        sx={{ height: "10px" }}
       >
         <img src={ColorLogo} alt="color logo" />
         <Typography

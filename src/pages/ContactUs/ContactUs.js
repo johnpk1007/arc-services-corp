@@ -263,7 +263,7 @@ export default function Contact() {
       <Divider sx={{ width: "100%" }} />
       <Box
         sx={{ width: "100%" }}
-        height="200px"
+        height="150px"
         display="flex"
         flexDirection="row"
         justifyContent="center"
