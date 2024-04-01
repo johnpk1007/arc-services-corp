@@ -25,7 +25,11 @@ export default function FirstImage() {
         alignItems: "center",
       }}
     >
-      <Box sx={{ width: "100%", marginLeft: "20%" }}>
+      <Box
+        data-aos="fade-up"
+        data-aos-once="true"
+        sx={{ width: "100%", marginLeft: "20%" }}
+      >
         <Typography
           fontSize={32}
           fontWeight="bold"
@@ -36,7 +40,12 @@ export default function FirstImage() {
       </Box>
       <Grid container sx={{ width: "80%" }}>
         <Grid item xs={12} lg={6}>
-          <Card elevation={0} sx={{ display: "flex", marginBottom: "100px" }}>
+          <Card
+            data-aos="fade-up"
+            data-aos-once="true"
+            elevation={0}
+            sx={{ display: "flex", marginBottom: { xs: "100px", lg: "0px" } }}
+          >
             <Box sx={{ display: "flex", flexDirection: "column" }}>
               <Box sx={{ display: "flex", flexDirection: "row" }}>
                 <Box sx={{ position: "relative", height: 340, width: 260 }}>
@@ -106,7 +115,12 @@ export default function FirstImage() {
           </Card>
         </Grid>
         <Grid item xs={12} lg={6}>
-          <Card elevation={0} sx={{ display: "flex" }}>
+          <Card
+            data-aos="fade-up"
+            data-aos-once="true"
+            elevation={0}
+            sx={{ display: "flex" }}
+          >
             <Box sx={{ display: "flex", flexDirection: "column" }}>
               <Box sx={{ display: "flex", flexDirection: "row" }}>
                 <Box sx={{ position: "relative", height: 340, width: 260 }}>

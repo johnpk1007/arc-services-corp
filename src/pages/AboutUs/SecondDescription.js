@@ -22,12 +22,12 @@ export default function SecondDescription() {
       <Grid container justifyContent="center" sx={{ width: "100%" }}>
         <Grid item xs={10}>
           <Grid container spacing={2}>
-            <Grid item xs={12}>
+            <Grid item xs={12} data-aos="fade-up" data-aos-once="true">
               <Typography fontWeight="bold" fontSize={32}>
                 More About Our Company
               </Typography>
             </Grid>
-            <Grid item xs={12} md={8}>
+            <Grid item xs={12} md={8} data-aos="fade-up" data-aos-once="true">
               <Typography
                 fontSize={20}
                 color="text.secondary"
@@ -79,7 +79,7 @@ export default function SecondDescription() {
               <img src={ColorLogoBig} alt="color logo" />
             </Grid>
 
-            <Grid item xs={12}>
+            <Grid item xs={12} data-aos="fade-up" data-aos-once="true">
               <Typography
                 fontSize={20}
                 color="text.secondary"
@@ -91,7 +91,7 @@ export default function SecondDescription() {
                 our own, ensuring your satisfaction every step of the way.
               </Typography>
             </Grid>
-            <Grid item xs={12}>
+            <Grid item xs={12} data-aos="fade-up" data-aos-once="true">
               <Typography
                 fontSize={20}
                 color="text.secondary"
@@ -104,7 +104,7 @@ export default function SecondDescription() {
                 precision and care.
               </Typography>
             </Grid>
-            <Grid item xs={12}>
+            <Grid item xs={12} data-aos="fade-up" data-aos-once="true">
               <Typography
                 fontSize={20}
                 color="text.secondary"

@@ -24,6 +24,8 @@ export default function FirstImage() {
         }}
       />
       <Box
+        data-aos="fade-left"
+        data-aos-once="true"
         sx={{
           position: "absolute",
           top: 0,

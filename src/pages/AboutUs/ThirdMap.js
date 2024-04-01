@@ -31,6 +31,8 @@ export default function ThirdMap() {
       }}
     >
       <Card
+        data-aos="fade-up"
+        data-aos-once="true"
         sx={{
           display: "flex",
           flexDirection: { xs: "column-reverse", md: "row" },

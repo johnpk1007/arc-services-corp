@@ -11,6 +11,7 @@ import "@fontsource/roboto/700.css";
 export default function FirstImage() {
   return (
     <Box
+      // data-aos="first-image-zoom-in"
       sx={{
         backgroundImage: `url(${LandingImage})`,
         backgroundSize: "cover",
