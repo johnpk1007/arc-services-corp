@@ -66,12 +66,12 @@ export default function SecondServices() {
           lg={2}
         >
           <div
-            data-aos="grow-animation"
+            data-aos="grow-animation-row"
+            data-aos-offset="-200"
             data-aos-delay="0"
             data-aos-duration="800"
             data-aos-easing="ease-in-out"
             data-aos-once="true"
-            data-a0s-offset="100"
             style={{
               border: "solid #F14C48",
             }}
@@ -85,12 +85,12 @@ export default function SecondServices() {
           lg={2}
         >
           <div
-            data-aos="grow-animation"
+            data-aos="grow-animation-row"
+            data-aos-offset="-200"
             data-aos-delay="400"
             data-aos-duration="800"
             data-aos-easing="ease-in-out"
             data-aos-once="true"
-            data-a0s-offset="100"
             style={{
               border: "solid #F14C48",
             }}
@@ -104,12 +104,12 @@ export default function SecondServices() {
           lg={2}
         >
           <div
-            data-aos="grow-animation"
+            data-aos="grow-animation-row"
+            data-aos-offset="-200"
             data-aos-delay="800"
             data-aos-duration="800"
             data-aos-easing="ease-in-out"
             data-aos-once="true"
-            data-a0s-offset="100"
             style={{
               border: "solid #F14C48",
             }}
@@ -123,12 +123,12 @@ export default function SecondServices() {
           lg={2}
         >
           <div
-            data-aos="grow-animation"
+            data-aos="grow-animation-row"
+            data-aos-offset="-200"
             data-aos-delay="1200"
             data-aos-duration="800"
             data-aos-easing="ease-in-out"
             data-aos-once="true"
-            data-a0s-offset="100"
             style={{
               border: "solid #F14C48",
             }}
@@ -148,265 +148,353 @@ export default function SecondServices() {
       >
         <Grid item xs={12} lg={1}></Grid>
         <Grid
-          data-aos="zoom-in"
-          data-aos-delay="0"
-          data-aos-duration="400"
-          data-aos-once="true"
-          data-a0s-offset="100"
           item
           xs={12}
           lg={2}
           sx={{
-            minHeight: "100px",
-            position: "relative",
             display: "flex",
-            flexDirection: "column",
-            alignItems: { xs: "flex-start", lg: "center" },
-            borderLeft: { xs: "solid #F14C48 5px", lg: "none" },
+            flexDirection: "row",
           }}
         >
-          <Avatar
+          <Box sx={{ height: "100%" }}>
+            <Box
+              data-aos="grow-animation-column"
+              data-aos-offset="-200"
+              data-aos-delay="200"
+              data-aos-duration="400"
+              data-aos-once="true"
+              sx={{
+                borderLeft: { xs: "solid #F14C48 5px", lg: "none" },
+              }}
+            />
+          </Box>
+          <Box
+            data-aos="zoom-in"
+            data-aos-offset="-200"
+            data-aos-delay="0"
+            data-aos-duration="400"
+            data-aos-once="true"
             sx={{
-              bgcolor: "#F14C48",
-              width: 60,
-              height: 60,
-              mb: "20px",
-              position: "absolute",
-              top: { xs: 0, lg: -20 },
-              left: { xs: -30, lg: "inherit" },
+              minHeight: "100px",
+              position: "relative",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: { xs: "flex-start", lg: "center" },
+              // borderLeft: { xs: "solid #F14C48 5px", lg: "none" },
             }}
           >
-            <CallIcon sx={{ width: 35, height: 35 }} />
-          </Avatar>
-          <Typography
-            fontSize={20}
-            fontWeight="medium"
-            gutterBottom
-            align="center"
-            sx={{ mt: { xs: 0, lg: "70px" }, ml: { xs: 5, lg: 0 } }}
-          >
-            CONTACT US
-          </Typography>
-          <Typography
-            fontSize={16}
-            fontWeight="regular"
-            color="text.secondary"
-            sx={{
-              ml: { xs: 5, lg: 0 },
-              textAlign: { xs: "left", lg: "center" },
-            }}
-          >
-            Contact us via phone or email for any inquiries.
-          </Typography>
+            <Avatar
+              sx={{
+                bgcolor: "#F14C48",
+                width: 60,
+                height: 60,
+                mb: "20px",
+                position: "absolute",
+                top: { xs: -10, lg: -30 },
+                left: { xs: -30, lg: "inherit" },
+              }}
+            >
+              <CallIcon sx={{ width: 35, height: 35 }} />
+            </Avatar>
+            <Typography
+              fontSize={20}
+              fontWeight="medium"
+              gutterBottom
+              align="center"
+              sx={{ mt: { xs: 0, lg: "70px" }, ml: { xs: 5, lg: 0 } }}
+            >
+              CONTACT US
+            </Typography>
+            <Typography
+              fontSize={16}
+              fontWeight="regular"
+              color="text.secondary"
+              sx={{
+                ml: { xs: 5, lg: 0 },
+                textAlign: { xs: "left", lg: "center" },
+              }}
+            >
+              Contact us via phone or email for any inquiries.
+            </Typography>
+          </Box>
         </Grid>
         <Grid
-          data-aos="zoom-in"
-          data-aos-delay="400"
-          data-aos-duration="400"
-          data-aos-once="true"
-          data-a0s-offset="100"
           item
           xs={12}
           lg={2}
           sx={{
-            minHeight: "100px",
-            position: "relative",
             display: "flex",
-            flexDirection: "column",
-            alignItems: { xs: "flex-start", lg: "center" },
-            borderLeft: { xs: "solid #F14C48 5px", lg: "none" },
+            flexDirection: "row",
           }}
         >
-          <Avatar
+          <Box sx={{ height: "100%" }}>
+            <Box
+              data-aos="grow-animation-column"
+              data-aos-offset="-200"
+              data-aos-delay="600"
+              data-aos-duration="400"
+              data-aos-once="true"
+              sx={{
+                borderLeft: { xs: "solid #F14C48 5px", lg: "none" },
+              }}
+            />
+          </Box>
+          <Box
+            data-aos="zoom-in"
+            data-aos-offset="-200"
+            data-aos-delay="400"
+            data-aos-duration="400"
+            data-aos-once="true"
             sx={{
-              bgcolor: "#F14C48",
-              width: 60,
-              height: 60,
-              mb: "20px",
-              position: "absolute",
-              top: { xs: 0, lg: -20 },
-              left: { xs: -30, lg: "inherit" },
+              minHeight: "100px",
+              position: "relative",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: { xs: "flex-start", lg: "center" },
+              // borderLeft: { xs: "solid #F14C48 5px", lg: "none" },
             }}
           >
-            <ForumIcon sx={{ width: 35, height: 35 }} />
-          </Avatar>
-          <Typography
-            fontSize={20}
-            fontWeight="medium"
-            sx={{ mt: { xs: 0, lg: "70px" }, ml: { xs: 5, lg: 0 } }}
-            gutterBottom
-          >
-            DISCUSS
-          </Typography>
-          <Typography
-            fontSize={16}
-            fontWeight="regular"
-            color="text.secondary"
-            align="center"
-            sx={{
-              ml: { xs: 5, lg: 0 },
-              textAlign: { xs: "left", lg: "center" },
-            }}
-          >
-            We'll reach out to you to go over the details of the job
-          </Typography>
+            <Avatar
+              sx={{
+                bgcolor: "#F14C48",
+                width: 60,
+                height: 60,
+                mb: "20px",
+                position: "absolute",
+                top: { xs: -10, lg: -30 },
+                left: { xs: -30, lg: "inherit" },
+              }}
+            >
+              <ForumIcon sx={{ width: 35, height: 35 }} />
+            </Avatar>
+            <Typography
+              fontSize={20}
+              fontWeight="medium"
+              sx={{ mt: { xs: 0, lg: "70px" }, ml: { xs: 5, lg: 0 } }}
+              gutterBottom
+            >
+              DISCUSS
+            </Typography>
+            <Typography
+              fontSize={16}
+              fontWeight="regular"
+              color="text.secondary"
+              align="center"
+              sx={{
+                ml: { xs: 5, lg: 0 },
+                textAlign: { xs: "left", lg: "center" },
+              }}
+            >
+              We'll reach out to you to go over the details of the job
+            </Typography>
+          </Box>
         </Grid>
         <Grid
-          data-aos="zoom-in"
-          data-aos-delay="800"
-          data-aos-duration="400"
-          data-aos-once="true"
-          data-a0s-offset="100"
           item
           xs={12}
           lg={2}
           sx={{
-            minHeight: "100px",
-            position: "relative",
             display: "flex",
-            flexDirection: "column",
-            alignItems: { xs: "flex-start", lg: "center" },
-            borderLeft: { xs: "solid #F14C48 5px", lg: "none" },
+            flexDirection: "row",
           }}
         >
-          <Avatar
+          <Box sx={{ height: "100%" }}>
+            <Box
+              data-aos="grow-animation-column"
+              data-aos-offset="-200"
+              data-aos-delay="1000"
+              data-aos-duration="400"
+              data-aos-once="true"
+              sx={{
+                borderLeft: { xs: "solid #F14C48 5px", lg: "none" },
+              }}
+            />
+          </Box>
+          <Box
+            data-aos="zoom-in"
+            data-aos-offset="-200"
+            data-aos-delay="800"
+            data-aos-duration="400"
+            data-aos-once="true"
             sx={{
-              bgcolor: "#F14C48",
-              width: 60,
-              height: 60,
-              mb: "20px",
-              position: "absolute",
-              top: { xs: 0, lg: -20 },
-              left: { xs: -30, lg: "inherit" },
+              minHeight: "100px",
+              position: "relative",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: { xs: "flex-start", lg: "center" },
             }}
           >
-            <MoneyOffIcon sx={{ width: 35, height: 35 }} />
-          </Avatar>
-          <Typography
-            fontSize={20}
-            fontWeight="medium"
-            sx={{ mt: { xs: 0, lg: "70px" }, ml: { xs: 5, lg: 0 } }}
-            gutterBottom
-            align="center"
-          >
-            FREE ESTIMATE
-          </Typography>
-          <Typography
-            fontSize={16}
-            fontWeight="regular"
-            color="text.secondary"
-            align="center"
-            sx={{
-              ml: { xs: 5, lg: 0 },
-              textAlign: { xs: "left", lg: "center" },
-            }}
-          >
-            Pending your approval, you'll receive a cost-free estimate.
-          </Typography>
+            <Avatar
+              sx={{
+                bgcolor: "#F14C48",
+                width: 60,
+                height: 60,
+                mb: "20px",
+                position: "absolute",
+                top: { xs: -10, lg: -30 },
+                left: { xs: -30, lg: "inherit" },
+              }}
+            >
+              <MoneyOffIcon sx={{ width: 35, height: 35 }} />
+            </Avatar>
+            <Typography
+              fontSize={20}
+              fontWeight="medium"
+              sx={{ mt: { xs: 0, lg: "70px" }, ml: { xs: 5, lg: 0 } }}
+              gutterBottom
+              align="center"
+            >
+              FREE ESTIMATE
+            </Typography>
+            <Typography
+              fontSize={16}
+              fontWeight="regular"
+              color="text.secondary"
+              align="center"
+              sx={{
+                ml: { xs: 5, lg: 0 },
+                textAlign: { xs: "left", lg: "center" },
+              }}
+            >
+              Pending your approval, you'll receive a cost-free estimate.
+            </Typography>
+          </Box>
         </Grid>
         <Grid
-          data-aos="zoom-in"
-          data-aos-delay="1200"
-          data-aos-duration="400"
-          data-aos-once="true"
-          data-a0s-offset="100"
           item
           xs={12}
           lg={2}
           sx={{
-            minHeight: "100px",
-            position: "relative",
             display: "flex",
-            flexDirection: "column",
-            alignItems: { xs: "flex-start", lg: "center" },
-            borderLeft: { xs: "solid #F14C48 5px", lg: "none" },
+            flexDirection: "row",
           }}
         >
-          <Avatar
+          <Box sx={{ height: "100%" }}>
+            <Box
+              data-aos="grow-animation-column"
+              data-aos-offset="-200"
+              data-aos-delay="1400"
+              data-aos-duration="400"
+              data-aos-once="true"
+              sx={{
+                borderLeft: { xs: "solid #F14C48 5px", lg: "none" },
+              }}
+            />
+          </Box>
+          <Box
+            data-aos="zoom-in"
+            data-aos-offset="-200"
+            data-aos-delay="1200"
+            data-aos-duration="400"
+            data-aos-once="true"
             sx={{
-              bgcolor: "#F14C48",
-              width: 60,
-              height: 60,
-              mb: "20px",
-              position: "absolute",
-              top: { xs: 0, lg: -20 },
-              left: { xs: -30, lg: "inherit" },
+              minHeight: "100px",
+              position: "relative",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: { xs: "flex-start", lg: "center" },
             }}
           >
-            <EventAvailableIcon sx={{ width: 35, height: 35 }} />
-          </Avatar>
-          <Typography
-            fontSize={20}
-            fontWeight="medium"
-            sx={{ mt: { xs: 0, lg: "70px" }, ml: { xs: 5, lg: 0 } }}
-            gutterBottom
-          >
-            DATE
-          </Typography>
-          <Typography
-            fontSize={16}
-            fontWeight="regular"
-            color="text.secondary"
-            align="center"
-            sx={{
-              ml: { xs: 5, lg: 0 },
-              textAlign: { xs: "left", lg: "center" },
-            }}
-          >
-            We'll provide you with our schedule and request you to select a
-            date.
-          </Typography>
+            <Avatar
+              sx={{
+                bgcolor: "#F14C48",
+                width: 60,
+                height: 60,
+                mb: "20px",
+                position: "absolute",
+                top: { xs: -10, lg: -30 },
+                left: { xs: -30, lg: "inherit" },
+              }}
+            >
+              <EventAvailableIcon sx={{ width: 35, height: 35 }} />
+            </Avatar>
+            <Typography
+              fontSize={20}
+              fontWeight="medium"
+              sx={{ mt: { xs: 0, lg: "70px" }, ml: { xs: 5, lg: 0 } }}
+              gutterBottom
+            >
+              DATE
+            </Typography>
+            <Typography
+              fontSize={16}
+              fontWeight="regular"
+              color="text.secondary"
+              align="center"
+              sx={{
+                ml: { xs: 5, lg: 0 },
+                textAlign: { xs: "left", lg: "center" },
+              }}
+            >
+              We'll provide you with our schedule and request you to select a
+              date.
+            </Typography>
+          </Box>
         </Grid>
         <Grid
-          data-aos="zoom-in"
-          data-aos-delay="1600"
-          data-aos-duration="400"
-          data-aos-once="true"
-          data-a0s-offset="100"
           item
           xs={12}
           lg={2}
           sx={{
-            minHeight: "100px",
-            position: "relative",
             display: "flex",
-            flexDirection: "column",
-            alignItems: { xs: "flex-start", lg: "center" },
+            flexDirection: "row",
           }}
         >
-          <Avatar
+          <Box sx={{ height: "100%" }}>
+            <Box
+              sx={{
+                borderLeft: { xs: "none" },
+              }}
+            />
+          </Box>
+          <Box
+            data-aos="zoom-in"
+            data-aos-offset="-200"
+            data-aos-delay="1600"
+            data-aos-duration="400"
+            data-aos-once="true"
             sx={{
-              bgcolor: "#F14C48",
-              width: 60,
-              height: 60,
-              mb: "20px",
-              position: "absolute",
-              top: { xs: 0, lg: -20 },
-              left: { xs: -30, lg: "inherit" },
+              minHeight: "100px",
+              position: "relative",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: { xs: "flex-start", lg: "center" },
             }}
           >
-            <HandymanIcon sx={{ width: 35, height: 35 }} />
-          </Avatar>
-          <Typography
-            fontSize={20}
-            fontWeight="medium"
-            sx={{ mt: { xs: 0, lg: "70px" }, ml: { xs: 5, lg: 0 } }}
-            gutterBottom
-          >
-            WORK
-          </Typography>
-          <Typography
-            fontSize={16}
-            fontWeight="regular"
-            color="text.secondary"
-            align="center"
-            sx={{
-              ml: { xs: 5, lg: 0 },
-              textAlign: { xs: "left", lg: "center" },
-            }}
-          >
-            Our team will get started on the project right away.
-          </Typography>
+            <Avatar
+              sx={{
+                bgcolor: "#F14C48",
+                width: 60,
+                height: 60,
+                mb: "20px",
+                position: "absolute",
+                top: { xs: -10, lg: -30 },
+                left: { xs: -30, lg: "inherit" },
+              }}
+            >
+              <HandymanIcon sx={{ width: 35, height: 35 }} />
+            </Avatar>
+            <Typography
+              fontSize={20}
+              fontWeight="medium"
+              sx={{ mt: { xs: 0, lg: "70px" }, ml: { xs: 5, lg: 0 } }}
+              gutterBottom
+            >
+              WORK
+            </Typography>
+            <Typography
+              fontSize={16}
+              fontWeight="regular"
+              color="text.secondary"
+              align="center"
+              sx={{
+                ml: { xs: 5, lg: 0 },
+                textAlign: { xs: "left", lg: "center" },
+              }}
+            >
+              Our team will get started on the project right away.
+            </Typography>
+          </Box>
         </Grid>
         <Grid item xs={12} lg={1}></Grid>
       </Grid>

@@ -141,12 +141,23 @@ table {
 
 
 
-[data-aos="grow-animation"]{
+[data-aos="grow-animation-row"]{
     width: 0%;
     opacity: 0%;
 }
   
-[data-aos="grow-animation"].aos-animate{
+[data-aos="grow-animation-row"].aos-animate{
     width: 100%;
     opacity: 100%;
 }
+
+[data-aos="grow-animation-column"]{
+    height: 0%;
+    opacity: 0%;
+}
+  
+[data-aos="grow-animation-column"].aos-animate{
+    height: 100%;
+    opacity: 100%;
+}
+
