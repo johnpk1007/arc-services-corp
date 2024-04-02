@@ -45,19 +45,29 @@ export default function ThirdMap() {
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between",
-            height: { xs: "300px", md: "400px" },
+            height: { xs: "250px", md: "400px" },
             paddingY: "30px",
             paddingLeft: "30px",
           }}
         >
           <Box>
-            <Typography fontWeight="bold" fontSize={32} gutterBottom>
+            <Typography
+              fontWeight="bold"
+              sx={{ fontSize: { xs: 16, sm: 20, md: 24, lg: 32 } }}
+              gutterBottom
+            >
               Contact Us
             </Typography>
-            <Typography fontSize={20} fontWeight="light">
+            <Typography
+              sx={{ fontSize: { xs: 14, sm: 16, md: 18, lg: 20 } }}
+              fontWeight="light"
+            >
               Our home office is located in Brickell
             </Typography>
-            <Typography fontSize={20} fontWeight="light">
+            <Typography
+              sx={{ fontSize: { xs: 14, sm: 16, md: 18, lg: 20 } }}
+              fontWeight="light"
+            >
               You may contact us day or night
             </Typography>
           </Box>
@@ -65,17 +75,35 @@ export default function ThirdMap() {
             <Typography
               fontSize={20}
               fontWeight="medium"
-              sx={{ display: "flex", alignItems: "center" }}
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                fontSize: { xs: 14, sm: 16, md: 18, lg: 20 },
+              }}
             >
-              <CallIcon fontSize="small" sx={{ marginRight: "10px" }} />
+              <CallIcon
+                sx={{
+                  marginRight: "10px",
+                  fontSize: { xs: 14, sm: 16, md: 18, lg: 20 },
+                }}
+              />
               (305) 632-1377
             </Typography>
             <Typography
-              fontSize={20}
               fontWeight="medium"
-              sx={{ display: "flex", alignItems: "center" }}
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                fontSize: { xs: 14, sm: 16, md: 18, lg: 20 },
+              }}
             >
-              <EmailIcon fontSize="small" sx={{ marginRight: "10px" }} />
+              <EmailIcon
+                fontSize="small"
+                sx={{
+                  marginRight: "10px",
+                  fontSize: { xs: 14, sm: 16, md: 18, lg: 20 },
+                }}
+              />
               nancygarcia1970@gmail.com
             </Typography>
           </Box>

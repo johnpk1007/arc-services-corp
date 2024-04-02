@@ -25,15 +25,11 @@ export default function FirstImage() {
         alignItems: "center",
       }}
     >
-      <Box
-        data-aos="fade-up"
-        data-aos-once="true"
-        sx={{ width: "100%", marginLeft: "20%" }}
-      >
+      <Box data-aos="fade-up" data-aos-once="true" sx={{ width: "100%" }}>
         <Typography
           fontSize={32}
           fontWeight="bold"
-          sx={{ marginBottom: "80px" }}
+          sx={{ marginBottom: "80px", marginLeft: "10%" }}
         >
           Meet Our Team
         </Typography>
@@ -48,7 +44,13 @@ export default function FirstImage() {
           >
             <Box sx={{ display: "flex", flexDirection: "column" }}>
               <Box sx={{ display: "flex", flexDirection: "row" }}>
-                <Box sx={{ position: "relative", height: 340, width: 260 }}>
+                <Box
+                  sx={{
+                    position: "relative",
+                    height: { xs: 170, sm: 220, md: 270, lg: 340 },
+                    width: { xs: 130, sm: 155, md: 180, lg: 260 },
+                  }}
+                >
                   <Box
                     sx={{
                       height: "95%",
@@ -81,16 +83,24 @@ export default function FirstImage() {
                     justifyContent: "space-around",
                   }}
                 >
-                  <Typography fontWeight="regular" fontSize={24}>
+                  <Typography
+                    fontWeight="regular"
+                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 24 } }}
+                  >
                     President
                   </Typography>
-                  <Typography fontSize={36} fontWeight="bold">
+                  <Typography
+                    sx={{ fontSize: { xs: 24, sm: 28, md: 32, lg: 36 } }}
+                    fontWeight="bold"
+                  >
                     Nancy Garcia
                   </Typography>
                   <Typography
-                    fontSize={20}
                     fontWeight="light"
-                    sx={{ display: { xs: "none", sm: "block" } }}
+                    sx={{
+                      display: { xs: "none", sm: "block" },
+                      fontSize: { sm: 17, md: 18, lg: 20 },
+                    }}
                   >
                     Leads strategic planning, oversees all operations, manages
                     finances and personnel, and handles customer relations.
@@ -100,13 +110,12 @@ export default function FirstImage() {
               <CardContent
                 sx={{
                   width: "100%",
-                  display: "flex",
+                  display: { xs: "flex", sm: "none" },
                   flexDirection: "column",
                   justifyContent: "space-around",
-                  display: { xs: "block", sm: "none" },
                 }}
               >
-                <Typography fontSize={20} fontWeight="light">
+                <Typography fontSize={16} fontWeight="light">
                   Leads strategic planning, oversees all operations, manages
                   finances and personnel, and handles customer relations.
                 </Typography>
@@ -123,7 +132,13 @@ export default function FirstImage() {
           >
             <Box sx={{ display: "flex", flexDirection: "column" }}>
               <Box sx={{ display: "flex", flexDirection: "row" }}>
-                <Box sx={{ position: "relative", height: 340, width: 260 }}>
+                <Box
+                  sx={{
+                    position: "relative",
+                    height: { xs: 170, sm: 220, md: 270, lg: 340 },
+                    width: { xs: 130, sm: 155, md: 180, lg: 260 },
+                  }}
+                >
                   <Box
                     sx={{
                       height: "95%",
@@ -156,15 +171,23 @@ export default function FirstImage() {
                     justifyContent: "space-around",
                   }}
                 >
-                  <Typography fontSize={24} fontWeight="regular">
+                  <Typography
+                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 24 } }}
+                    fontWeight="regular"
+                  >
                     General Manager
                   </Typography>
-                  <Typography fontSize={36} fontWeight="bold">
+                  <Typography
+                    sx={{ fontSize: { xs: 24, sm: 28, md: 32, lg: 36 } }}
+                    fontWeight="bold"
+                  >
                     Ariel Soto
                   </Typography>
                   <Typography
-                    fontSize={20}
-                    sx={{ display: { xs: "none", sm: "block" } }}
+                    sx={{
+                      display: { xs: "none", sm: "block" },
+                      fontSize: { sm: 17, md: 18, lg: 20 },
+                    }}
                     fontWeight="light"
                   >
                     Oversees day-to-day operations, coordinates projects,
@@ -176,15 +199,14 @@ export default function FirstImage() {
               <CardContent
                 sx={{
                   width: "100%",
-                  display: "flex",
+                  display: { xs: "flex", sm: "none" },
                   flexDirection: "column",
                   justifyContent: "space-around",
-                  display: { xs: "block", sm: "none" },
                 }}
               >
-                <Typography fontSize={20} fontWeight="light">
-                  Leads strategic planning, oversees all operations, manages
-                  finances and personnel, and handles customer relations.
+                <Typography fontSize={16} fontWeight="light">
+                  Oversees day-to-day operations, coordinates projects, performs
+                  repairs and maintenance tasks, and ensures work quality.
                 </Typography>
               </CardContent>
             </Box>

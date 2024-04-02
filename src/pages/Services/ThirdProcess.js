@@ -35,11 +35,15 @@ export default function SecondServices() {
           alignItems: "center",
         }}
       >
-        <Typography fontSize={32} fontWeight="bold" gutterBottom>
+        <Typography
+          sx={{ fontSize: { xs: 24, sm: 26, md: 28, lg: 32 } }}
+          fontWeight="bold"
+          gutterBottom
+        >
           How The Process Works
         </Typography>
         <Typography
-          fontSize={20}
+          sx={{ fontSize: { xs: 16, sm: 17, md: 18, lg: 20 } }}
           fontWeight="regular"
           color="text.secondary"
           marginBottom="110px"
@@ -180,7 +184,6 @@ export default function SecondServices() {
               display: "flex",
               flexDirection: "column",
               alignItems: { xs: "flex-start", lg: "center" },
-              // borderLeft: { xs: "solid #F14C48 5px", lg: "none" },
             }}
           >
             <Avatar
@@ -197,21 +200,24 @@ export default function SecondServices() {
               <CallIcon sx={{ width: 35, height: 35 }} />
             </Avatar>
             <Typography
-              fontSize={20}
               fontWeight="medium"
               gutterBottom
               align="center"
-              sx={{ mt: { xs: 0, lg: "70px" }, ml: { xs: 5, lg: 0 } }}
+              sx={{
+                mt: { xs: 0, lg: "70px" },
+                ml: { xs: 5, lg: 0 },
+                fontSize: { xs: 16, sm: 17, md: 18, lg: 20 },
+              }}
             >
               CONTACT US
             </Typography>
             <Typography
-              fontSize={16}
               fontWeight="regular"
               color="text.secondary"
               sx={{
                 ml: { xs: 5, lg: 0 },
                 textAlign: { xs: "left", lg: "center" },
+                fontSize: { xs: 12, sm: 13, md: 14, lg: 16 },
               }}
             >
               Contact us via phone or email for any inquiries.
@@ -251,7 +257,6 @@ export default function SecondServices() {
               display: "flex",
               flexDirection: "column",
               alignItems: { xs: "flex-start", lg: "center" },
-              // borderLeft: { xs: "solid #F14C48 5px", lg: "none" },
             }}
           >
             <Avatar
@@ -268,21 +273,24 @@ export default function SecondServices() {
               <ForumIcon sx={{ width: 35, height: 35 }} />
             </Avatar>
             <Typography
-              fontSize={20}
               fontWeight="medium"
-              sx={{ mt: { xs: 0, lg: "70px" }, ml: { xs: 5, lg: 0 } }}
               gutterBottom
+              align="center"
+              sx={{
+                mt: { xs: 0, lg: "70px" },
+                ml: { xs: 5, lg: 0 },
+                fontSize: { xs: 16, sm: 17, md: 18, lg: 20 },
+              }}
             >
               DISCUSS
             </Typography>
             <Typography
-              fontSize={16}
               fontWeight="regular"
               color="text.secondary"
-              align="center"
               sx={{
                 ml: { xs: 5, lg: 0 },
                 textAlign: { xs: "left", lg: "center" },
+                fontSize: { xs: 12, sm: 13, md: 14, lg: 16 },
               }}
             >
               We'll reach out to you to go over the details of the job
@@ -338,22 +346,24 @@ export default function SecondServices() {
               <MoneyOffIcon sx={{ width: 35, height: 35 }} />
             </Avatar>
             <Typography
-              fontSize={20}
               fontWeight="medium"
-              sx={{ mt: { xs: 0, lg: "70px" }, ml: { xs: 5, lg: 0 } }}
               gutterBottom
               align="center"
+              sx={{
+                mt: { xs: 0, lg: "70px" },
+                ml: { xs: 5, lg: 0 },
+                fontSize: { xs: 16, sm: 17, md: 18, lg: 20 },
+              }}
             >
               FREE ESTIMATE
             </Typography>
             <Typography
-              fontSize={16}
               fontWeight="regular"
               color="text.secondary"
-              align="center"
               sx={{
                 ml: { xs: 5, lg: 0 },
                 textAlign: { xs: "left", lg: "center" },
+                fontSize: { xs: 12, sm: 13, md: 14, lg: 16 },
               }}
             >
               Pending your approval, you'll receive a cost-free estimate.
@@ -409,21 +419,24 @@ export default function SecondServices() {
               <EventAvailableIcon sx={{ width: 35, height: 35 }} />
             </Avatar>
             <Typography
-              fontSize={20}
               fontWeight="medium"
-              sx={{ mt: { xs: 0, lg: "70px" }, ml: { xs: 5, lg: 0 } }}
               gutterBottom
+              align="center"
+              sx={{
+                mt: { xs: 0, lg: "70px" },
+                ml: { xs: 5, lg: 0 },
+                fontSize: { xs: 16, sm: 17, md: 18, lg: 20 },
+              }}
             >
               DATE
             </Typography>
             <Typography
-              fontSize={16}
               fontWeight="regular"
               color="text.secondary"
-              align="center"
               sx={{
                 ml: { xs: 5, lg: 0 },
                 textAlign: { xs: "left", lg: "center" },
+                fontSize: { xs: 12, sm: 13, md: 14, lg: 16 },
               }}
             >
               We'll provide you with our schedule and request you to select a
@@ -475,21 +488,24 @@ export default function SecondServices() {
               <HandymanIcon sx={{ width: 35, height: 35 }} />
             </Avatar>
             <Typography
-              fontSize={20}
               fontWeight="medium"
-              sx={{ mt: { xs: 0, lg: "70px" }, ml: { xs: 5, lg: 0 } }}
               gutterBottom
+              align="center"
+              sx={{
+                mt: { xs: 0, lg: "70px" },
+                ml: { xs: 5, lg: 0 },
+                fontSize: { xs: 16, sm: 17, md: 18, lg: 20 },
+              }}
             >
               WORK
             </Typography>
             <Typography
-              fontSize={16}
               fontWeight="regular"
               color="text.secondary"
-              align="center"
               sx={{
                 ml: { xs: 5, lg: 0 },
                 textAlign: { xs: "left", lg: "center" },
+                fontSize: { xs: 12, sm: 13, md: 14, lg: 16 },
               }}
             >
               Our team will get started on the project right away.

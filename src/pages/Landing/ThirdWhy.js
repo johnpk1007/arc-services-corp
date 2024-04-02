@@ -53,11 +53,15 @@ export default function ThirdWhy() {
           alignItems: "center",
         }}
       >
-        <Typography fontSize={32} fontWeight="bold" gutterBottom>
+        <Typography
+          sx={{ fontSize: { xs: 24, sm: 26, md: 28, lg: 32 } }}
+          fontWeight="bold"
+          gutterBottom
+        >
           Why Hire Us
         </Typography>
         <Typography
-          fontSize={20}
+          sx={{ fontSize: { xs: 16, sm: 17, md: 18, lg: 20 } }}
           fontWeight="regular"
           color="#777777"
           marginBottom="80px"
@@ -103,7 +107,7 @@ export default function ThirdWhy() {
               <CardContent sx={{ marginTop: "20px" }}>
                 <Typography
                   gutterBottom
-                  fontSize={20}
+                  sx={{ fontSize: { xs: 16, sm: 17, md: 18, lg: 20 } }}
                   component="div"
                   textAlign="center"
                   fontWeight="medium"
@@ -111,7 +115,7 @@ export default function ThirdWhy() {
                   CLEAN
                 </Typography>
                 <Typography
-                  fontSize={16}
+                  sx={{ fontSize: { xs: 14, sm: 15, lg: 16 } }}
                   color="text.secondary"
                   fontWeight="light"
                   textAlign="center"
@@ -148,7 +152,7 @@ export default function ThirdWhy() {
               <CardContent sx={{ marginTop: "20px" }}>
                 <Typography
                   gutterBottom
-                  fontSize={20}
+                  sx={{ fontSize: { xs: 16, sm: 17, md: 18, lg: 20 } }}
                   component="div"
                   textAlign="center"
                   fontWeight="medium"
@@ -156,7 +160,7 @@ export default function ThirdWhy() {
                   PROFESSIONAL
                 </Typography>
                 <Typography
-                  fontSize={16}
+                  sx={{ fontSize: { xs: 14, sm: 15, lg: 16 } }}
                   color="text.secondary"
                   fontWeight="light"
                   textAlign="center"
@@ -193,7 +197,7 @@ export default function ThirdWhy() {
               <CardContent sx={{ marginTop: "20px" }}>
                 <Typography
                   gutterBottom
-                  fontSize={20}
+                  sx={{ fontSize: { xs: 16, sm: 17, md: 18, lg: 20 } }}
                   component="div"
                   textAlign="center"
                   fontWeight="medium"
@@ -201,7 +205,7 @@ export default function ThirdWhy() {
                   FREE ESTIMATE
                 </Typography>
                 <Typography
-                  fontSize={16}
+                  sx={{ fontSize: { xs: 14, sm: 15, lg: 16 } }}
                   color="text.secondary"
                   fontWeight="light"
                   textAlign="center"
@@ -238,7 +242,7 @@ export default function ThirdWhy() {
               <CardContent sx={{ marginTop: "20px" }}>
                 <Typography
                   gutterBottom
-                  fontSize={20}
+                  sx={{ fontSize: { xs: 16, sm: 17, md: 18, lg: 20 } }}
                   component="div"
                   textAlign="center"
                   fontWeight="medium"
@@ -246,7 +250,7 @@ export default function ThirdWhy() {
                   QUICK RESPONSE
                 </Typography>
                 <Typography
-                  fontSize={16}
+                  sx={{ fontSize: { xs: 14, sm: 15, lg: 16 } }}
                   color="text.secondary"
                   fontWeight="light"
                   textAlign="center"
@@ -270,7 +274,7 @@ export default function ThirdWhy() {
           width: { xs: "90%", sm: "160px" },
           borderColor: "#F14C48",
           color: "#F14C48",
-          fontSize: 20,
+          fontSize: { xs: 16, sm: 17, md: 18, lg: 20 },
           marginBottom: "80px",
           "&:hover": {
             backgroundColor: "rgba(241, 76, 72, 0.04)",

@@ -36,11 +36,15 @@ export default function FourthTestimonial() {
           alignItems: "center",
         }}
       >
-        <Typography fontSize={32} fontWeight="bold" gutterBottom>
+        <Typography
+          sx={{ fontSize: { xs: 24, sm: 26, md: 28, lg: 32 } }}
+          fontWeight="bold"
+          gutterBottom
+        >
           Testimonial
         </Typography>
         <Typography
-          fontSize={20}
+          sx={{ fontSize: { xs: 16, sm: 17, md: 18, lg: 20 } }}
           fontWeight="regular"
           color="text.secondary"
           marginBottom="110px"
@@ -81,7 +85,7 @@ export default function FourthTestimonial() {
                   }}
                 >
                   <Typography
-                    fontSize={24}
+                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 24 } }}
                     textAlign="right"
                     color="white"
                     fontWeight="bold"
@@ -89,18 +93,24 @@ export default function FourthTestimonial() {
                     Proin cursus feugiat tortor
                   </Typography>
                   <Typography
-                    fontSize={20}
                     textAlign="right"
                     fontWeight="light"
                     color="white"
-                    sx={{ width: { xs: "100%", sm: "70%", md: "50%" } }}
+                    sx={{
+                      width: { xs: "100%", sm: "70%", md: "50%" },
+                      fontSize: { xs: 14, sm: 16, md: 18, lg: 20 },
+                    }}
                   >
                     Proin cursus feugiat tortor, ac mattis erat. Sed nibh
                     sapien, congue eget facilisis vitae, consequat luctus ante.
                   </Typography>
 
                   <Divider sx={{ width: "40%", backgroundColor: "white" }} />
-                  <Typography fontSize={24} fontWeight="regular" color="white">
+                  <Typography
+                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 24 } }}
+                    fontWeight="regular"
+                    color="white"
+                  >
                     John Doe
                   </Typography>
                 </Box>
@@ -134,7 +144,7 @@ export default function FourthTestimonial() {
                   }}
                 >
                   <Typography
-                    fontSize={24}
+                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 24 } }}
                     textAlign="left"
                     color="white"
                     fontWeight="bold"
@@ -147,14 +157,21 @@ export default function FourthTestimonial() {
                     textAlign="left"
                     fontWeight="light"
                     color="white"
-                    sx={{ width: { xs: "100%", sm: "70%", md: "50%" } }}
+                    sx={{
+                      width: { xs: "100%", sm: "70%", md: "50%" },
+                      fontSize: { xs: 14, sm: 16, md: 18, lg: 20 },
+                    }}
                   >
                     Proin cursus feugiat tortor, ac mattis erat. Sed nibh
                     sapien, congue eget facilisis vitae, consequat luctus ante.
                   </Typography>
 
                   <Divider sx={{ width: "40%", backgroundColor: "white" }} />
-                  <Typography fontSize={24} fontWeight="regular" color="white">
+                  <Typography
+                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 24 } }}
+                    fontWeight="regular"
+                    color="white"
+                  >
                     John Doe
                   </Typography>
                 </Box>
@@ -188,7 +205,7 @@ export default function FourthTestimonial() {
                   }}
                 >
                   <Typography
-                    fontSize={24}
+                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 24 } }}
                     textAlign="right"
                     color="white"
                     fontWeight="bold"
@@ -201,7 +218,10 @@ export default function FourthTestimonial() {
                     textAlign="right"
                     fontWeight="light"
                     color="white"
-                    sx={{ width: { xs: "100%", sm: "70%", md: "50%" } }}
+                    sx={{
+                      width: { xs: "100%", sm: "70%", md: "50%" },
+                      fontSize: { xs: 14, sm: 16, md: 18, lg: 20 },
+                    }}
                   >
                     Proin cursus feugiat tortor, ac mattis erat. Sed nibh
                     sapien, congue eget facilisis vitae, consequat luctus ante.
@@ -209,7 +229,7 @@ export default function FourthTestimonial() {
 
                   <Divider sx={{ width: "40%", backgroundColor: "white" }} />
                   <Typography
-                    fontSize={24}
+                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 24 } }}
                     textAlign="right"
                     fontWeight="regular"
                     color="white"

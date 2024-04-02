@@ -37,11 +37,15 @@ export default function SecondService() {
           alignItems: "center",
         }}
       >
-        <Typography fontSize={32} fontWeight="700" gutterBottom>
+        <Typography
+          sx={{ fontSize: { xs: 24, sm: 26, md: 28, lg: 32 } }}
+          fontWeight="700"
+          gutterBottom
+        >
           Handyman Services
         </Typography>
         <Typography
-          fontSize={20}
+          sx={{ fontSize: { xs: 16, sm: 17, md: 18, lg: 20 } }}
           fontWeight="regular"
           color="text.secondary"
           marginBottom="80px"
@@ -77,11 +81,15 @@ export default function SecondService() {
           >
             <img src={InstallationIcon} alt="remodeling" />
           </Avatar>
-          <Typography fontSize={20} fontWeight="regular" marginBottom="20px">
+          <Typography
+            sx={{ fontSize: { xs: 16, sm: 17, md: 18, lg: 20 } }}
+            fontWeight="regular"
+            marginBottom="20px"
+          >
             INSTALLATION
           </Typography>
           <Typography
-            fontSize={16}
+            sx={{ fontSize: { xs: 14, sm: 15, lg: 16 } }}
             fontWeight="light"
             color="text.secondary"
             align="center"
@@ -110,11 +118,15 @@ export default function SecondService() {
           >
             <img src={RemodelingIcon} alt="remodeling" />
           </Avatar>
-          <Typography fontSize={20} fontWeight="regular" marginBottom="20px">
+          <Typography
+            sx={{ fontSize: { xs: 16, sm: 17, md: 18, lg: 20 } }}
+            fontWeight="regular"
+            marginBottom="20px"
+          >
             REMODELING
           </Typography>
           <Typography
-            fontSize={16}
+            sx={{ fontSize: { xs: 14, sm: 15, lg: 16 } }}
             fontWeight="light"
             color="text.secondary"
             align="center"
@@ -144,7 +156,7 @@ export default function SecondService() {
             <HandymanIcon sx={{ width: 35, height: 35 }} />
           </Avatar>
           <Typography
-            fontSize={20}
+            sx={{ fontSize: { xs: 16, sm: 17, md: 18, lg: 20 } }}
             fontWeight="regular"
             marginBottom="20px"
             align="center"
@@ -152,7 +164,7 @@ export default function SecondService() {
             REPAIR
           </Typography>
           <Typography
-            fontSize={16}
+            sx={{ fontSize: { xs: 14, sm: 15, lg: 16 } }}
             fontWeight="light"
             color="text.secondary"
             align="center"
@@ -180,11 +192,15 @@ export default function SecondService() {
           >
             <img src={CleaningServicesIcon} alt="cleaning" />
           </Avatar>
-          <Typography fontSize={20} fontWeight="regular" marginBottom="20px">
+          <Typography
+            sx={{ fontSize: { xs: 16, sm: 17, md: 18, lg: 20 } }}
+            fontWeight="regular"
+            marginBottom="20px"
+          >
             CLEANING
           </Typography>
           <Typography
-            fontSize={16}
+            sx={{ fontSize: { xs: 14, sm: 15, lg: 16 } }}
             fontWeight="light"
             color="text.secondary"
             align="center"
@@ -203,7 +219,7 @@ export default function SecondService() {
         sx={{
           width: { xs: "90%", sm: "160px" },
           bgcolor: "#F14C48",
-          fontSize: 20,
+          fontSize: { xs: 16, sm: 17, md: 18, lg: 20 },
           mb: "80px",
           "&:hover": {
             backgroundColor: "#d84440",

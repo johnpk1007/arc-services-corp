@@ -33,11 +33,15 @@ export default function ThirdWhy() {
           alignItems: "center",
         }}
       >
-        <Typography fontSize={32} fontWeight="bold" gutterBottom>
+        <Typography
+          sx={{ fontSize: { xs: 24, sm: 26, md: 28, lg: 32 } }}
+          fontWeight="bold"
+          gutterBottom
+        >
           Get In Touch
         </Typography>
         <Typography
-          fontSize={20}
+          sx={{ fontSize: { xs: 16, sm: 17, md: 18, lg: 20 } }}
           fontWeight="regular"
           color="text.secondary"
           marginBottom="80px"
@@ -58,7 +62,7 @@ export default function ThirdWhy() {
         sx={{
           width: { xs: "90%", sm: "160px" },
           bgcolor: "#F14C48",
-          fontSize: 20,
+          fontSize: { xs: 16, sm: 17, md: 18, lg: 20 },
           marginBottom: "90px",
           "&:hover": {
             backgroundColor: "#d84440",
@@ -77,7 +81,7 @@ export default function ThirdWhy() {
       >
         <img src={ColorLogo} alt="color logo" />
         <Typography
-          fontSize={20}
+          sx={{ fontSize: { xs: 16, sm: 17, md: 18, lg: 20 } }}
           fontWeight="regular"
           color="text.secondary"
           textAlign="center"

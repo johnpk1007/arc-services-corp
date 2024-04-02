@@ -39,11 +39,15 @@ export default function SecondServices() {
           alignItems: "center",
         }}
       >
-        <Typography fontSize={32} fontWeight="bold" gutterBottom>
+        <Typography
+          sx={{ fontSize: { xs: 24, sm: 26, md: 28, lg: 32 } }}
+          fontWeight="bold"
+          gutterBottom
+        >
           Handyman Services
         </Typography>
         <Typography
-          fontSize={20}
+          sx={{ fontSize: { xs: 16, sm: 17, md: 18, lg: 20 } }}
           fontWeight="regular"
           color="#777777"
           marginBottom="80px"

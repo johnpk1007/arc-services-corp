@@ -138,11 +138,14 @@ export default function Contact() {
                 marginBottom: { xs: "30px", sm: "100px" },
               }}
             >
-              <Typography fontSize={20} fontWeight="bold">
+              <Typography
+                sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 20 } }}
+                fontWeight="bold"
+              >
                 Call Us
               </Typography>
               <Typography
-                fontSize={20}
+                sx={{ fontSize: { xs: 14, sm: 15, lg: 16 } }}
                 color="text.secondary"
                 fontWeight="medium"
               >
@@ -154,10 +157,10 @@ export default function Contact() {
               variant="contained"
               sx={{
                 bgcolor: "#F14C48",
-                fontSize: 16,
+                fontSize: { xs: 16, sm: 17, md: 18, lg: 20 },
                 height: "50px",
                 marginBottom: { xs: "100px", sm: "0px" },
-                width: { xs: "100%", sm: "150px" },
+                width: { xs: "100%", sm: "180px" },
                 "&:hover": {
                   backgroundColor: "#d84440",
                 },
@@ -176,7 +179,10 @@ export default function Contact() {
               marginBottom: "20px",
             }}
           >
-            <Typography fontSize={20} fontWeight="bold">
+            <Typography
+              sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 20 } }}
+              fontWeight="bold"
+            >
               Send A Message
             </Typography>
           </Box>
@@ -244,9 +250,9 @@ export default function Contact() {
               variant="contained"
               sx={{
                 bgcolor: "#F14C48",
-                fontSize: 16,
+                fontSize: { xs: 16, sm: 17, md: 18, lg: 20 },
                 height: "50px",
-                width: { xs: "100%", sm: "150px" },
+                width: { xs: "100%", sm: "180px" },
                 "&:hover": {
                   backgroundColor: "#d84440",
                 },
@@ -263,7 +269,7 @@ export default function Contact() {
       <Divider sx={{ width: "100%" }} />
       <Box
         sx={{ width: "100%" }}
-        height="150px"
+        height="200px"
         display="flex"
         flexDirection="row"
         justifyContent="center"
@@ -271,7 +277,7 @@ export default function Contact() {
       >
         <img src={ColorLogo} alt="color logo" />
         <Typography
-          fontSize={20}
+          sx={{ fontSize: { xs: 16, sm: 17, md: 18, lg: 20 } }}
           fontWeight="regular"
           color="#777777"
           textAlign="center"
