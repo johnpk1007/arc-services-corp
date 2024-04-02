@@ -5,6 +5,13 @@ import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import Divider from "@mui/material/Divider";
 import CssBaseline from "@mui/material/CssBaseline";
+import Input from "@mui/material/Input";
+import InputLabel from "@mui/material/InputLabel";
+import FormControl from "@mui/material/FormControl";
+import OutlinedInput from "@mui/material/OutlinedInput";
+
+import { useForm } from "react-hook-form";
+import useWeb3Forms from "@web3forms/react";
 
 import { useState } from "react";
 
@@ -22,15 +29,38 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
 export default function Contact() {
-  const [formState, setFormState] = useState({
-    firstname: "",
-    lastname: "",
-    email: "",
-    message: "",
+  const { register, reset, handleSubmit } = useForm();
+
+  const { submit: onSubmit } = useWeb3Forms({
+    access_key: process.env.REACT_APP_EMAIL_KEY,
+    onSuccess: (msg, data) => {
+      console.log("success", msg, data);
+    },
+    onError: (msg, data) => {
+      console.log("error", msg, data);
+    },
   });
 
-  const changeHandler = (event) => {
-    setFormState({ ...formState, [event.target.name]: event.target.value });
+  const [formValue, setFormValue] = useState({
+    Customer_First_Name: "",
+    Customer_Last_Name: "",
+    Customer_Email_Address: "",
+    Message: "",
+  });
+
+  const [formError, setFormError] = useState({
+    Customer_First_Name: "",
+    Customer_Last_Name: "",
+    Customer_Email_Address: "",
+    Message: "",
+  });
+
+  const valueChangeHandler = (event) => {
+    setFormValue({ ...formValue, [event.target.name]: event.target.value });
+  };
+
+  const errorChangeHandler = (event) => {
+    setFormError({ ...formError, [event.target.name]: event.target.value });
   };
 
   return (
@@ -40,8 +70,8 @@ export default function Contact() {
         minHeight: "1400px",
       }}
     >
+      <LogoAppBar color="black" />
       <CssBaseline />
-      <LogoAppBar color="black" location="contactus" />
       <Grid container>
         <Grid item xs={12} sm={3}>
           <Box
@@ -90,7 +120,6 @@ export default function Contact() {
         </Grid>
         <Grid item xs={1} md={2} lg={3} />
         <Grid
-          component="form"
           item
           xs={10}
           sm={7}
@@ -171,98 +200,118 @@ export default function Contact() {
               CALL NOW
             </Button>
           </Box>
-          <Box
-            sx={{
-              display: "flex",
-              justifyContent: "flex-start",
-              width: "100%",
-              marginBottom: "20px",
-            }}
-          >
-            <Typography
-              sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 20 } }}
-              fontWeight="bold"
-            >
-              Send A Message
-            </Typography>
-          </Box>
-          <Grid container spacing={1}>
-            <Grid item xs={6}>
-              <TextField
-                sx={{ width: "100%" }}
-                id="first-name-textfield"
-                name="firstname"
-                label="First Name"
-                variant="outlined"
-                onBlur={changeHandler}
-                error={!formState.firstname.match(/^(?:[a-zA-Z]+|)$/)}
-              />
-            </Grid>
-            <Grid item xs={6}>
-              <TextField
-                sx={{ width: "100%" }}
-                id="last-name-textfield"
-                name="lastname"
-                label="Last Name"
-                variant="outlined"
-                onBlur={changeHandler}
-                error={!formState.lastname.match(/^(?:[a-zA-Z]+|)$/)}
-              />
-            </Grid>
-            <Grid item xs={12}>
-              <TextField
-                sx={{ width: "100%" }}
-                id="your-email-address"
-                name="email"
-                label="Your Email Address"
-                variant="outlined"
-                onBlur={changeHandler}
-                error={
-                  !formState.email.match(
-                    /^([\w-.]+@([\w-]+\.)+[\w-]{2,4})?$|^$/
-                  )
-                }
-              />
-            </Grid>
-            <Grid item xs={12}>
-              <TextField
-                sx={{ width: "100%" }}
-                id="message"
-                name="message"
-                label="Message"
-                variant="outlined"
-                multiline
-                rows={10}
-                onBlur={changeHandler}
-              />
-            </Grid>
-          </Grid>
-          <Box
-            sx={{
-              display: "flex",
-              justifyContent: { xs: "space-between", sm: "flex-end" },
-              width: "100%",
-              marginTop: "20px",
-              marginBottom: "120px",
-            }}
-          >
-            <Button
-              type="submit"
-              variant="contained"
+
+          <Box component="form" onSubmit={handleSubmit(onSubmit)}>
+            <Box
               sx={{
-                bgcolor: "#F14C48",
-                fontSize: { xs: 16, sm: 17, md: 18, lg: 20 },
-                height: "50px",
-                width: { xs: "100%", sm: "180px" },
-                "&:hover": {
-                  backgroundColor: "#d84440",
-                },
+                display: "flex",
+                justifyContent: "flex-start",
+                width: "100%",
+                marginBottom: "20px",
               }}
-              disableElevation
-              endIcon={<EmailIcon />}
             >
-              SEND NOW
-            </Button>
+              <Typography
+                sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 20 } }}
+                fontWeight="bold"
+              >
+                Send A Message
+              </Typography>
+            </Box>
+            <Grid container spacing={1}>
+              <Grid item xs={6}>
+                <TextField
+                  value={formValue.Customer_First_Name}
+                  inputProps={{
+                    onChange: (e) => {
+                      valueChangeHandler(e);
+                    },
+                    onBlur: (e) => {
+                      errorChangeHandler(e);
+                    },
+                  }}
+                  error={
+                    !formError.Customer_First_Name.match(/^(?:[a-zA-Z]+|)$/)
+                  }
+                  fullWidth
+                  label="First Name"
+                  {...register("Customer_First_Name")}
+                />
+              </Grid>
+              <Grid item xs={6}>
+                <TextField
+                  inputProps={{
+                    onChange: (e) => {
+                      valueChangeHandler(e);
+                    },
+                    onBlur: (e) => {
+                      errorChangeHandler(e);
+                    },
+                  }}
+                  error={
+                    !formError.Customer_Last_Name.match(/^(?:[a-zA-Z]+|)$/)
+                  }
+                  fullWidth
+                  label="Last Name"
+                  {...register("Customer_Last_Name")}
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <TextField
+                  inputProps={{
+                    onChange: (e) => {
+                      valueChangeHandler(e);
+                    },
+                    onBlur: (e) => {
+                      errorChangeHandler(e);
+                    },
+                  }}
+                  error={
+                    !formError.Customer_Email_Address.match(
+                      /^([\w-.]+@([\w-]+\.)+[\w-]{2,4})?$|^$/
+                    )
+                  }
+                  fullWidth
+                  label="Your Email Address"
+                  {...register("Customer_Email_Address")}
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <TextField
+                  fullWidth
+                  label="Message"
+                  multiline
+                  rows={10}
+                  {...register("Message")}
+                />
+              </Grid>
+            </Grid>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "flex-end",
+                width: "100%",
+              }}
+            >
+              <Button
+                type="submit"
+                variant="contained"
+                sx={{
+                  marginTop: "50px",
+                  marginBottom: "100px",
+                  bgcolor: "#F14C48",
+                  fontSize: { xs: 16, sm: 17, md: 18, lg: 20 },
+                  height: "50px",
+                  width: { xs: "100%", sm: "180px" },
+                  "&:hover": {
+                    backgroundColor: "#d84440",
+                  },
+                }}
+                disableElevation
+                endIcon={<EmailIcon />}
+              >
+                Submit
+              </Button>
+            </Box>
           </Box>
         </Grid>
         <Grid item xs={1} md={2} lg={3} />
