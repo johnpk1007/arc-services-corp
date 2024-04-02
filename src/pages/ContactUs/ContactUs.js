@@ -32,7 +32,6 @@ export default function Contact() {
   const changeHandler = (event) => {
     setFormState({ ...formState, [event.target.name]: event.target.value });
   };
-  console.log(formState);
 
   return (
     <Box
@@ -91,6 +90,7 @@ export default function Contact() {
         </Grid>
         <Grid item xs={1} md={2} lg={3} />
         <Grid
+          component="form"
           item
           xs={10}
           sm={7}
@@ -247,6 +247,7 @@ export default function Contact() {
             }}
           >
             <Button
+              type="submit"
               variant="contained"
               sx={{
                 bgcolor: "#F14C48",
