@@ -10,6 +10,11 @@ import Typing1 from "../../images/testimony/typing1.jpeg";
 import Typing2 from "../../images/testimony/typing2.jpeg";
 import Typing3 from "../../images/testimony/typing3.jpeg";
 
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
+
 export default function FourthTestimonial() {
   return (
     <Box
@@ -22,19 +27,33 @@ export default function FourthTestimonial() {
       }}
     >
       <CssBaseline />
-      <Typography fontSize={32} fontWeight="bold" gutterBottom>
-        Testimonial
-      </Typography>
-      <Typography
-        fontSize={20}
-        fontWeight="regular"
-        color="#777777"
-        marginBottom="110px"
-        textAlign="center"
-        width="80%"
+      <Box
+        data-aos="fade-up"
+        data-aos-once="true"
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
       >
-        Here are a few testimonials from satisfied customers
-      </Typography>
+        <Typography
+          sx={{ fontSize: { xs: 24, sm: 26, md: 28, lg: 32 } }}
+          fontWeight="bold"
+          gutterBottom
+        >
+          Testimonial
+        </Typography>
+        <Typography
+          sx={{ fontSize: { xs: 16, sm: 17, md: 18, lg: 20 } }}
+          fontWeight="regular"
+          color="text.secondary"
+          marginBottom="110px"
+          textAlign="center"
+          width="80%"
+        >
+          Here are a few testimonials from satisfied customers
+        </Typography>
+      </Box>
       <Grid container justifyContent="center">
         <Grid item xs={11} sm={10} md={6}>
           <Grid container spacing={3}>
@@ -50,6 +69,8 @@ export default function FourthTestimonial() {
                   title="typing1"
                 />
                 <Box
+                  data-aos="fade-left"
+                  data-aos-once="true"
                   sx={{
                     position: "absolute",
                     top: 0,
@@ -64,26 +85,32 @@ export default function FourthTestimonial() {
                   }}
                 >
                   <Typography
-                    fontSize={24}
+                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 24 } }}
                     textAlign="right"
                     color="white"
-                    sx={{ fontWeight: "regular" }}
+                    fontWeight="bold"
                   >
                     Proin cursus feugiat tortor
                   </Typography>
                   <Typography
-                    fontSize={20}
                     textAlign="right"
                     fontWeight="light"
                     color="white"
-                    sx={{ width: { xs: "100%", sm: "70%", md: "50%" } }}
+                    sx={{
+                      width: { xs: "100%", sm: "70%", md: "50%" },
+                      fontSize: { xs: 14, sm: 16, md: 18, lg: 20 },
+                    }}
                   >
                     Proin cursus feugiat tortor, ac mattis erat. Sed nibh
                     sapien, congue eget facilisis vitae, consequat luctus ante.
                   </Typography>
 
                   <Divider sx={{ width: "40%", backgroundColor: "white" }} />
-                  <Typography fontSize={24} fontWeight="regular" color="white">
+                  <Typography
+                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 24 } }}
+                    fontWeight="regular"
+                    color="white"
+                  >
                     John Doe
                   </Typography>
                 </Box>
@@ -101,6 +128,8 @@ export default function FourthTestimonial() {
                   title="typing2"
                 />
                 <Box
+                  data-aos="fade-right"
+                  data-aos-once="true"
                   sx={{
                     position: "absolute",
                     top: 0,
@@ -115,10 +144,10 @@ export default function FourthTestimonial() {
                   }}
                 >
                   <Typography
-                    fontSize={24}
+                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 24 } }}
                     textAlign="left"
                     color="white"
-                    sx={{ fontWeight: "regular" }}
+                    fontWeight="bold"
                     gutterBottom
                   >
                     Proin cursus feugiat tortor
@@ -128,14 +157,21 @@ export default function FourthTestimonial() {
                     textAlign="left"
                     fontWeight="light"
                     color="white"
-                    sx={{ width: { xs: "100%", sm: "70%", md: "50%" } }}
+                    sx={{
+                      width: { xs: "100%", sm: "70%", md: "50%" },
+                      fontSize: { xs: 14, sm: 16, md: 18, lg: 20 },
+                    }}
                   >
                     Proin cursus feugiat tortor, ac mattis erat. Sed nibh
                     sapien, congue eget facilisis vitae, consequat luctus ante.
                   </Typography>
 
                   <Divider sx={{ width: "40%", backgroundColor: "white" }} />
-                  <Typography fontSize={24} fontWeight="regular" color="white">
+                  <Typography
+                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 24 } }}
+                    fontWeight="regular"
+                    color="white"
+                  >
                     John Doe
                   </Typography>
                 </Box>
@@ -153,6 +189,8 @@ export default function FourthTestimonial() {
                   title="typing3"
                 />
                 <Box
+                  data-aos="fade-left"
+                  data-aos-once="true"
                   sx={{
                     position: "absolute",
                     top: 0,
@@ -167,10 +205,10 @@ export default function FourthTestimonial() {
                   }}
                 >
                   <Typography
-                    fontSize={24}
+                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 24 } }}
                     textAlign="right"
                     color="white"
-                    sx={{ fontWeight: "regular" }}
+                    fontWeight="bold"
                     gutterBottom
                   >
                     Proin cursus feugiat tortor
@@ -180,7 +218,10 @@ export default function FourthTestimonial() {
                     textAlign="right"
                     fontWeight="light"
                     color="white"
-                    sx={{ width: { xs: "100%", sm: "70%", md: "50%" } }}
+                    sx={{
+                      width: { xs: "100%", sm: "70%", md: "50%" },
+                      fontSize: { xs: 14, sm: 16, md: 18, lg: 20 },
+                    }}
                   >
                     Proin cursus feugiat tortor, ac mattis erat. Sed nibh
                     sapien, congue eget facilisis vitae, consequat luctus ante.
@@ -188,7 +229,7 @@ export default function FourthTestimonial() {
 
                   <Divider sx={{ width: "40%", backgroundColor: "white" }} />
                   <Typography
-                    fontSize={24}
+                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 24 } }}
                     textAlign="right"
                     fontWeight="regular"
                     color="white"

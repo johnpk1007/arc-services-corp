@@ -3,6 +3,11 @@ import ServiceImage from "../../images/firstImage/services.jpg";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
+
 export default function FirstImage() {
   return (
     <Box>
@@ -17,6 +22,8 @@ export default function FirstImage() {
         }}
       />
       <Box
+        data-aos="fade-up"
+        data-aos-once="true"
         sx={{
           position: "absolute",
           top: 0,

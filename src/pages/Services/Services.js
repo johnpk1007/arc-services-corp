@@ -11,7 +11,7 @@ import LogoAppBar from "../../components/LogoAppBar";
 export default function Landing() {
   return (
     <Box>
-      <LogoAppBar />
+      <LogoAppBar location="services" />
       <FirstImage />
       <SecondServices />
       <ThirdProcess />

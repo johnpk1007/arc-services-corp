@@ -4,6 +4,11 @@ import CssBaseline from "@mui/material/CssBaseline";
 
 import AboutUs from "../../images/firstImage/aboutus.jpg";
 
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
+
 export default function FirstImage() {
   return (
     <Box>
@@ -19,6 +24,8 @@ export default function FirstImage() {
         }}
       />
       <Box
+        data-aos="fade-left"
+        data-aos-once="true"
         sx={{
           position: "absolute",
           top: 0,
@@ -27,27 +34,26 @@ export default function FirstImage() {
           width: "100%",
           display: "flex",
           flexDirection: "column",
-          alignItems: { xs: "flex-start", sm: "flex-end" },
+          alignItems: "flex-end",
           justifyContent: { xs: "flex-end", sm: "center" },
-          paddingRight: 10,
+          paddingRight: { xs: 5, sm: 10 },
+          paddingLeft: 5,
           paddingBottom: 10,
         }}
       >
         <Typography
-          sx={{ fontSize: { xs: 32, sm: 40, md: 48, lg: 64 } }}
+          sx={{
+            fontSize: { xs: 32, sm: 40, md: 48, lg: 64 },
+            width: { xs: "100%", sm: "60%", lg: "50%" },
+          }}
           fontWeight="bold"
           color="white"
+          textAlign="right"
         >
           We're a<span style={{ color: "#F14C48" }}> different </span>
-          kind of
+          kind of handyman service
         </Typography>
-        <Typography
-          sx={{ fontSize: { xs: 32, sm: 40, md: 48, lg: 64 } }}
-          fontWeight="bold"
-          color="white"
-        >
-          handyman service
-        </Typography>
+
         <Typography
           sx={{
             fontSize: { xs: 18, sm: 20, md: 22, lg: 24 },

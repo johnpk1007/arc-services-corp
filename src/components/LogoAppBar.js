@@ -8,6 +8,8 @@ import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 
+import { Link } from "react-router-dom";
+
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -32,7 +34,7 @@ function Scroll({ children }) {
   });
 }
 
-export default function LogoAppBar() {
+export default function LogoAppBar({ color, location }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
@@ -48,6 +50,8 @@ export default function LogoAppBar() {
               edge="start"
               aria-label="menu"
               sx={{ mr: 2 }}
+              component={Link}
+              to="/"
             >
               <img src={WhiteLogo} alt="white Logo" />
             </IconButton>
@@ -56,9 +60,14 @@ export default function LogoAppBar() {
               variant="text"
               sx={{
                 fontWeight: "bold",
-                color: "inherit",
-                display: { xs: "none", sm: "block" },
+                color: color ? "inherit" : "white",
+                display:
+                  location === "services"
+                    ? "none"
+                    : { xs: "none", sm: "block" },
               }}
+              component={Link}
+              to="/services"
             >
               SERVICES
             </Button>
@@ -66,9 +75,12 @@ export default function LogoAppBar() {
               variant="text"
               sx={{
                 fontWeight: "bold",
-                color: "inherit",
-                display: { xs: "none", sm: "block" },
+                color: color ? "inherit" : "white",
+                display:
+                  location === "aboutus" ? "none" : { xs: "none", sm: "block" },
               }}
+              component={Link}
+              to="/aboutus"
             >
               ABOUT US
             </Button>
@@ -76,9 +88,14 @@ export default function LogoAppBar() {
               variant="text"
               sx={{
                 fontWeight: "bold",
-                color: "inherit",
-                display: { xs: "none", sm: "block" },
+                color: color ? "inherit" : "white",
+                display:
+                  location === "contactus"
+                    ? "none"
+                    : { xs: "none", sm: "block" },
               }}
+              component={Link}
+              to="/contactus"
             >
               CONTACT US
             </Button>
@@ -116,18 +133,27 @@ export default function LogoAppBar() {
           }}
         >
           <List>
-            <ListItem disablePadding>
-              <ListItemButton>
+            <ListItem
+              disablePadding
+              sx={{ display: location === "services" ? "none" : "block" }}
+            >
+              <ListItemButton component={Link} to="/services">
                 <ListItemText primary="SERVICES" />
               </ListItemButton>
             </ListItem>
-            <ListItem disablePadding>
-              <ListItemButton>
+            <ListItem
+              disablePadding
+              sx={{ display: location === "aboutus" ? "none" : "block" }}
+            >
+              <ListItemButton component={Link} to="/aboutus">
                 <ListItemText primary="ABOUT US" />
               </ListItemButton>
             </ListItem>
-            <ListItem disablePadding>
-              <ListItemButton>
+            <ListItem
+              disablePadding
+              sx={{ display: location === "contactus" ? "none" : "block" }}
+            >
+              <ListItemButton component={Link} to="/contactus">
                 <ListItemText primary="CONTACT US" />
               </ListItemButton>
             </ListItem>

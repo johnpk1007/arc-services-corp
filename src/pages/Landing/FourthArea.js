@@ -24,25 +24,47 @@ export default function ThirdWhy() {
         paddingTop: "200px",
       }}
     >
-      <Typography fontSize={32} fontWeight="bold" gutterBottom>
-        Service Areas
-      </Typography>
-      <Typography
-        fontSize={20}
-        fontWeight="regular"
-        color="#777777"
-        marginBottom="80px"
-        textAlign="center"
-        width="80%"
+      <Box
+        data-aos="fade-up"
+        data-aos-once="true"
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
       >
-        We provide services spanning from Key Largo through Dade County to
-        Broward County. Below are our top service areas in demand.
-      </Typography>
-
+        <Typography
+          sx={{ fontSize: { xs: 24, sm: 26, md: 28, lg: 32 } }}
+          fontWeight="bold"
+          gutterBottom
+        >
+          Service Areas
+        </Typography>
+        <Typography
+          sx={{ fontSize: { xs: 16, sm: 17, md: 18, lg: 20 } }}
+          fontWeight="regular"
+          color="#777777"
+          marginBottom="80px"
+          textAlign="center"
+          width="80%"
+        >
+          We provide services spanning from Key Largo through Dade County to
+          Broward County. Below are our top service areas in demand.
+        </Typography>
+      </Box>
       <Grid container justifyContent="center">
         <Grid item xs={10} sm={8} md={10} lg={6}>
           <Grid container spacing={3} justifyContent="center">
-            <Grid item xs={12} sm={6} md={4}>
+            <Grid
+              data-aos="fade-up"
+              data-aos-delay="0"
+              data-aos-once="true"
+              data-a0s-offset="100"
+              item
+              xs={12}
+              sm={6}
+              md={4}
+            >
               <Card sx={{ position: "relative" }}>
                 <CardMedia
                   sx={{
@@ -77,7 +99,16 @@ export default function ThirdWhy() {
                 </Box>
               </Card>
             </Grid>
-            <Grid item xs={12} sm={6} md={4}>
+            <Grid
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-once="true"
+              data-a0s-offset="100"
+              item
+              xs={12}
+              sm={6}
+              md={4}
+            >
               <Card sx={{ position: "relative" }}>
                 <CardMedia
                   sx={{
@@ -112,7 +143,16 @@ export default function ThirdWhy() {
                 </Box>
               </Card>
             </Grid>
-            <Grid item xs={12} sm={6} md={4}>
+            <Grid
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-once="true"
+              data-a0s-offset="100"
+              item
+              xs={12}
+              sm={6}
+              md={4}
+            >
               <Card sx={{ position: "relative" }}>
                 <CardMedia
                   sx={{
@@ -147,7 +187,16 @@ export default function ThirdWhy() {
                 </Box>
               </Card>
             </Grid>
-            <Grid item xs={12} sm={6} md={4}>
+            <Grid
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-once="true"
+              data-a0s-offset="100"
+              item
+              xs={12}
+              sm={6}
+              md={4}
+            >
               <Card sx={{ position: "relative" }}>
                 <CardMedia
                   sx={{
@@ -182,7 +231,16 @@ export default function ThirdWhy() {
                 </Box>
               </Card>
             </Grid>
-            <Grid item xs={12} sm={6} md={4}>
+            <Grid
+              data-aos="fade-up"
+              data-aos-delay="400"
+              data-aos-once="true"
+              data-a0s-offset="100"
+              item
+              xs={12}
+              sm={6}
+              md={4}
+            >
               <Card sx={{ position: "relative" }}>
                 <CardMedia
                   sx={{
@@ -217,7 +275,16 @@ export default function ThirdWhy() {
                 </Box>
               </Card>
             </Grid>
-            <Grid item xs={12} sm={6} md={4}>
+            <Grid
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-once="true"
+              data-a0s-offset="100"
+              item
+              xs={12}
+              sm={6}
+              md={4}
+            >
               <Card sx={{ position: "relative" }}>
                 <CardMedia
                   sx={{

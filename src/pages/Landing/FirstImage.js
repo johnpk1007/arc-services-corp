@@ -3,6 +3,11 @@ import LandingImage from "../../images/firstImage/landing.jpg";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
+
 export default function FirstImage() {
   return (
     <Box
@@ -18,57 +23,32 @@ export default function FirstImage() {
         justifyContent: { xs: "flex-end", sm: "center" },
       }}
     >
-      <Box sx={{ display: "flex", ml: { xs: 5, md: 10 } }}>
-        <Typography
-          sx={{ fontSize: { xs: 32, sm: 40, md: 48, lg: 64 } }}
-          fontWeight="bold"
-          color="white"
-          mr={2}
-        >
-          The
-        </Typography>
-        <Typography
-          sx={{ fontSize: { xs: 32, sm: 40, md: 48, lg: 64 } }}
-          fontWeight="bold"
-          color="#F14C48"
-          mr={2}
-        >
-          quality
-        </Typography>
-        <Typography
-          sx={{ fontSize: { xs: 32, sm: 40, md: 48, lg: 64 } }}
-          fontWeight="bold"
-          color="white"
-        >
-          you expect
-        </Typography>
-      </Box>
-      <Box sx={{ display: "flex", ml: { xs: 5, md: 10 } }}>
-        <Typography
-          sx={{ fontSize: { xs: 32, sm: 40, md: 48, lg: 64 } }}
-          fontWeight="bold"
-          color="white"
-          mr={2}
-        >
-          The
-        </Typography>
-        <Typography
-          sx={{ fontSize: { xs: 32, sm: 40, md: 48, lg: 64 } }}
-          fontWeight="bold"
-          color="#F14C48"
-          mr={2}
-        >
-          service
-        </Typography>
-        <Typography
-          sx={{ fontSize: { xs: 32, sm: 40, md: 48, lg: 64 } }}
-          fontWeight="bold"
-          color="white"
-        >
-          you deserve
-        </Typography>
-      </Box>
       <Box
+        data-aos="fade-right"
+        data-aos-once="true"
+        sx={{ display: "flex", flexDirection: "column", ml: { xs: 5, md: 10 } }}
+      >
+        <Typography
+          sx={{ fontSize: { xs: 32, sm: 40, md: 48, lg: 64 } }}
+          fontWeight="700"
+          color="white"
+          mr={2}
+        >
+          The <span style={{ color: "#F14C48" }}>quality</span> you expect
+        </Typography>
+        <Typography
+          sx={{ fontSize: { xs: 32, sm: 40, md: 48, lg: 64 } }}
+          fontWeight="700"
+          color="white"
+          mr={2}
+        >
+          The <span style={{ color: "#F14C48" }}>service</span> you deserve
+        </Typography>
+      </Box>
+
+      <Box
+        data-aos="fade-right"
+        data-aos-once="true"
         sx={{
           display: "flex",
           flexDirection: "column",
@@ -76,31 +56,16 @@ export default function FirstImage() {
           mb: 10,
         }}
       >
-        <Box sx={{ display: "flex" }}>
-          <Typography
-            sx={{ fontSize: { xs: 18, sm: 20, md: 22, lg: 24 } }}
-            fontWeight="regular"
-            color="white"
-            mr={1}
-          >
-            Trust
-          </Typography>
-          <Typography
-            sx={{ fontSize: { xs: 18, sm: 20, md: 22, lg: 24 } }}
-            fontWeight="regular"
-            color="#F14C48"
-            mr={1}
-          >
-            ANG Service Corp
-          </Typography>
-          <Typography
-            sx={{ fontSize: { xs: 18, sm: 20, md: 22, lg: 24 } }}
-            fontWeight="regular"
-            color="white"
-          >
-            for all your
-          </Typography>
-        </Box>
+        <Typography
+          sx={{ fontSize: { xs: 18, sm: 20, md: 22, lg: 24 } }}
+          fontWeight="regular"
+          color="white"
+          mr={1}
+        >
+          Trust <span style={{ color: "#F14C48" }}>ANG Services Corp</span> for
+          all your
+        </Typography>
+
         <Typography
           sx={{ fontSize: { xs: 18, sm: 20, md: 22, lg: 24 } }}
           fontWeight="regular"
