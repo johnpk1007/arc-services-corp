@@ -5,10 +5,8 @@ import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import Divider from "@mui/material/Divider";
 import CssBaseline from "@mui/material/CssBaseline";
-import Input from "@mui/material/Input";
-import InputLabel from "@mui/material/InputLabel";
-import FormControl from "@mui/material/FormControl";
-import OutlinedInput from "@mui/material/OutlinedInput";
+import Alert from "@mui/material/Alert";
+import Snackbar from "@mui/material/Snackbar";
 
 import { useForm } from "react-hook-form";
 import useWeb3Forms from "@web3forms/react";
@@ -23,28 +21,30 @@ import LogoAppBar from "../../components/LogoAppBar";
 import ContactUs from "../../images/firstImage/contactus.jpg";
 import ColorLogo from "../../images/logo/colorLogo.svg";
 
+import HCaptcha from "@hcaptcha/react-hcaptcha";
+
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
 export default function Contact() {
-  const { register, reset, handleSubmit } = useForm();
+  const { register, handleSubmit, setValue } = useForm();
 
-  const { submit: onSubmit } = useWeb3Forms({
-    access_key: process.env.REACT_APP_EMAIL_KEY,
-    onSuccess: (msg, data) => {
-      console.log("success", msg, data);
-    },
-    onError: (msg, data) => {
-      console.log("error", msg, data);
-    },
+  const [captcha, setCaptcha] = useState(false);
+
+  const onHCaptchaChange = (token) => {
+    setValue("h-captcha-response", token);
+    setCaptcha(true);
+  };
+
+  const [firstName, setFirstName] = useState({ value: "", error: undefined });
+  const [lastName, setLastName] = useState({ value: "", error: undefined });
+  const [emailAddress, setEmailAddress] = useState({
+    value: "",
+    error: undefined,
   });
-
-  const [firstName, setFirstName] = useState({ value: "", error: false });
-  const [lastName, setLastName] = useState({ value: "", error: false });
-  const [emailAddress, setEmailAddress] = useState({ value: "", error: false });
-  const [message, setMessage] = useState({ value: "", error: false });
+  const [message, setMessage] = useState({ value: "", error: undefined });
 
   const firstNameChangeHandler = (event) => {
     setFirstName({ ...firstName, value: event.target.value });
@@ -99,8 +99,56 @@ export default function Contact() {
     firstName.error === false,
     lastName.error === false,
     emailAddress.error === false,
-    message.error === false
+    message.error === false,
+    captcha === true
   );
+
+  const resetCustom = () => {
+    console.log("reset worked!");
+    setFirstName({ value: "", error: undefined });
+    setLastName({ value: "", error: undefined });
+    setEmailAddress({ value: "", error: undefined });
+    setMessage({ value: "", error: undefined });
+  };
+
+  const [successOpen, setSuccessOpen] = useState(false);
+
+  const handleSuccessOpen = () => {
+    setSuccessOpen(true);
+  };
+
+  const handleSuccessClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setSuccessOpen(false);
+  };
+
+  const [errorOpen, setErrorOpen] = useState(false);
+
+  const handleErrorOpen = () => {
+    setErrorOpen(true);
+  };
+
+  const handleErrorClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setErrorOpen(false);
+  };
+
+  const { submit: onSubmit } = useWeb3Forms({
+    access_key: process.env.REACT_APP_EMAIL_KEY,
+    onSuccess: (msg, data) => {
+      console.log("success", msg, data);
+      resetCustom();
+      handleSuccessOpen();
+    },
+    onError: (msg, data) => {
+      console.log("error", msg, data);
+      handleErrorOpen();
+    },
+  });
 
   return (
     <Box
@@ -235,6 +283,7 @@ export default function Contact() {
               }}
               disableElevation
               endIcon={<CallIcon />}
+              href="tel:305-632-1377"
             >
               CALL NOW
             </Button>
@@ -259,6 +308,7 @@ export default function Contact() {
             <Grid container spacing={1}>
               <Grid item xs={6}>
                 <TextField
+                  type="text"
                   value={firstName.value}
                   inputProps={{
                     onChange: (e) => {
@@ -269,6 +319,9 @@ export default function Contact() {
                     },
                   }}
                   error={firstName.error}
+                  helperText={
+                    firstName.error ? "Please write your first name" : ""
+                  }
                   fullWidth
                   label="First Name"
                   {...register("Customer_First_Name")}
@@ -276,6 +329,8 @@ export default function Contact() {
               </Grid>
               <Grid item xs={6}>
                 <TextField
+                  type="text"
+                  value={lastName.value}
                   inputProps={{
                     onChange: (e) => {
                       lastNameChangeHandler(e);
@@ -285,6 +340,9 @@ export default function Contact() {
                     },
                   }}
                   error={lastName.error}
+                  helperText={
+                    lastName.error ? "Please write your last name" : ""
+                  }
                   fullWidth
                   label="Last Name"
                   {...register("Customer_Last_Name")}
@@ -292,6 +350,8 @@ export default function Contact() {
               </Grid>
               <Grid item xs={12}>
                 <TextField
+                  type="email"
+                  value={emailAddress.value}
                   inputProps={{
                     onChange: (e) => {
                       emailAddressChangeHandler(e);
@@ -301,6 +361,11 @@ export default function Contact() {
                     },
                   }}
                   error={emailAddress.error}
+                  helperText={
+                    emailAddress.error
+                      ? "Please write a valid email address"
+                      : ""
+                  }
                   fullWidth
                   label="Your Email Address"
                   {...register("Customer_Email_Address")}
@@ -308,6 +373,8 @@ export default function Contact() {
               </Grid>
               <Grid item xs={12}>
                 <TextField
+                  type="text"
+                  value={message.value}
                   inputProps={{
                     onChange: (e) => {
                       messageChangeHandler(e);
@@ -317,6 +384,7 @@ export default function Contact() {
                     },
                   }}
                   error={message.error}
+                  helperText={message.error ? "Please write your message" : ""}
                   fullWidth
                   label="Message"
                   multiline
@@ -328,17 +396,25 @@ export default function Contact() {
             <Box
               sx={{
                 display: "flex",
-                justifyContent: "flex-end",
+                flexDirection: "row",
+                justifyContent: "space-between",
+                alignItems: "flex-start",
                 width: "100%",
+                height: "200px",
+                paddingTop: "10px",
               }}
             >
+              <HCaptcha
+                size="compact"
+                sitekey={process.env.REACT_APP_HCAPTCHA_KEY}
+                onVerify={onHCaptchaChange}
+              />
+
               <Button
                 disabled={!buttonDisabled}
                 type="submit"
                 variant="contained"
                 sx={{
-                  marginTop: "50px",
-                  marginBottom: "100px",
                   bgcolor: "#F14C48",
                   fontSize: { xs: 16, sm: 17, md: 18, lg: 20 },
                   height: "50px",
@@ -378,6 +454,36 @@ export default function Contact() {
           All rights reserved ©ANG Services Corp
         </Typography>
       </Box>
+      <Snackbar
+        anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+        open={successOpen}
+        autoHideDuration={5000}
+        onClose={handleSuccessClose}
+      >
+        <Alert
+          onClose={handleSuccessClose}
+          severity="success"
+          variant="filled"
+          sx={{ width: "100%", backgroundColor: "#F14C48" }}
+        >
+          Email has been sent successfully. We will contact you shortly.
+        </Alert>
+      </Snackbar>
+      <Snackbar
+        anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+        open={errorOpen}
+        autoHideDuration={5000}
+        onClose={handleErrorClose}
+      >
+        <Alert
+          onClose={handleErrorClose}
+          severity="error"
+          variant="filled"
+          sx={{ width: "100%", backgroundColor: "black" }}
+        >
+          Email has not been sent due to unknown reason
+        </Alert>
+      </Snackbar>
     </Box>
   );
 }
