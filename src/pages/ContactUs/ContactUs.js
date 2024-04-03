@@ -41,27 +41,66 @@ export default function Contact() {
     },
   });
 
-  const [formValue, setFormValue] = useState({
-    Customer_First_Name: "",
-    Customer_Last_Name: "",
-    Customer_Email_Address: "",
-    Message: "",
-  });
+  const [firstName, setFirstName] = useState({ value: "", error: false });
+  const [lastName, setLastName] = useState({ value: "", error: false });
+  const [emailAddress, setEmailAddress] = useState({ value: "", error: false });
+  const [message, setMessage] = useState({ value: "", error: false });
 
-  const [formError, setFormError] = useState({
-    Customer_First_Name: "",
-    Customer_Last_Name: "",
-    Customer_Email_Address: "",
-    Message: "",
-  });
-
-  const valueChangeHandler = (event) => {
-    setFormValue({ ...formValue, [event.target.name]: event.target.value });
+  const firstNameChangeHandler = (event) => {
+    setFirstName({ ...firstName, value: event.target.value });
+  };
+  const firstNameErrorHandler = (event) => {
+    setFirstName({
+      ...firstName,
+      error: !event.target.value.match(/^(?:[a-zA-Z]+|)$/),
+    });
   };
 
-  const errorChangeHandler = (event) => {
-    setFormError({ ...formError, [event.target.name]: event.target.value });
+  const lastNameChangeHandler = (event) => {
+    setLastName({ ...lastName, value: event.target.value });
   };
+  const lastNameErrorHandler = (event) => {
+    setLastName({
+      ...lastName,
+      error: !event.target.value.match(/^(?:[a-zA-Z]+|)$/),
+    });
+  };
+
+  const emailAddressChangeHandler = (event) => {
+    setEmailAddress({ ...emailAddress, value: event.target.value });
+  };
+  const emailAddressErrorHandler = (event) => {
+    setEmailAddress({
+      ...emailAddress,
+      error: !event.target.value.match(/^([\w-.]+@([\w-]+\.)+[\w-]{2,4})?$|^$/),
+    });
+  };
+
+  const messageChangeHandler = (event) => {
+    setMessage({ ...message, value: event.target.value });
+  };
+  const messageErrorHandler = (event) => {
+    const regex = new RegExp(/^\s+$/);
+    setMessage({
+      ...message,
+      error: regex.test(event.target.value),
+    });
+  };
+
+  const allTrue = (...values) => {
+    return values.every((value) => value === true);
+  };
+
+  const buttonDisabled = allTrue(
+    firstName.value !== "",
+    lastName.value !== "",
+    emailAddress.value !== "",
+    message.value !== "",
+    firstName.error === false,
+    lastName.error === false,
+    emailAddress.error === false,
+    message.error === false
+  );
 
   return (
     <Box
@@ -70,7 +109,7 @@ export default function Contact() {
         minHeight: "1400px",
       }}
     >
-      <LogoAppBar color="black" />
+      <LogoAppBar color="black" location="contactus" />
       <CssBaseline />
       <Grid container>
         <Grid item xs={12} sm={3}>
@@ -220,18 +259,16 @@ export default function Contact() {
             <Grid container spacing={1}>
               <Grid item xs={6}>
                 <TextField
-                  value={formValue.Customer_First_Name}
+                  value={firstName.value}
                   inputProps={{
                     onChange: (e) => {
-                      valueChangeHandler(e);
+                      firstNameChangeHandler(e);
                     },
                     onBlur: (e) => {
-                      errorChangeHandler(e);
+                      firstNameErrorHandler(e);
                     },
                   }}
-                  error={
-                    !formError.Customer_First_Name.match(/^(?:[a-zA-Z]+|)$/)
-                  }
+                  error={firstName.error}
                   fullWidth
                   label="First Name"
                   {...register("Customer_First_Name")}
@@ -241,15 +278,13 @@ export default function Contact() {
                 <TextField
                   inputProps={{
                     onChange: (e) => {
-                      valueChangeHandler(e);
+                      lastNameChangeHandler(e);
                     },
                     onBlur: (e) => {
-                      errorChangeHandler(e);
+                      lastNameErrorHandler(e);
                     },
                   }}
-                  error={
-                    !formError.Customer_Last_Name.match(/^(?:[a-zA-Z]+|)$/)
-                  }
+                  error={lastName.error}
                   fullWidth
                   label="Last Name"
                   {...register("Customer_Last_Name")}
@@ -259,17 +294,13 @@ export default function Contact() {
                 <TextField
                   inputProps={{
                     onChange: (e) => {
-                      valueChangeHandler(e);
+                      emailAddressChangeHandler(e);
                     },
                     onBlur: (e) => {
-                      errorChangeHandler(e);
+                      emailAddressErrorHandler(e);
                     },
                   }}
-                  error={
-                    !formError.Customer_Email_Address.match(
-                      /^([\w-.]+@([\w-]+\.)+[\w-]{2,4})?$|^$/
-                    )
-                  }
+                  error={emailAddress.error}
                   fullWidth
                   label="Your Email Address"
                   {...register("Customer_Email_Address")}
@@ -277,6 +308,15 @@ export default function Contact() {
               </Grid>
               <Grid item xs={12}>
                 <TextField
+                  inputProps={{
+                    onChange: (e) => {
+                      messageChangeHandler(e);
+                    },
+                    onBlur: (e) => {
+                      messageErrorHandler(e);
+                    },
+                  }}
+                  error={message.error}
                   fullWidth
                   label="Message"
                   multiline
@@ -293,6 +333,7 @@ export default function Contact() {
               }}
             >
               <Button
+                disabled={!buttonDisabled}
                 type="submit"
                 variant="contained"
                 sx={{
