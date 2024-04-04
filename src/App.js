@@ -5,6 +5,7 @@ import Landing from "./pages/Landing/Landing";
 import Services from "./pages/Services/Services";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import ContactUs from "./pages/ContactUs/ContactUs";
+import Error from "./pages/Error/Error";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -19,13 +20,8 @@ function App() {
       <Route path="/services" element={<Services />} />
       <Route path="/aboutus" element={<AboutUs />} />
       <Route path="/contactus" element={<ContactUs />} />
+      <Route path="*" element={<Error />} />
     </Routes>
-    //    <div className="App">
-    //       <Landing />
-    //      <Services />
-    //      <AboutUs />
-    //       <ContactUs />
-    //  </div>
   );
 }
 export default App;

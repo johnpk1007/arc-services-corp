@@ -11,6 +11,7 @@ import Janitorial from "../../images/realImage/janitorial.jpeg";
 import Painting from "../../images/realImage/painting.jpeg";
 import Wallpaper from "../../images/realImage/wallpaper.jpeg";
 import GeneralRepair from "../../images/realImage/general.jpeg";
+import Plumbing from "../../images/realImage/plumbing.jpeg";
 
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
@@ -408,7 +409,7 @@ export default function SecondServices() {
               <Card>
                 <CardMedia
                   sx={{ height: 200, backgroundColor: "gray" }}
-                  //   image={Drywall}
+                    image={Plumbing}
                   title="plumbing"
                 />
                 <CardContent

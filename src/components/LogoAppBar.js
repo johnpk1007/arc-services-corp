@@ -43,13 +43,23 @@ export default function LogoAppBar({ color, location }) {
   return (
     <Box>
       <Scroll>
-        <AppBar sx={{ height: "64px", alignItems: "center" }}>
+        <AppBar
+          sx={{
+            height: "64px",
+            alignItems: "center",
+          }}
+        >
           <Toolbar sx={{ width: "80%" }}>
             <IconButton
               size="large"
               edge="start"
               aria-label="menu"
-              sx={{ mr: 2 }}
+              sx={{
+                mr: 2,
+                "&:hover": {
+                  backgroundColor: "transparent",
+                },
+              }}
               component={Link}
               to="/"
             >
@@ -65,6 +75,9 @@ export default function LogoAppBar({ color, location }) {
                   location === "services"
                     ? "none"
                     : { xs: "none", sm: "block" },
+                "&:hover": {
+                  backgroundColor: "transparent",
+                },
               }}
               component={Link}
               to="/services"
@@ -78,6 +91,9 @@ export default function LogoAppBar({ color, location }) {
                 color: color ? "inherit" : "white",
                 display:
                   location === "aboutus" ? "none" : { xs: "none", sm: "block" },
+                "&:hover": {
+                  backgroundColor: "transparent",
+                },
               }}
               component={Link}
               to="/aboutus"
@@ -93,6 +109,9 @@ export default function LogoAppBar({ color, location }) {
                   location === "contactus"
                     ? "none"
                     : { xs: "none", sm: "block" },
+                "&:hover": {
+                  backgroundColor: "transparent",
+                },
               }}
               component={Link}
               to="/contactus"
