@@ -42,6 +42,7 @@ export default function FirstImage() {
         }}
       >
         <Typography
+          variant="h1"
           sx={{
             fontSize: { xs: 32, sm: 40, md: 48, lg: 64 },
             width: { xs: "100%", sm: "60%", lg: "50%" },
@@ -49,12 +50,14 @@ export default function FirstImage() {
           fontWeight="bold"
           color="white"
           textAlign="right"
+          gutterBottom
         >
           We're a<span style={{ color: "#F14C48" }}> different </span>
           kind of handyman service
         </Typography>
 
         <Typography
+          variant="h2"
           sx={{
             fontSize: { xs: 18, sm: 20, md: 22, lg: 24 },
             width: { xs: "100%", sm: "50%" },

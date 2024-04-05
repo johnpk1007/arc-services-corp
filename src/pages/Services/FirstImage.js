@@ -39,6 +39,7 @@ export default function FirstImage() {
         }}
       >
         <Typography
+          variant="h1"
           sx={{ fontSize: { xs: 32, sm: 40, md: 48, lg: 64 } }}
           fontWeight="bold"
           color="white"
@@ -48,6 +49,7 @@ export default function FirstImage() {
           <span style={{ color: "#F14C48" }}> work</span>
         </Typography>
         <Typography
+          variant="h2"
           sx={{ fontSize: { xs: 18, sm: 20, md: 22, lg: 24 } }}
           fontWeight="regular"
           color="white"

@@ -187,6 +187,7 @@ export default function Contact() {
             }}
           >
             <Typography
+              variant="h1"
               color="white"
               fontSize={32}
               fontWeight="bold"
@@ -195,6 +196,7 @@ export default function Contact() {
               Contact Us
             </Typography>
             <Typography
+              variant="h2"
               fontSize={20}
               textAlign="left"
               color="white"
@@ -220,6 +222,7 @@ export default function Contact() {
           }}
         >
           <Typography
+            variant="h1"
             fontSize={32}
             fontWeight="bold"
             gutterBottom
@@ -228,6 +231,7 @@ export default function Contact() {
             Contact Us
           </Typography>
           <Typography
+            variant="h2"
             fontSize={20}
             sx={{ display: { xs: "none", sm: "block" } }}
             textAlign="center"
@@ -442,7 +446,7 @@ export default function Contact() {
         justifyContent="center"
         alignItems="center"
       >
-        <img src={ColorLogo} alt="color logo" />
+        <img src={ColorLogo} alt="company main logo" />
         <Typography
           sx={{ fontSize: { xs: 16, sm: 17, md: 18, lg: 20 } }}
           fontWeight="regular"

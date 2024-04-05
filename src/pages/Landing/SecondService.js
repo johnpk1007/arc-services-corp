@@ -38,6 +38,7 @@ export default function SecondService() {
         }}
       >
         <Typography
+          variant="h2"
           sx={{ fontSize: { xs: 24, sm: 26, md: 28, lg: 32 } }}
           fontWeight="700"
           gutterBottom
@@ -79,7 +80,7 @@ export default function SecondService() {
           <Avatar
             sx={{ bgcolor: "#F14C48", width: 60, height: 60, mb: "20px" }}
           >
-            <img src={InstallationIcon} alt="remodeling" />
+            <img src={InstallationIcon} alt="installation icon" />
           </Avatar>
           <Typography
             sx={{ fontSize: { xs: 16, sm: 17, md: 18, lg: 20 } }}
@@ -116,7 +117,7 @@ export default function SecondService() {
           <Avatar
             sx={{ bgcolor: "#F14C48", width: 60, height: 60, mb: "20px" }}
           >
-            <img src={RemodelingIcon} alt="remodeling" />
+            <img src={RemodelingIcon} alt="remodeling icon" />
           </Avatar>
           <Typography
             sx={{ fontSize: { xs: 16, sm: 17, md: 18, lg: 20 } }}
@@ -190,7 +191,7 @@ export default function SecondService() {
           <Avatar
             sx={{ bgcolor: "#F14C48", width: 60, height: 60, mb: "20px" }}
           >
-            <img src={CleaningServicesIcon} alt="cleaning" />
+            <img src={CleaningServicesIcon} alt="cleaning icon" />
           </Avatar>
           <Typography
             sx={{ fontSize: { xs: 16, sm: 17, md: 18, lg: 20 } }}

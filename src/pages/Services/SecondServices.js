@@ -41,6 +41,7 @@ export default function SecondServices() {
         }}
       >
         <Typography
+          variant="h2"
           sx={{ fontSize: { xs: 24, sm: 26, md: 28, lg: 32 } }}
           fontWeight="bold"
           gutterBottom
@@ -409,7 +410,7 @@ export default function SecondServices() {
               <Card>
                 <CardMedia
                   sx={{ height: 200, backgroundColor: "gray" }}
-                    image={Plumbing}
+                  image={Plumbing}
                   title="plumbing"
                 />
                 <CardContent

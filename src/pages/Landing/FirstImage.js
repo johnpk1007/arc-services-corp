@@ -29,6 +29,7 @@ export default function FirstImage() {
         sx={{ display: "flex", flexDirection: "column", ml: { xs: 5, md: 10 } }}
       >
         <Typography
+          variant="h1"
           sx={{ fontSize: { xs: 32, sm: 40, md: 48, lg: 64 } }}
           fontWeight="700"
           color="white"
@@ -37,6 +38,8 @@ export default function FirstImage() {
           The <span style={{ color: "#F14C48" }}>quality</span> you expect
         </Typography>
         <Typography
+          gutterBottom
+          variant="h1"
           sx={{ fontSize: { xs: 32, sm: 40, md: 48, lg: 64 } }}
           fontWeight="700"
           color="white"
@@ -57,6 +60,7 @@ export default function FirstImage() {
         }}
       >
         <Typography
+          variant="h2"
           sx={{ fontSize: { xs: 18, sm: 20, md: 22, lg: 24 } }}
           fontWeight="regular"
           color="white"
@@ -67,6 +71,7 @@ export default function FirstImage() {
         </Typography>
 
         <Typography
+          variant="h2"
           sx={{ fontSize: { xs: 18, sm: 20, md: 22, lg: 24 } }}
           fontWeight="regular"
           color="white"
@@ -74,6 +79,7 @@ export default function FirstImage() {
           repair and renovation needs,
         </Typography>
         <Typography
+          variant="h2"
           sx={{ fontSize: { xs: 18, sm: 20, md: 22, lg: 24 } }}
           fontWeight="regular"
           color="white"
@@ -81,6 +87,7 @@ export default function FirstImage() {
           with comprehensive expertise in
         </Typography>
         <Typography
+          variant="h2"
           sx={{ fontSize: { xs: 18, sm: 20, md: 22, lg: 24 } }}
           fontWeight="regular"
           color="white"

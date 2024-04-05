@@ -37,6 +37,7 @@ export default function FourthTestimonial() {
         }}
       >
         <Typography
+          variant="h2"
           sx={{ fontSize: { xs: 24, sm: 26, md: 28, lg: 32 } }}
           fontWeight="bold"
           gutterBottom
@@ -85,33 +86,37 @@ export default function FourthTestimonial() {
                   }}
                 >
                   <Typography
-                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 24 } }}
+                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 22 } }}
                     textAlign="right"
                     color="white"
-                    fontWeight="bold"
+                    fontWeight="400"
                   >
-                    Proin cursus feugiat tortor
+                    Kingston Square Condominium
                   </Typography>
                   <Typography
                     textAlign="right"
-                    fontWeight="light"
+                    fontWeight="300"
                     color="white"
                     sx={{
-                      width: { xs: "100%", sm: "70%", md: "50%" },
-                      fontSize: { xs: 14, sm: 16, md: 18, lg: 20 },
+                      width: "100%",
+                      fontSize: { xs: 14, sm: 15, md: 16, lg: 18 },
                     }}
                   >
-                    Proin cursus feugiat tortor, ac mattis erat. Sed nibh
-                    sapien, congue eget facilisis vitae, consequat luctus ante.
+                    ANG Services Corp consistently delivers exceptional results
+                    in handling general repairs and maintenance for our condo.
+                    Their communication is clear, and they consistently complete
+                    tasks with utmost proficiency. Working with them is
+                    genuinely enjoyable, and I wholeheartedly recommend their
+                    services.
                   </Typography>
 
-                  <Divider sx={{ width: "40%", backgroundColor: "white" }} />
+                  <Divider sx={{ width: "50%", backgroundColor: "white" }} />
                   <Typography
-                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 24 } }}
-                    fontWeight="regular"
+                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 22 } }}
+                    fontWeight="500"
                     color="white"
                   >
-                    John Doe
+                    Mark Woodson, Board Member
                   </Typography>
                 </Box>
               </Card>
@@ -144,22 +149,21 @@ export default function FourthTestimonial() {
                   }}
                 >
                   <Typography
-                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 24 } }}
+                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 22 } }}
                     textAlign="left"
                     color="white"
-                    fontWeight="bold"
-                    gutterBottom
+                    fontWeight="400"
                   >
                     Proin cursus feugiat tortor
                   </Typography>
                   <Typography
                     fontSize={20}
                     textAlign="left"
-                    fontWeight="light"
+                    fontWeight="300"
                     color="white"
                     sx={{
-                      width: { xs: "100%", sm: "70%", md: "50%" },
-                      fontSize: { xs: 14, sm: 16, md: 18, lg: 20 },
+                      width: "100%",
+                      fontSize: { xs: 14, sm: 15, md: 16, lg: 18 },
                     }}
                   >
                     Proin cursus feugiat tortor, ac mattis erat. Sed nibh
@@ -168,8 +172,8 @@ export default function FourthTestimonial() {
 
                   <Divider sx={{ width: "40%", backgroundColor: "white" }} />
                   <Typography
-                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 24 } }}
-                    fontWeight="regular"
+                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 22 } }}
+                    fontWeight="500"
                     color="white"
                   >
                     John Doe
@@ -205,22 +209,21 @@ export default function FourthTestimonial() {
                   }}
                 >
                   <Typography
-                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 24 } }}
+                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 22 } }}
                     textAlign="right"
                     color="white"
-                    fontWeight="bold"
-                    gutterBottom
+                    fontWeight="400"
                   >
                     Proin cursus feugiat tortor
                   </Typography>
                   <Typography
                     fontSize={20}
                     textAlign="right"
-                    fontWeight="light"
+                    fontWeight="300"
                     color="white"
                     sx={{
-                      width: { xs: "100%", sm: "70%", md: "50%" },
-                      fontSize: { xs: 14, sm: 16, md: 18, lg: 20 },
+                      width: "100%",
+                      fontSize: { xs: 14, sm: 15, md: 16, lg: 18 },
                     }}
                   >
                     Proin cursus feugiat tortor, ac mattis erat. Sed nibh
@@ -229,9 +232,9 @@ export default function FourthTestimonial() {
 
                   <Divider sx={{ width: "40%", backgroundColor: "white" }} />
                   <Typography
-                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 24 } }}
+                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 22 } }}
                     textAlign="right"
-                    fontWeight="regular"
+                    fontWeight="500"
                     color="white"
                   >
                     John Doe
