@@ -154,7 +154,7 @@ export default function FourthTestimonial() {
                     color="white"
                     fontWeight="400"
                   >
-                    Proin cursus feugiat tortor
+                    Unlimited Property Management
                   </Typography>
                   <Typography
                     fontSize={20}
@@ -166,8 +166,12 @@ export default function FourthTestimonial() {
                       fontSize: { xs: 14, sm: 15, md: 16, lg: 18 },
                     }}
                   >
-                    Proin cursus feugiat tortor, ac mattis erat. Sed nibh
-                    sapien, congue eget facilisis vitae, consequat luctus ante.
+                    We have been working with ANG Services for our janitorial
+                    and maintenance needs and we’re extremely satisfied with
+                    their services. They respond promptly to our requests and
+                    show a high level of professionalism. We recommend ANG
+                    Services and will continue to work with them as we expand
+                    our properties.
                   </Typography>
 
                   <Divider sx={{ width: "40%", backgroundColor: "white" }} />
@@ -176,7 +180,7 @@ export default function FourthTestimonial() {
                     fontWeight="500"
                     color="white"
                   >
-                    John Doe
+                    Marco Osores, Manager
                   </Typography>
                 </Box>
               </Card>
@@ -214,7 +218,7 @@ export default function FourthTestimonial() {
                     color="white"
                     fontWeight="400"
                   >
-                    Proin cursus feugiat tortor
+                    Echolistic Hair Studio
                   </Typography>
                   <Typography
                     fontSize={20}
@@ -226,8 +230,10 @@ export default function FourthTestimonial() {
                       fontSize: { xs: 14, sm: 15, md: 16, lg: 18 },
                     }}
                   >
-                    Proin cursus feugiat tortor, ac mattis erat. Sed nibh
-                    sapien, congue eget facilisis vitae, consequat luctus ante.
+                    ANG Services is a company that works with diligence,
+                    professionalism and commitment. I was impressed with the
+                    quality of their work and attention to detail. I highly
+                    recommend them for any home or business projects!
                   </Typography>
 
                   <Divider sx={{ width: "40%", backgroundColor: "white" }} />
@@ -237,7 +243,7 @@ export default function FourthTestimonial() {
                     fontWeight="500"
                     color="white"
                   >
-                    John Doe
+                    Antonio Palomino, Owner
                   </Typography>
                 </Box>
               </Card>
