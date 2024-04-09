@@ -23,6 +23,8 @@ import ColorLogo from "../../images/logo/colorLogo.svg";
 
 import HCaptcha from "@hcaptcha/react-hcaptcha";
 
+import { Helmet } from "react-helmet-async";
+
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
@@ -157,6 +159,23 @@ export default function Contact() {
         minHeight: "1400px",
       }}
     >
+      <Helmet>
+        <title data-react-helmet="true">Contact us - ARC Services Corp</title>
+        <meta
+          name="description"
+          data-react-helmet="true"
+          content="Don’t hesitate to reach out to us for your complimentary estimate or any general inquiries."
+        />
+        <meta name="keywords" data-react-helmet="true" content="phone, email" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Contact us - ARC Services Corp" />
+        <meta
+          property="og:description"
+          content="Don’t hesitate to reach out to us for your complimentary estimate or any general inquiries."
+        />
+        {/* <meta property="og:url" content="https://www.angservices.com/contactus" />
+<meta property="og:image" content="https://www.angservices.com/images/firstImage/contactus.jpg" /> */}
+      </Helmet>
       <LogoAppBar color="black" location="contactus" />
       <CssBaseline />
       <Grid container>
