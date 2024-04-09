@@ -12,6 +12,7 @@ import Painting from "../../images/realImage/painting.jpeg";
 import Wallpaper from "../../images/realImage/wallpaper.jpeg";
 import GeneralRepair from "../../images/realImage/general.jpeg";
 import Plumbing from "../../images/realImage/plumbing.jpeg";
+import Pressure from "../../images/realImage/pressure.jpeg";
 
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
@@ -41,6 +42,7 @@ export default function SecondServices() {
         }}
       >
         <Typography
+          variant="h2"
           sx={{ fontSize: { xs: 24, sm: 26, md: 28, lg: 32 } }}
           fontWeight="bold"
           gutterBottom
@@ -79,6 +81,8 @@ export default function SecondServices() {
                   sx={{ height: 200 }}
                   image={Floor}
                   title="floor installation"
+                  component="img"
+                  loading="lazy"
                 />
                 <CardContent
                   sx={{
@@ -127,6 +131,8 @@ export default function SecondServices() {
                   sx={{ height: 200 }}
                   image={Wallpaper}
                   title="wallpaper installation"
+                  component="img"
+                  loading="lazy"
                 />
                 <CardContent
                   sx={{
@@ -175,6 +181,8 @@ export default function SecondServices() {
                   sx={{ height: 200 }}
                   image={Painting}
                   title="painting service"
+                  component="img"
+                  loading="lazy"
                 />
                 <CardContent
                   sx={{
@@ -222,6 +230,8 @@ export default function SecondServices() {
                   sx={{ height: 200 }}
                   image={Drywall}
                   title="drywall repair"
+                  component="img"
+                  loading="lazy"
                 />
                 <CardContent
                   sx={{
@@ -266,9 +276,11 @@ export default function SecondServices() {
             >
               <Card>
                 <CardMedia
-                  sx={{ height: 200, backgroundColor: "gray" }}
+                  sx={{ height: 200 }}
                   image={GeneralRepair}
                   title="general repair"
+                  component="img"
+                  loading="lazy"
                 />
                 <CardContent
                   sx={{
@@ -314,9 +326,11 @@ export default function SecondServices() {
             >
               <Card>
                 <CardMedia
-                  sx={{ height: 200, backgroundColor: "gray" }}
-                  //   image={Drywall}
+                  sx={{ height: 200 }}
+                  image={Pressure}
                   title="pressure cleaning"
+                  component="img"
+                  loading="lazy"
                 />
                 <CardContent
                   sx={{
@@ -364,6 +378,8 @@ export default function SecondServices() {
                   sx={{ height: 200 }}
                   image={Janitorial}
                   title="janitorial services"
+                  component="img"
+                  loading="lazy"
                 />
                 <CardContent
                   sx={{
@@ -409,8 +425,10 @@ export default function SecondServices() {
               <Card>
                 <CardMedia
                   sx={{ height: 200, backgroundColor: "gray" }}
-                    image={Plumbing}
+                  image={Plumbing}
                   title="plumbing"
+                  component="img"
+                  loading="lazy"
                 />
                 <CardContent
                   sx={{

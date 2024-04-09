@@ -52,6 +52,7 @@ export default function ThirdMap() {
         >
           <Box>
             <Typography
+              variant="h2"
               fontWeight="bold"
               sx={{ fontSize: { xs: 16, sm: 20, md: 24, lg: 32 } }}
               gutterBottom
@@ -128,7 +129,7 @@ export default function ThirdMap() {
           >
             <img
               src={CurvedMap}
-              alt="curved map"
+              alt="map drawing"
               style={{
                 width: "100px",
                 height: "400px",

@@ -34,6 +34,7 @@ export default function ThirdWhy() {
         }}
       >
         <Typography
+          variant="h2"
           sx={{ fontSize: { xs: 24, sm: 26, md: 28, lg: 32 } }}
           fontWeight="bold"
           gutterBottom
@@ -74,6 +75,8 @@ export default function ThirdWhy() {
                   }}
                   image={Brickell}
                   title="brickell"
+                  component="img"
+                  loading="lazy"
                 />
                 <Box
                   sx={{
@@ -118,6 +121,8 @@ export default function ThirdWhy() {
                   }}
                   image={MiamiBeach}
                   title="miamiBeach"
+                  component="img"
+                  loading="lazy"
                 />
                 <Box
                   sx={{
@@ -162,6 +167,8 @@ export default function ThirdWhy() {
                   }}
                   image={Kendall}
                   title="kendall"
+                  component="img"
+                  loading="lazy"
                 />
                 <Box
                   sx={{
@@ -206,6 +213,8 @@ export default function ThirdWhy() {
                   }}
                   image={CoralGables}
                   title="coral gables"
+                  component="img"
+                  loading="lazy"
                 />
                 <Box
                   sx={{
@@ -250,6 +259,8 @@ export default function ThirdWhy() {
                   }}
                   image={Hialeah}
                   title="hialeah"
+                  component="img"
+                  loading="lazy"
                 />
                 <Box
                   sx={{
@@ -294,6 +305,8 @@ export default function ThirdWhy() {
                   }}
                   image={KeyLargo}
                   title="Key Largo"
+                  component="img"
+                  loading="lazy"
                 />
                 <Box
                   sx={{

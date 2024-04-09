@@ -54,6 +54,7 @@ export default function ThirdWhy() {
         }}
       >
         <Typography
+          variant="h2"
           sx={{ fontSize: { xs: 24, sm: 26, md: 28, lg: 32 } }}
           fontWeight="bold"
           gutterBottom
@@ -103,6 +104,8 @@ export default function ThirdWhy() {
                 sx={{ height: 240 }}
                 image={CleanService}
                 title="clean service"
+                component="img"
+                loading="lazy"
               />
               <CardContent sx={{ marginTop: "20px" }}>
                 <Typography
@@ -148,6 +151,8 @@ export default function ThirdWhy() {
                 sx={{ height: 240 }}
                 image={ProfessionalService}
                 title="professional service"
+                component="img"
+                loading="lazy"
               />
               <CardContent sx={{ marginTop: "20px" }}>
                 <Typography
@@ -193,6 +198,8 @@ export default function ThirdWhy() {
                 sx={{ height: 240 }}
                 image={FreeService}
                 title="free service"
+                component="img"
+                loading="lazy"
               />
               <CardContent sx={{ marginTop: "20px" }}>
                 <Typography
@@ -238,6 +245,8 @@ export default function ThirdWhy() {
                 sx={{ height: 240 }}
                 image={QuickService}
                 title="quick service"
+                component="img"
+                loading="lazy"
               />
               <CardContent sx={{ marginTop: "20px" }}>
                 <Typography

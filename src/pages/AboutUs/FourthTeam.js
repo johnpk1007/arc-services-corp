@@ -27,6 +27,7 @@ export default function FirstImage() {
     >
       <Box data-aos="fade-up" data-aos-once="true" sx={{ width: "100%" }}>
         <Typography
+          variant="h2"
           fontSize={32}
           fontWeight="bold"
           sx={{ marginBottom: "80px", marginLeft: "10%" }}
@@ -73,6 +74,8 @@ export default function FirstImage() {
                       right: 0,
                       zIndex: 1,
                     }}
+                    component="img"
+                    loading="lazy"
                   />
                 </Box>
                 <CardContent
@@ -161,6 +164,8 @@ export default function FirstImage() {
                       right: 0,
                       zIndex: 1,
                     }}
+                    component="img"
+                    loading="lazy"
                   />
                 </Box>
                 <CardContent

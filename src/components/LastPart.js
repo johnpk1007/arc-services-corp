@@ -34,6 +34,7 @@ export default function ThirdWhy() {
         }}
       >
         <Typography
+          variant="h2"
           sx={{ fontSize: { xs: 24, sm: 26, md: 28, lg: 32 } }}
           fontWeight="bold"
           gutterBottom
@@ -70,7 +71,7 @@ export default function ThirdWhy() {
         }}
         disableElevation
       >
-        Contact us
+        Contact us <span style={{ display: "none" }}> so we can help you</span>
       </Button>
       <Divider sx={{ width: "100%" }} />
       <Box
@@ -79,7 +80,7 @@ export default function ThirdWhy() {
         justifyContent="center"
         alignItems="center"
       >
-        <img src={ColorLogo} alt="color logo" />
+        <img src={ColorLogo} alt="company main logo" />
         <Typography
           sx={{ fontSize: { xs: 16, sm: 17, md: 18, lg: 20 } }}
           fontWeight="regular"

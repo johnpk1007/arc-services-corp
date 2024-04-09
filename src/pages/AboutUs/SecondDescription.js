@@ -24,6 +24,7 @@ export default function SecondDescription() {
           <Grid container spacing={2}>
             <Grid item xs={12} data-aos="fade-up" data-aos-once="true">
               <Typography
+                variant="h2"
                 fontWeight="bold"
                 sx={{ fontSize: { xs: 24, sm: 26, md: 28, lg: 32 } }}
               >

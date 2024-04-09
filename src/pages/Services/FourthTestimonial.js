@@ -37,6 +37,7 @@ export default function FourthTestimonial() {
         }}
       >
         <Typography
+          variant="h2"
           sx={{ fontSize: { xs: 24, sm: 26, md: 28, lg: 32 } }}
           fontWeight="bold"
           gutterBottom
@@ -67,6 +68,8 @@ export default function FourthTestimonial() {
                   }}
                   image={Typing1}
                   title="typing1"
+                  component="img"
+                  loading="lazy"
                 />
                 <Box
                   data-aos="fade-left"
@@ -85,33 +88,37 @@ export default function FourthTestimonial() {
                   }}
                 >
                   <Typography
-                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 24 } }}
+                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 22 } }}
                     textAlign="right"
                     color="white"
-                    fontWeight="bold"
+                    fontWeight="400"
                   >
-                    Proin cursus feugiat tortor
+                    Kingston Square Condominium
                   </Typography>
                   <Typography
                     textAlign="right"
-                    fontWeight="light"
+                    fontWeight="300"
                     color="white"
                     sx={{
-                      width: { xs: "100%", sm: "70%", md: "50%" },
-                      fontSize: { xs: 14, sm: 16, md: 18, lg: 20 },
+                      width: "100%",
+                      fontSize: { xs: 14, sm: 15, md: 16, lg: 18 },
                     }}
                   >
-                    Proin cursus feugiat tortor, ac mattis erat. Sed nibh
-                    sapien, congue eget facilisis vitae, consequat luctus ante.
+                    ANG Services Corp consistently delivers exceptional results
+                    in handling general repairs and maintenance for our condo.
+                    Their communication is clear, and they consistently complete
+                    tasks with utmost proficiency. Working with them is
+                    genuinely enjoyable, and I wholeheartedly recommend their
+                    services.
                   </Typography>
 
-                  <Divider sx={{ width: "40%", backgroundColor: "white" }} />
+                  <Divider sx={{ width: "50%", backgroundColor: "white" }} />
                   <Typography
-                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 24 } }}
-                    fontWeight="regular"
+                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 22 } }}
+                    fontWeight="500"
                     color="white"
                   >
-                    John Doe
+                    Mark Woodson, Board Member
                   </Typography>
                 </Box>
               </Card>
@@ -126,6 +133,8 @@ export default function FourthTestimonial() {
                   }}
                   image={Typing2}
                   title="typing2"
+                  component="img"
+                  loading="lazy"
                 />
                 <Box
                   data-aos="fade-right"
@@ -144,35 +153,38 @@ export default function FourthTestimonial() {
                   }}
                 >
                   <Typography
-                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 24 } }}
+                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 22 } }}
                     textAlign="left"
                     color="white"
-                    fontWeight="bold"
-                    gutterBottom
+                    fontWeight="400"
                   >
-                    Proin cursus feugiat tortor
+                    Unlimited Property Management
                   </Typography>
                   <Typography
                     fontSize={20}
                     textAlign="left"
-                    fontWeight="light"
+                    fontWeight="300"
                     color="white"
                     sx={{
-                      width: { xs: "100%", sm: "70%", md: "50%" },
-                      fontSize: { xs: 14, sm: 16, md: 18, lg: 20 },
+                      width: "100%",
+                      fontSize: { xs: 14, sm: 15, md: 16, lg: 18 },
                     }}
                   >
-                    Proin cursus feugiat tortor, ac mattis erat. Sed nibh
-                    sapien, congue eget facilisis vitae, consequat luctus ante.
+                    We have been working with ANG Services for our janitorial
+                    and maintenance needs and we’re extremely satisfied with
+                    their services. They respond promptly to our requests and
+                    show a high level of professionalism. We recommend ANG
+                    Services and will continue to work with them as we expand
+                    our properties.
                   </Typography>
 
                   <Divider sx={{ width: "40%", backgroundColor: "white" }} />
                   <Typography
-                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 24 } }}
-                    fontWeight="regular"
+                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 22 } }}
+                    fontWeight="500"
                     color="white"
                   >
-                    John Doe
+                    Marco Osores, Manager
                   </Typography>
                 </Box>
               </Card>
@@ -187,6 +199,8 @@ export default function FourthTestimonial() {
                   }}
                   image={Typing3}
                   title="typing3"
+                  component="img"
+                  loading="lazy"
                 />
                 <Box
                   data-aos="fade-left"
@@ -205,36 +219,37 @@ export default function FourthTestimonial() {
                   }}
                 >
                   <Typography
-                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 24 } }}
+                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 22 } }}
                     textAlign="right"
                     color="white"
-                    fontWeight="bold"
-                    gutterBottom
+                    fontWeight="400"
                   >
-                    Proin cursus feugiat tortor
+                    Echolistic Hair Studio
                   </Typography>
                   <Typography
                     fontSize={20}
                     textAlign="right"
-                    fontWeight="light"
+                    fontWeight="300"
                     color="white"
                     sx={{
-                      width: { xs: "100%", sm: "70%", md: "50%" },
-                      fontSize: { xs: 14, sm: 16, md: 18, lg: 20 },
+                      width: "100%",
+                      fontSize: { xs: 14, sm: 15, md: 16, lg: 18 },
                     }}
                   >
-                    Proin cursus feugiat tortor, ac mattis erat. Sed nibh
-                    sapien, congue eget facilisis vitae, consequat luctus ante.
+                    ANG Services is a company that works with diligence,
+                    professionalism and commitment. I was impressed with the
+                    quality of their work and attention to detail. I highly
+                    recommend them for any home or business projects!
                   </Typography>
 
                   <Divider sx={{ width: "40%", backgroundColor: "white" }} />
                   <Typography
-                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 24 } }}
+                    sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 22 } }}
                     textAlign="right"
-                    fontWeight="regular"
+                    fontWeight="500"
                     color="white"
                   >
-                    John Doe
+                    Antonio Palomino, Owner
                   </Typography>
                 </Box>
               </Card>

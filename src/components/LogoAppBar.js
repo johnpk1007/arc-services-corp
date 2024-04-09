@@ -46,7 +46,7 @@ export default function LogoAppBar({ color, location }) {
         <AppBar
           sx={{
             height: "64px",
-            alignItems: "center",
+            paddingLeft: "10%",
           }}
         >
           <Toolbar sx={{ width: "80%" }}>
@@ -55,7 +55,6 @@ export default function LogoAppBar({ color, location }) {
               edge="start"
               aria-label="menu"
               sx={{
-                mr: 2,
                 "&:hover": {
                   backgroundColor: "transparent",
                 },
@@ -63,7 +62,7 @@ export default function LogoAppBar({ color, location }) {
               component={Link}
               to="/"
             >
-              <img src={WhiteLogo} alt="white Logo" />
+              <img src={WhiteLogo} alt="company secondary logo" />
             </IconButton>
             <div style={{ flexGrow: 1 }}></div>
             <Button
@@ -122,6 +121,9 @@ export default function LogoAppBar({ color, location }) {
               onClick={handleDrawerToggle}
               sx={{
                 display: { xs: "block", sm: "none" },
+                "&:hover": {
+                  backgroundColor: "transparent",
+                },
               }}
             >
               <MenuIcon sx={{ color: "white" }} />
@@ -180,7 +182,11 @@ export default function LogoAppBar({ color, location }) {
           <Box
             sx={{ display: "flex", justifyContent: "flex-end", mr: 2, mb: 1 }}
           >
-            <img src={ColorLogo} alt="color logo" style={{ width: 70 }} />
+            <img
+              src={ColorLogo}
+              alt="company main logo"
+              style={{ width: 70 }}
+            />
           </Box>
         </Box>
       </Drawer>

@@ -3,12 +3,18 @@ import ServiceImage from "../../images/firstImage/services.jpg";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 
+import { useEffect } from "react";
+
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
 export default function FirstImage() {
+  useEffect(() => {
+    const img = new Image();
+    img.src = ServiceImage;
+  }, []);
   return (
     <Box>
       <Box
@@ -39,6 +45,7 @@ export default function FirstImage() {
         }}
       >
         <Typography
+          variant="h1"
           sx={{ fontSize: { xs: 32, sm: 40, md: 48, lg: 64 } }}
           fontWeight="bold"
           color="white"
@@ -48,6 +55,7 @@ export default function FirstImage() {
           <span style={{ color: "#F14C48" }}> work</span>
         </Typography>
         <Typography
+          variant="h2"
           sx={{ fontSize: { xs: 18, sm: 20, md: 22, lg: 24 } }}
           fontWeight="regular"
           color="white"

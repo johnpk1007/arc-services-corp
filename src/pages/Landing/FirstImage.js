@@ -3,12 +3,18 @@ import LandingImage from "../../images/firstImage/landing.jpg";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 
+import { useEffect } from "react";
+
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
 export default function FirstImage() {
+  useEffect(() => {
+    const img = new Image();
+    img.src = LandingImage;
+  }, []);
   return (
     <Box
       sx={{
@@ -21,14 +27,20 @@ export default function FirstImage() {
         flexDirection: "column",
         alignItems: "flex-start",
         justifyContent: { xs: "flex-end", sm: "center" },
+        position: "relative",
       }}
     >
       <Box
         data-aos="fade-right"
         data-aos-once="true"
-        sx={{ display: "flex", flexDirection: "column", ml: { xs: 5, md: 10 } }}
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          ml: { xs: 5, md: 10 },
+        }}
       >
         <Typography
+          variant="h1"
           sx={{ fontSize: { xs: 32, sm: 40, md: 48, lg: 64 } }}
           fontWeight="700"
           color="white"
@@ -37,6 +49,8 @@ export default function FirstImage() {
           The <span style={{ color: "#F14C48" }}>quality</span> you expect
         </Typography>
         <Typography
+          gutterBottom
+          variant="h1"
           sx={{ fontSize: { xs: 32, sm: 40, md: 48, lg: 64 } }}
           fontWeight="700"
           color="white"
@@ -57,6 +71,7 @@ export default function FirstImage() {
         }}
       >
         <Typography
+          variant="h2"
           sx={{ fontSize: { xs: 18, sm: 20, md: 22, lg: 24 } }}
           fontWeight="regular"
           color="white"
@@ -67,6 +82,7 @@ export default function FirstImage() {
         </Typography>
 
         <Typography
+          variant="h2"
           sx={{ fontSize: { xs: 18, sm: 20, md: 22, lg: 24 } }}
           fontWeight="regular"
           color="white"
@@ -74,6 +90,7 @@ export default function FirstImage() {
           repair and renovation needs,
         </Typography>
         <Typography
+          variant="h2"
           sx={{ fontSize: { xs: 18, sm: 20, md: 22, lg: 24 } }}
           fontWeight="regular"
           color="white"
@@ -81,6 +98,7 @@ export default function FirstImage() {
           with comprehensive expertise in
         </Typography>
         <Typography
+          variant="h2"
           sx={{ fontSize: { xs: 18, sm: 20, md: 22, lg: 24 } }}
           fontWeight="regular"
           color="white"
