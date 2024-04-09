@@ -227,6 +227,7 @@ export default function SecondService() {
           },
         }}
         disableElevation
+        aria-label="learn more about our handyman services"
       >
         Learn more
       </Button>

@@ -3,12 +3,18 @@ import ServiceImage from "../../images/firstImage/services.jpg";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 
+import { useEffect } from "react";
+
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
 export default function FirstImage() {
+  useEffect(() => {
+    const img = new Image();
+    img.src = ServiceImage;
+  }, []);
   return (
     <Box>
       <Box

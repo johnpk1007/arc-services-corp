@@ -71,7 +71,7 @@ export default function ThirdWhy() {
         }}
         disableElevation
       >
-        Contact us
+        Contact us <span style={{ display: "none" }}> so we can help you</span>
       </Button>
       <Divider sx={{ width: "100%" }} />
       <Box

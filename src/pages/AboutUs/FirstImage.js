@@ -4,12 +4,18 @@ import CssBaseline from "@mui/material/CssBaseline";
 
 import AboutUs from "../../images/firstImage/aboutus.jpg";
 
+import { useEffect } from "react";
+
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
 export default function FirstImage() {
+  useEffect(() => {
+    const img = new Image();
+    img.src = AboutUs;
+  }, []);
   return (
     <Box>
       <CssBaseline />

@@ -81,6 +81,8 @@ export default function SecondServices() {
                   sx={{ height: 200 }}
                   image={Floor}
                   title="floor installation"
+                  component="img"
+                  loading="lazy"
                 />
                 <CardContent
                   sx={{
@@ -129,6 +131,8 @@ export default function SecondServices() {
                   sx={{ height: 200 }}
                   image={Wallpaper}
                   title="wallpaper installation"
+                  component="img"
+                  loading="lazy"
                 />
                 <CardContent
                   sx={{
@@ -177,6 +181,8 @@ export default function SecondServices() {
                   sx={{ height: 200 }}
                   image={Painting}
                   title="painting service"
+                  component="img"
+                  loading="lazy"
                 />
                 <CardContent
                   sx={{
@@ -224,6 +230,8 @@ export default function SecondServices() {
                   sx={{ height: 200 }}
                   image={Drywall}
                   title="drywall repair"
+                  component="img"
+                  loading="lazy"
                 />
                 <CardContent
                   sx={{
@@ -271,6 +279,8 @@ export default function SecondServices() {
                   sx={{ height: 200 }}
                   image={GeneralRepair}
                   title="general repair"
+                  component="img"
+                  loading="lazy"
                 />
                 <CardContent
                   sx={{
@@ -319,6 +329,8 @@ export default function SecondServices() {
                   sx={{ height: 200 }}
                   image={Pressure}
                   title="pressure cleaning"
+                  component="img"
+                  loading="lazy"
                 />
                 <CardContent
                   sx={{
@@ -366,6 +378,8 @@ export default function SecondServices() {
                   sx={{ height: 200 }}
                   image={Janitorial}
                   title="janitorial services"
+                  component="img"
+                  loading="lazy"
                 />
                 <CardContent
                   sx={{
@@ -413,6 +427,8 @@ export default function SecondServices() {
                   sx={{ height: 200, backgroundColor: "gray" }}
                   image={Plumbing}
                   title="plumbing"
+                  component="img"
+                  loading="lazy"
                 />
                 <CardContent
                   sx={{

@@ -68,6 +68,8 @@ export default function FourthTestimonial() {
                   }}
                   image={Typing1}
                   title="typing1"
+                  component="img"
+                  loading="lazy"
                 />
                 <Box
                   data-aos="fade-left"
@@ -131,6 +133,8 @@ export default function FourthTestimonial() {
                   }}
                   image={Typing2}
                   title="typing2"
+                  component="img"
+                  loading="lazy"
                 />
                 <Box
                   data-aos="fade-right"
@@ -195,6 +199,8 @@ export default function FourthTestimonial() {
                   }}
                   image={Typing3}
                   title="typing3"
+                  component="img"
+                  loading="lazy"
                 />
                 <Box
                   data-aos="fade-left"

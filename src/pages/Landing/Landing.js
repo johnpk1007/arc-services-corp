@@ -10,7 +10,7 @@ import { Helmet } from "react-helmet-async";
 export default function Landing() {
   return (
     <Box>
-      <Helmet prioritizeSeoTags>
+      <Helmet>
         <title data-react-helmet="true">
           General Repairs, Handyman & Cleaning Services in Miami and South
           Florida

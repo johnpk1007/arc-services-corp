@@ -3,12 +3,18 @@ import LandingImage from "../../images/firstImage/landing.jpg";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 
+import { useEffect } from "react";
+
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
 export default function FirstImage() {
+  useEffect(() => {
+    const img = new Image();
+    img.src = LandingImage;
+  }, []);
   return (
     <Box
       sx={{
@@ -21,12 +27,17 @@ export default function FirstImage() {
         flexDirection: "column",
         alignItems: "flex-start",
         justifyContent: { xs: "flex-end", sm: "center" },
+        position: "relative",
       }}
     >
       <Box
         data-aos="fade-right"
         data-aos-once="true"
-        sx={{ display: "flex", flexDirection: "column", ml: { xs: 5, md: 10 } }}
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          ml: { xs: 5, md: 10 },
+        }}
       >
         <Typography
           variant="h1"

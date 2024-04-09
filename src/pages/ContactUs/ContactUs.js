@@ -11,7 +11,7 @@ import Snackbar from "@mui/material/Snackbar";
 import { useForm } from "react-hook-form";
 import useWeb3Forms from "@web3forms/react";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
@@ -31,6 +31,10 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
 export default function Contact() {
+  useEffect(() => {
+    const img = new Image();
+    img.src = ContactUs;
+  }, []);
   const { register, handleSubmit, setValue } = useForm();
 
   const [captcha, setCaptcha] = useState(false);

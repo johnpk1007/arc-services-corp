@@ -74,6 +74,8 @@ export default function FirstImage() {
                       right: 0,
                       zIndex: 1,
                     }}
+                    component="img"
+                    loading="lazy"
                   />
                 </Box>
                 <CardContent
@@ -162,6 +164,8 @@ export default function FirstImage() {
                       right: 0,
                       zIndex: 1,
                     }}
+                    component="img"
+                    loading="lazy"
                   />
                 </Box>
                 <CardContent
