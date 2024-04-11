@@ -218,7 +218,7 @@ export default function SecondService() {
         data-aos-once="true"
         variant="contained"
         sx={{
-          width: { xs: "90%", sm: "160px" },
+          width: { xs: "90%", sm: "auto" },
           bgcolor: "#F14C48",
           fontSize: { xs: 16, sm: 17, md: 18, lg: 20 },
           mb: "80px",
@@ -229,7 +229,7 @@ export default function SecondService() {
         disableElevation
         aria-label="learn more about our handyman services"
       >
-        Learn more
+        EXPLORE OUR SERVICES
       </Button>
     </Box>
   );
