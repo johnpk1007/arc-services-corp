@@ -23,7 +23,7 @@ export default function FirstImage() {
         }}
       />
       <Box
-        data-aos-delay="1000"
+        data-aos-delay="500"
         data-aos="fade-left"
         data-aos-once="true"
         sx={{
@@ -37,7 +37,7 @@ export default function FirstImage() {
           flexDirection: "column",
           alignItems: "flex-end",
           justifyContent: { xs: "flex-end", sm: "center" },
-          paddingBottom: 10,
+          paddingBottom: { xs: 20, sm: 0 },
         }}
       >
         <Typography

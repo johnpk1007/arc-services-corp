@@ -11,6 +11,7 @@ export default function FirstImage() {
   return (
     <Box
       sx={{
+        boxSizing: "border-box",
         backgroundImage: {
           xs: `url(${LandingImageMobile})`,
           sm: `url(${LandingImage})`,
@@ -24,16 +25,17 @@ export default function FirstImage() {
         alignItems: "flex-start",
         justifyContent: { xs: "flex-end", sm: "center" },
         position: "relative",
+        paddingBottom: { xs: 20, sm: 0 },
       }}
     >
       <Box
         data-aos="fade-right"
         data-aos-once="true"
-        data-aos-delay="1000"
+        data-aos-delay="500"
         sx={{
           display: "flex",
           flexDirection: "column",
-          ml: { xs: 5, md: 10 },
+          ml: { xs: 5, md: 10, xl: "10%" },
         }}
       >
         <Typography
