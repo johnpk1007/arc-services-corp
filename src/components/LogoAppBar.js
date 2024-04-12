@@ -46,10 +46,10 @@ export default function LogoAppBar({ color, location }) {
         <AppBar
           sx={{
             height: "64px",
-            paddingLeft: "10%",
+            paddingLeft: { xs: "0%", sm: "10%" },
           }}
         >
-          <Toolbar sx={{ width: "80%" }}>
+          <Toolbar sx={{ width: { xs: "90%", sm: "80%" } }}>
             <IconButton
               size="large"
               edge="start"

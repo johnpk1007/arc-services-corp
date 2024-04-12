@@ -1,23 +1,14 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import CssBaseline from "@mui/material/CssBaseline";
-
 import AboutUs from "../../images/firstImage/aboutus.jpg";
 import AboutUsMobile from "../../images/firstImage/aboutusMobile.jpeg";
-
-import { useEffect } from "react";
 
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/700.css";
 
 export default function FirstImage() {
-  useEffect(() => {
-    const img = new Image();
-    img.src = AboutUs;
-  }, []);
   return (
     <Box>
-      <CssBaseline />
       <Box
         sx={{
           height: 800,
@@ -32,9 +23,11 @@ export default function FirstImage() {
         }}
       />
       <Box
+        data-aos-delay="1000"
         data-aos="fade-left"
         data-aos-once="true"
         sx={{
+          boxSizing: "border-box",
           position: "absolute",
           top: 0,
           left: 0,
@@ -44,16 +37,15 @@ export default function FirstImage() {
           flexDirection: "column",
           alignItems: "flex-end",
           justifyContent: { xs: "flex-end", sm: "center" },
-          paddingRight: { xs: 5, sm: 10 },
-          paddingLeft: 5,
           paddingBottom: 10,
         }}
       >
         <Typography
           variant="h1"
           sx={{
+            marginRight: { xs: 5, sm: 10 },
             fontSize: { xs: 32, sm: 40, md: 48, lg: 64 },
-            width: { xs: "100%", sm: "60%", lg: "50%" },
+            width: { xs: "90%", sm: "60%", lg: "50%" },
           }}
           fontWeight="700"
           color="white"
@@ -67,8 +59,9 @@ export default function FirstImage() {
         <Typography
           variant="h2"
           sx={{
+            marginRight: { xs: 5, sm: 10 },
             fontSize: { xs: 18, sm: 20, md: 22, lg: 24 },
-            width: { xs: "100%", sm: "50%" },
+            width: { xs: "90%", sm: "50%" },
           }}
           fontWeight="400"
           color="white"

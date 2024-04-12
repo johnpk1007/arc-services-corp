@@ -29,6 +29,7 @@ export default function FirstImage() {
       <Box
         data-aos="fade-right"
         data-aos-once="true"
+        data-aos-delay="1000"
         sx={{
           display: "flex",
           flexDirection: "column",
@@ -57,6 +58,7 @@ export default function FirstImage() {
       </Box>
 
       <Box
+        data-aos-delay="1000"
         data-aos="fade-right"
         data-aos-once="true"
         sx={{
