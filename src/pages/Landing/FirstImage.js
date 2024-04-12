@@ -35,7 +35,7 @@ export default function FirstImage() {
         sx={{
           display: "flex",
           flexDirection: "column",
-          ml: { xs: 5, md: 10, xl: "10%" },
+          ml: { xs: 3, sm: 5, md: 10, xl: "10%" },
         }}
       >
         <Typography
