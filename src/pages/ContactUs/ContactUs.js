@@ -19,13 +19,13 @@ import EmailIcon from "@mui/icons-material/Email";
 import LogoAppBar from "../../components/LogoAppBar";
 
 import ContactUs from "../../images/firstImage/contactus.jpg";
+import ContactUsMobile from "../../images/firstImage/contactusMobile.jpeg";
 import ColorLogo from "../../images/logo/colorLogo.svg";
 
 import HCaptcha from "@hcaptcha/react-hcaptcha";
 
 import { Helmet } from "react-helmet-async";
 
-import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
@@ -188,7 +188,10 @@ export default function Contact() {
             sx={{
               height: { xs: "800px", sm: "100%" },
               width: "100%",
-              backgroundImage: `url(${ContactUs})`,
+              backgroundImage: {
+                xs: `url(${ContactUsMobile})`,
+                sm: `url(${ContactUs})`,
+              },
               backgroundSize: "cover",
               backgroundPosition: "75%",
               filter: { xs: "brightness(80%)", sm: "none" },
@@ -213,7 +216,7 @@ export default function Contact() {
               variant="h1"
               color="white"
               fontSize={32}
-              fontWeight="bold"
+              fontWeight="700"
               gutterBottom
             >
               Contact Us
@@ -223,7 +226,7 @@ export default function Contact() {
               fontSize={20}
               textAlign="left"
               color="white"
-              fontWeight="regular"
+              fontWeight="400"
             >
               Don’t hesitate to reach out to us for your complimentary estimate
               or any general inquiries.
@@ -247,7 +250,7 @@ export default function Contact() {
           <Typography
             variant="h1"
             fontSize={32}
-            fontWeight="bold"
+            fontWeight="700"
             gutterBottom
             sx={{ display: { xs: "none", sm: "block" }, paddingTop: "250px" }}
           >
@@ -258,7 +261,7 @@ export default function Contact() {
             fontSize={20}
             sx={{ display: { xs: "none", sm: "block" } }}
             textAlign="center"
-            fontWeight="regular"
+            fontWeight="400"
             color="text.secondary"
           >
             Don’t hesitate to reach out to us for your complimentary estimate or
@@ -283,14 +286,14 @@ export default function Contact() {
             >
               <Typography
                 sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 20 } }}
-                fontWeight="bold"
+                fontWeight="700"
               >
                 Call Us
               </Typography>
               <Typography
                 sx={{ fontSize: { xs: 14, sm: 15, lg: 16 } }}
                 color="text.secondary"
-                fontWeight="medium"
+                fontWeight="500"
               >
                 (305) 632-1377
               </Typography>
@@ -327,7 +330,7 @@ export default function Contact() {
             >
               <Typography
                 sx={{ fontSize: { xs: 16, sm: 18, md: 20, lg: 20 } }}
-                fontWeight="bold"
+                fontWeight="700"
               >
                 Send A Message
               </Typography>

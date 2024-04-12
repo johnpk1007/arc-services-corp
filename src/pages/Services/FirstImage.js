@@ -1,13 +1,12 @@
 import ServiceImage from "../../images/firstImage/services.jpg";
+import ServiceImageMobile from "../../images/firstImage/servicesMobile.jpeg";
 
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 
 import { useEffect } from "react";
 
-import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
-import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
 export default function FirstImage() {
@@ -21,7 +20,10 @@ export default function FirstImage() {
         sx={{
           height: 800,
           width: "100%",
-          backgroundImage: `url(${ServiceImage})`,
+          backgroundImage: {
+            xs: `url(${ServiceImageMobile})`,
+            sm: `url(${ServiceImage})`,
+          },
           backgroundSize: "cover",
           backgroundPosition: "center",
           filter: "brightness(80%)",
@@ -47,7 +49,7 @@ export default function FirstImage() {
         <Typography
           variant="h1"
           sx={{ fontSize: { xs: 32, sm: 40, md: 48, lg: 64 } }}
-          fontWeight="bold"
+          fontWeight="700"
           color="white"
           gutterBottom
         >
@@ -57,7 +59,7 @@ export default function FirstImage() {
         <Typography
           variant="h2"
           sx={{ fontSize: { xs: 18, sm: 20, md: 22, lg: 24 } }}
-          fontWeight="regular"
+          fontWeight="400"
           color="white"
         >
           At
@@ -66,7 +68,7 @@ export default function FirstImage() {
         </Typography>
         <Typography
           sx={{ fontSize: { xs: 18, sm: 20, md: 22, lg: 24 } }}
-          fontWeight="regular"
+          fontWeight="400"
           color="white"
         >
           Explore our Process and Hear from Satisfied Clients
