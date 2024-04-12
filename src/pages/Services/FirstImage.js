@@ -45,7 +45,7 @@ export default function FirstImage() {
           alignItems: { xs: "flex-start", sm: "center" },
           justifyContent: { xs: "flex-end", sm: "center" },
           paddingX: 3,
-          paddingBottom: 10,
+          paddingBottom: { xs: 20, sm: 0 },
         }}
       >
         <Typography

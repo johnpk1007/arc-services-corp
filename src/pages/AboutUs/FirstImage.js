@@ -37,7 +37,7 @@ export default function FirstImage() {
           flexDirection: "column",
           alignItems: "flex-end",
           justifyContent: { xs: "flex-end", sm: "center" },
-          paddingBottom: 10,
+          paddingBottom: { xs: 20, sm: 0 },
         }}
       >
         <Typography

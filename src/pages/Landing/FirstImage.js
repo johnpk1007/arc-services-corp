@@ -25,7 +25,7 @@ export default function FirstImage() {
         alignItems: "flex-start",
         justifyContent: { xs: "flex-end", sm: "center" },
         position: "relative",
-        paddingBottom: 10,
+        paddingBottom: { xs: 20, sm: 0 },
       }}
     >
       <Box
