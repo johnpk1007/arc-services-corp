@@ -3,12 +3,11 @@ import Typography from "@mui/material/Typography";
 import CssBaseline from "@mui/material/CssBaseline";
 
 import AboutUs from "../../images/firstImage/aboutus.jpg";
+import AboutUsMobile from "../../images/firstImage/aboutusMobile.jpeg";
 
 import { useEffect } from "react";
 
-import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
-import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
 export default function FirstImage() {
@@ -23,7 +22,10 @@ export default function FirstImage() {
         sx={{
           height: 800,
           width: "100%",
-          backgroundImage: `url(${AboutUs})`,
+          backgroundImage: {
+            xs: `url(${AboutUsMobile})`,
+            sm: `url(${AboutUs})`,
+          },
           backgroundSize: "cover",
           backgroundPosition: "center",
           filter: "brightness(80%)",
@@ -53,7 +55,7 @@ export default function FirstImage() {
             fontSize: { xs: 32, sm: 40, md: 48, lg: 64 },
             width: { xs: "100%", sm: "60%", lg: "50%" },
           }}
-          fontWeight="bold"
+          fontWeight="700"
           color="white"
           textAlign="right"
           gutterBottom
@@ -68,7 +70,7 @@ export default function FirstImage() {
             fontSize: { xs: 18, sm: 20, md: 22, lg: 24 },
             width: { xs: "100%", sm: "50%" },
           }}
-          fontWeight="regular"
+          fontWeight="400"
           color="white"
           textAlign="right"
         >

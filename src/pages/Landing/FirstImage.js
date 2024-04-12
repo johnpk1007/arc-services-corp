@@ -1,24 +1,20 @@
 import LandingImage from "../../images/firstImage/landing.jpg";
+import LandingImageMobile from "../../images/firstImage/landingMobile.jpeg";
 
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 
-import { useEffect } from "react";
-
-import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
-import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
 export default function FirstImage() {
-  useEffect(() => {
-    const img = new Image();
-    img.src = LandingImage;
-  }, []);
   return (
     <Box
       sx={{
-        backgroundImage: `url(${LandingImage})`,
+        backgroundImage: {
+          xs: `url(${LandingImageMobile})`,
+          sm: `url(${LandingImage})`,
+        },
         backgroundSize: "cover",
         backgroundPosition: "center",
         height: 800,
@@ -73,7 +69,7 @@ export default function FirstImage() {
         <Typography
           variant="h2"
           sx={{ fontSize: { xs: 18, sm: 20, md: 22, lg: 24 } }}
-          fontWeight="regular"
+          fontWeight="400"
           color="white"
           mr={1}
         >
@@ -84,7 +80,7 @@ export default function FirstImage() {
         <Typography
           variant="h2"
           sx={{ fontSize: { xs: 18, sm: 20, md: 22, lg: 24 } }}
-          fontWeight="regular"
+          fontWeight="400"
           color="white"
         >
           repair and renovation needs,
@@ -92,7 +88,7 @@ export default function FirstImage() {
         <Typography
           variant="h2"
           sx={{ fontSize: { xs: 18, sm: 20, md: 22, lg: 24 } }}
-          fontWeight="regular"
+          fontWeight="400"
           color="white"
         >
           with comprehensive expertise in
@@ -100,7 +96,7 @@ export default function FirstImage() {
         <Typography
           variant="h2"
           sx={{ fontSize: { xs: 18, sm: 20, md: 22, lg: 24 } }}
-          fontWeight="regular"
+          fontWeight="400"
           color="white"
         >
           services tailored to you

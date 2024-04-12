@@ -280,7 +280,7 @@ export default function ThirdWhy() {
         data-aos-once="true"
         variant="outlined"
         sx={{
-          width: { xs: "90%", sm: "160px" },
+          width: { xs: "90%", sm: "auto" },
           borderColor: "#F14C48",
           color: "#F14C48",
           fontSize: { xs: 16, sm: 17, md: 18, lg: 20 },
@@ -292,7 +292,7 @@ export default function ThirdWhy() {
         }}
         disableElevation
       >
-        Learn more
+        MEET OUR TEAM
       </Button>
     </Box>
   );

@@ -69,7 +69,18 @@ export default function SecondServices() {
             display: { xs: "none", lg: "block" },
           }}
           lg={2}
+          position="relative"
         >
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              height: 10,
+              width: 10,
+              backgroundColor: "white",
+            }}
+          />
           <div
             data-aos="grow-animation-row"
             data-aos-offset="-200"
@@ -88,7 +99,18 @@ export default function SecondServices() {
             display: { xs: "none", lg: "block" },
           }}
           lg={2}
+          position="relative"
         >
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              height: 10,
+              width: 10,
+              backgroundColor: "white",
+            }}
+          />
           <div
             data-aos="grow-animation-row"
             data-aos-offset="-200"
@@ -107,7 +129,18 @@ export default function SecondServices() {
             display: { xs: "none", lg: "block" },
           }}
           lg={2}
+          position="relative"
         >
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              height: 10,
+              width: 10,
+              backgroundColor: "white",
+            }}
+          />
           <div
             data-aos="grow-animation-row"
             data-aos-offset="-200"
@@ -126,7 +159,18 @@ export default function SecondServices() {
             display: { xs: "none", lg: "block" },
           }}
           lg={2}
+          position="relative"
         >
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              height: 10,
+              width: 10,
+              backgroundColor: "white",
+            }}
+          />
           <div
             data-aos="grow-animation-row"
             data-aos-offset="-200"
