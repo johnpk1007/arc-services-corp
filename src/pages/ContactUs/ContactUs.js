@@ -31,10 +31,6 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
 export default function Contact() {
-  useEffect(() => {
-    const img = new Image();
-    img.src = ContactUs;
-  }, []);
   const { register, handleSubmit, setValue } = useForm();
 
   const [captcha, setCaptcha] = useState(false);
