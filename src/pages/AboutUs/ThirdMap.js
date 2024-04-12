@@ -42,6 +42,7 @@ export default function ThirdMap() {
       >
         <CardContent
           sx={{
+            boxSizing: "border-box",
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between",

@@ -30,7 +30,7 @@ export default function FirstImage() {
         }}
       />
       <Box
-        data-aos-delay="1000"
+        data-aos-delay="500"
         data-aos="fade-up"
         data-aos-once="true"
         sx={{

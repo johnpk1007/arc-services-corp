@@ -73,6 +73,7 @@ export default function FourthTestimonial() {
                   data-aos="fade-left"
                   data-aos-once="true"
                   sx={{
+                    boxSizing: "border-box",
                     position: "absolute",
                     top: 0,
                     left: 0,
@@ -138,6 +139,7 @@ export default function FourthTestimonial() {
                   data-aos="fade-right"
                   data-aos-once="true"
                   sx={{
+                    boxSizing: "border-box",
                     position: "absolute",
                     top: 0,
                     left: 0,
@@ -204,6 +206,7 @@ export default function FourthTestimonial() {
                   data-aos="fade-left"
                   data-aos-once="true"
                   sx={{
+                    boxSizing: "border-box",
                     position: "absolute",
                     top: 0,
                     left: 0,
