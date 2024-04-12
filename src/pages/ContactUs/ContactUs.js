@@ -4,14 +4,13 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import Divider from "@mui/material/Divider";
-import CssBaseline from "@mui/material/CssBaseline";
 import Alert from "@mui/material/Alert";
 import Snackbar from "@mui/material/Snackbar";
 
 import { useForm } from "react-hook-form";
 import useWeb3Forms from "@web3forms/react";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
@@ -177,7 +176,6 @@ export default function Contact() {
 <meta property="og:image" content="https://www.angservices.com/images/firstImage/contactus.jpg" /> */}
       </Helmet>
       <LogoAppBar color="black" location="contactus" />
-      <CssBaseline />
       <Grid container>
         <Grid item xs={12} sm={3}>
           <Box
@@ -195,6 +193,7 @@ export default function Contact() {
           />
           <Box
             sx={{
+              boxSizing: "border-box",
               position: "absolute",
               top: 0,
               left: 0,

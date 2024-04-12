@@ -4,9 +4,7 @@ import Button from "@mui/material/Button";
 import Divider from "@mui/material/Divider";
 import ColorLogo from "../images/logo/colorLogo.svg";
 
-import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
-import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
 import { Link } from "react-router-dom";
@@ -36,14 +34,14 @@ export default function ThirdWhy() {
         <Typography
           variant="h2"
           sx={{ fontSize: { xs: 24, sm: 26, md: 28, lg: 32 } }}
-          fontWeight="bold"
+          fontWeight="700"
           gutterBottom
         >
           Get In Touch
         </Typography>
         <Typography
           sx={{ fontSize: { xs: 16, sm: 17, md: 18, lg: 20 } }}
-          fontWeight="regular"
+          fontWeight="400"
           color="text.secondary"
           marginBottom="80px"
           textAlign="center"
@@ -83,7 +81,7 @@ export default function ThirdWhy() {
         <img src={ColorLogo} alt="company main logo" />
         <Typography
           sx={{ fontSize: { xs: 16, sm: 17, md: 18, lg: 20 } }}
-          fontWeight="regular"
+          fontWeight="400"
           color="text.secondary"
           textAlign="center"
           width="80%"

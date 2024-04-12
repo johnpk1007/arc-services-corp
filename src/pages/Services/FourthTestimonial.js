@@ -3,7 +3,6 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
-import { CssBaseline } from "@mui/material";
 import Divider from "@mui/material/Divider";
 
 import Typing1 from "../../images/testimony/typing1.jpeg";
@@ -26,7 +25,6 @@ export default function FourthTestimonial() {
         alignItems: "center",
       }}
     >
-      <CssBaseline />
       <Box
         data-aos="fade-up"
         data-aos-once="true"
