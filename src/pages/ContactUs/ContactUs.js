@@ -179,7 +179,7 @@ export default function Contact() {
       <Grid container>
         <Grid item xs={12} sm={3}>
           <Box
-            data-aos-delay="500"
+            data-aos-delay="700"
             data-aos="fade-right"
             data-aos-once="true"
             sx={{
