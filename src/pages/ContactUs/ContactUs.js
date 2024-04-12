@@ -179,16 +179,27 @@ export default function Contact() {
       <Grid container>
         <Grid item xs={12} sm={3}>
           <Box
+            data-aos-delay="500"
+            data-aos="fade-right"
+            data-aos-once="true"
             sx={{
-              height: { xs: "800px", sm: "100%" },
+              height: "100%",
               width: "100%",
-              backgroundImage: {
-                xs: `url(${ContactUsMobile})`,
-                sm: `url(${ContactUs})`,
-              },
+              backgroundImage: `url(${ContactUs})`,
               backgroundSize: "cover",
               backgroundPosition: "75%",
-              filter: { xs: "brightness(80%)", sm: "none" },
+              display: { xs: "none", sm: "block" },
+            }}
+          />
+          <Box
+            sx={{
+              height: "800px",
+              width: "100%",
+              backgroundImage: `url(${ContactUsMobile})`,
+              backgroundSize: "cover",
+              backgroundPosition: "75%",
+              filter: "brightness(80%)",
+              display: { xs: "block", sm: "none" },
             }}
           />
           <Box
@@ -204,7 +215,7 @@ export default function Contact() {
               alignItems: "flex-start",
               justifyContent: "flex-end",
               paddingX: 5,
-              paddingBottom: 10,
+              paddingBottom: 20,
             }}
           >
             <Typography
