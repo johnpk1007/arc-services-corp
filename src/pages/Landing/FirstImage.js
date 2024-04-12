@@ -55,19 +55,6 @@ export default function FirstImage() {
         >
           The <span style={{ color: "#F14C48" }}>service</span> you deserve
         </Typography>
-      </Box>
-
-      <Box
-        data-aos-delay="1000"
-        data-aos="fade-right"
-        data-aos-once="true"
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          ml: { xs: 5, md: 10 },
-          mb: 10,
-        }}
-      >
         <Typography
           variant="h2"
           sx={{ fontSize: { xs: 18, sm: 20, md: 22, lg: 24 } }}
