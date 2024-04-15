@@ -3,11 +3,9 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 import "@fontsource/roboto/300.css";
-import "@fontsource/roboto/400.css";
-import "@fontsource/roboto/500.css";
-import "@fontsource/roboto/700.css";
 
 export default function Error() {
   return (
@@ -21,6 +19,28 @@ export default function Error() {
         alignItems: "center",
       }}
     >
+      <Helmet>
+        <title data-react-helmet="true">
+          Page not found - ANG Services Corp
+        </title>
+        <meta
+          name="description"
+          data-react-helmet="true"
+          content="The page you are looking for might have been removed or had its name changed"
+        />
+        <meta name="keywords" data-react-helmet="true" content="404, error" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Page not found - ANG Services Corp"
+        />
+        <meta
+          property="og:description"
+          content="The page you are looking for might have been removed or had its name changed"
+        />
+        {/* <meta property="og:url" content="https://www.angservices.com" />
+<meta property="og:image" content="https://www.angservices.com/images/firstImage/landing.jpg" /> */}
+      </Helmet>
       <Typography
         sx={{
           marginTop: "150px",
