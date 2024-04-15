@@ -30,7 +30,12 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
 export default function Contact() {
-  const { register, handleSubmit, setValue } = useForm();
+  const {
+    register,
+    handleSubmit,
+    setValue,
+    formState: { isSubmitting },
+  } = useForm();
 
   const [captcha, setCaptcha] = useState(false);
 
@@ -447,7 +452,7 @@ export default function Contact() {
               />
 
               <Button
-                disabled={!buttonDisabled}
+                disabled={isSubmitting ? true : !buttonDisabled}
                 type="submit"
                 variant="contained"
                 sx={{
@@ -460,9 +465,9 @@ export default function Contact() {
                   },
                 }}
                 disableElevation
-                endIcon={<EmailIcon />}
+                endIcon={isSubmitting ? <div /> : <EmailIcon />}
               >
-                Submit
+                {isSubmitting ? <div class="loader"></div> : "SUBMIT"}
               </Button>
             </Box>
           </Box>
