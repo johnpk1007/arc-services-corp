@@ -34,8 +34,8 @@ export default function Landing() {
           property="og:description"
           content="Look no further! We offer an array of handyman and repair services under the meticulous care of our licensed professionals. Call or email to get your free quote today!"
         />
-        {/* <meta property="og:url" content="https://www.angservices.com" />
-<meta property="og:image" content="https://www.angservices.com/images/firstImage/landing.jpg" /> */}
+        <meta property="og:url" content="https://www.angservicescorp.com" />
+        <meta property="og:image" content="https://www.angservicescorp.com/images/firstImage/landing.jpg" />
       </Helmet>
       <LogoAppBar />
       <FirstImage />

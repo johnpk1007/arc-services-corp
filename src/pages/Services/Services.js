@@ -32,8 +32,8 @@ export default function Services() {
           property="og:description"
           content="At ANG Service Corp, it's About More Than Just Services. Explore our Process and Hear from Satisfied Clients"
         />
-        {/* <meta property="og:url" content="https://www.angservices.com/services" />
-<meta property="og:image" content="https://www.angservices.com/images/firstImage/services.jpg" /> */}
+        <meta property="og:url" content="https://www.angservicescorp.com/services" />
+        <meta property="og:image" content="https://www.angservicescorp.com/images/firstImage/services.jpg" />
       </Helmet>
       <LogoAppBar location="services" />
       <FirstImage />
