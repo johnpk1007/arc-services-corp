@@ -178,7 +178,7 @@ export default function Contact() {
           content="Don’t hesitate to reach out to us for your complimentary estimate or any general inquiries."
         />
         <meta property="og:url" content="https://www.angservicescorp.com/contactus" />
-        <meta property="og:image" content="https://www.angservicescorp.com/static/media/contactusMobile.4034ec345ada096125f6.jpeg" />
+        <meta property="og:image:secure_url" content="https://www.angservicescorp.com/static/media/contactusMobile.4034ec345ada096125f6.jpeg" />
       </Helmet>
       <LogoAppBar color="black" location="contactus" />
       <Grid container>
