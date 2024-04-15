@@ -11,9 +11,7 @@ import "aos/dist/aos.css";
 
 function App() {
   useEffect(() => {
-    AOS.init({
-      disable: "phone",
-    });
+    AOS.init();
     AOS.refresh();
   }, []);
   return (

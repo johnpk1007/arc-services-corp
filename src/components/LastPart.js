@@ -23,7 +23,7 @@ export default function ThirdWhy() {
       }}
     >
       <Box
-        data-aos="fade-up"
+        data-aos="custom-fade"
         data-aos-once="true"
         sx={{
           display: "flex",
@@ -52,25 +52,33 @@ export default function ThirdWhy() {
           your home improvement needs.
         </Typography>
       </Box>
-      <Button
-        component={Link}
-        to="/contactus"
-        data-aos="fade-up"
+      <Box
+        data-aos="custom-fade"
         data-aos-once="true"
-        variant="contained"
-        sx={{
-          width: { xs: "90%", sm: "160px" },
-          bgcolor: "#F14C48",
-          fontSize: { xs: 16, sm: 17, md: 18, lg: 20 },
-          marginBottom: "90px",
-          "&:hover": {
-            backgroundColor: "#d84440",
-          },
-        }}
-        disableElevation
+        style={{ width: "100%" }}
+        display="flex"
+        justifyContent="center"
       >
-        Contact us <span style={{ display: "none" }}> so we can help you</span>
-      </Button>
+        <Button
+          component={Link}
+          to="/contactus"
+          variant="contained"
+          sx={{
+            width: { xs: "90%", sm: "160px" },
+            bgcolor: "#F14C48",
+            fontSize: { xs: 16, sm: 17, md: 18, lg: 20 },
+            marginBottom: "90px",
+            "&:hover": {
+              backgroundColor: "#d84440",
+            },
+          }}
+          disableElevation
+        >
+          Contact us{" "}
+          <span style={{ display: "none" }}> so we can help you</span>
+        </Button>
+      </Box>
+
       <Divider sx={{ width: "100%" }} />
       <Box
         height="150px"

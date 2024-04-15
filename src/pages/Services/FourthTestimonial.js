@@ -26,7 +26,7 @@ export default function FourthTestimonial() {
       }}
     >
       <Box
-        data-aos="fade-up"
+        data-aos="custom-fade"
         data-aos-once="true"
         sx={{
           display: "flex",

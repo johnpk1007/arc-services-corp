@@ -27,7 +27,7 @@ export default function SecondServices() {
       }}
     >
       <Box
-        data-aos="fade-up"
+        data-aos="custom-fade"
         data-aos-once="true"
         sx={{
           display: "flex",
@@ -208,7 +208,6 @@ export default function SecondServices() {
           <Box sx={{ height: "100%" }}>
             <Box
               data-aos="grow-animation-column"
-              data-aos-offset="-200"
               data-aos-delay="200"
               data-aos-duration="400"
               data-aos-once="true"
@@ -219,7 +218,6 @@ export default function SecondServices() {
           </Box>
           <Box
             data-aos="zoom-in"
-            data-aos-offset="-200"
             data-aos-delay="0"
             data-aos-duration="400"
             data-aos-once="true"
@@ -281,7 +279,7 @@ export default function SecondServices() {
           <Box sx={{ height: "100%" }}>
             <Box
               data-aos="grow-animation-column"
-              data-aos-offset="-200"
+              data-aos-offset="-100"
               data-aos-delay="600"
               data-aos-duration="400"
               data-aos-once="true"
@@ -292,7 +290,7 @@ export default function SecondServices() {
           </Box>
           <Box
             data-aos="zoom-in"
-            data-aos-offset="-200"
+            data-aos-offset="-100"
             data-aos-delay="400"
             data-aos-duration="400"
             data-aos-once="true"
@@ -427,7 +425,7 @@ export default function SecondServices() {
           <Box sx={{ height: "100%" }}>
             <Box
               data-aos="grow-animation-column"
-              data-aos-offset="-200"
+              data-aos-offset="-300"
               data-aos-delay="1400"
               data-aos-duration="400"
               data-aos-once="true"
@@ -438,7 +436,7 @@ export default function SecondServices() {
           </Box>
           <Box
             data-aos="zoom-in"
-            data-aos-offset="-200"
+            data-aos-offset="-300"
             data-aos-delay="1200"
             data-aos-duration="400"
             data-aos-once="true"
@@ -507,7 +505,7 @@ export default function SecondServices() {
           </Box>
           <Box
             data-aos="zoom-in"
-            data-aos-offset="-200"
+            data-aos-offset="-400"
             data-aos-delay="1600"
             data-aos-duration="400"
             data-aos-once="true"
