@@ -31,7 +31,7 @@ export default function AboutUs() {
           content="At ANG Services Corp, we are more than just a handyman service. We're your trusted partner in creating the home of your dreams."
         />
         <meta property="og:url" content="https://www.angservicescorp.com/aboutus" />
-        <meta property="og:image" content="https://angservicescorp.com/static/media/aboutus.462d494df1fb472a4353.jpg" />
+        <meta property="og:image:secure_url" content="https://angservicescorp.com/static/media/aboutus.462d494df1fb472a4353.jpg" />
       </Helmet>
       <LogoAppBar location="aboutus" />
       <FirstImage />
