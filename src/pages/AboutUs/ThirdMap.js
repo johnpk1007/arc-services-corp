@@ -30,116 +30,125 @@ export default function ThirdMap() {
         backgroundColor: "#f6f6f6",
       }}
     >
-      <Card
-        data-aos="fade-up"
+      <Box
+        data-aos="custom-fade"
         data-aos-once="true"
         sx={{
           display: "flex",
-          flexDirection: { xs: "column-reverse", md: "row" },
-          justifyContent: "space-between",
-          width: { xs: "80%", lg: "60%" },
+          flexDirection: "column",
+          alignItems: "center",
+          width: "100%",
         }}
       >
-        <CardContent
+        <Card
           sx={{
-            boxSizing: "border-box",
             display: "flex",
-            flexDirection: "column",
+            flexDirection: { xs: "column-reverse", md: "row" },
             justifyContent: "space-between",
-            height: { xs: "250px", md: "400px" },
-            paddingY: "30px",
-            paddingLeft: "30px",
+            width: { xs: "80%", lg: "60%" },
           }}
         >
-          <Box>
-            <Typography
-              variant="h2"
-              fontWeight="bold"
-              sx={{ fontSize: { xs: 16, sm: 20, md: 24, lg: 32 } }}
-              gutterBottom
-            >
-              Contact Us
-            </Typography>
-            <Typography
-              sx={{ fontSize: { xs: 14, sm: 16, md: 18, lg: 20 } }}
-              fontWeight="light"
-            >
-              Our home office is located in Brickell
-            </Typography>
-            <Typography
-              sx={{ fontSize: { xs: 14, sm: 16, md: 18, lg: 20 } }}
-              fontWeight="light"
-            >
-              You may contact us day or night
-            </Typography>
-          </Box>
-          <Box>
-            <Typography
-              fontSize={20}
-              fontWeight="medium"
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                fontSize: { xs: 14, sm: 16, md: 18, lg: 20 },
-              }}
-            >
-              <CallIcon
-                sx={{
-                  marginRight: "10px",
-                  fontSize: { xs: 14, sm: 16, md: 18, lg: 20 },
-                }}
-              />
-              (305) 632-1377
-            </Typography>
-            <Typography
-              fontWeight="medium"
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                fontSize: { xs: 14, sm: 16, md: 18, lg: 20 },
-              }}
-            >
-              <EmailIcon
-                fontSize="small"
-                sx={{
-                  marginRight: "10px",
-                  fontSize: { xs: 14, sm: 16, md: 18, lg: 20 },
-                }}
-              />
-              nancygarcia1970@gmail.com
-            </Typography>
-          </Box>
-        </CardContent>
-        <CardMedia
-          sx={{
-            width: { xs: "100%", md: "60%" },
-            height: "400px",
-            position: "relative",
-          }}
-        >
-          <Paper
-            elevation={0}
+          <CardContent
             sx={{
-              position: "absolute",
-              top: 1,
-              left: -1,
-              zIndex: 500,
-              backgroundColor: "transparent",
-              display: { xs: "none", md: "block" },
+              boxSizing: "border-box",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
+              height: { xs: "250px", md: "400px" },
+              paddingY: "30px",
+              paddingLeft: "30px",
             }}
           >
-            <img
-              src={CurvedMap}
-              alt="map drawing"
-              style={{
-                width: "100px",
-                height: "400px",
+            <Box>
+              <Typography
+                variant="h2"
+                fontWeight="bold"
+                sx={{ fontSize: { xs: 16, sm: 20, md: 24, lg: 32 } }}
+                gutterBottom
+              >
+                Contact Us
+              </Typography>
+              <Typography
+                sx={{ fontSize: { xs: 14, sm: 16, md: 18, lg: 20 } }}
+                fontWeight="light"
+              >
+                Our home office is located in Brickell
+              </Typography>
+              <Typography
+                sx={{ fontSize: { xs: 14, sm: 16, md: 18, lg: 20 } }}
+                fontWeight="light"
+              >
+                You may contact us day or night
+              </Typography>
+            </Box>
+            <Box>
+              <Typography
+                fontSize={20}
+                fontWeight="medium"
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  fontSize: { xs: 14, sm: 16, md: 18, lg: 20 },
+                }}
+              >
+                <CallIcon
+                  sx={{
+                    marginRight: "10px",
+                    fontSize: { xs: 14, sm: 16, md: 18, lg: 20 },
+                  }}
+                />
+                (305) 632-1377
+              </Typography>
+              <Typography
+                fontWeight="medium"
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  fontSize: { xs: 14, sm: 16, md: 18, lg: 20 },
+                }}
+              >
+                <EmailIcon
+                  fontSize="small"
+                  sx={{
+                    marginRight: "10px",
+                    fontSize: { xs: 14, sm: 16, md: 18, lg: 20 },
+                  }}
+                />
+                nancygarcia1970@gmail.com
+              </Typography>
+            </Box>
+          </CardContent>
+          <CardMedia
+            sx={{
+              width: { xs: "100%", md: "60%" },
+              height: "400px",
+              position: "relative",
+            }}
+          >
+            <Paper
+              elevation={0}
+              sx={{
+                position: "absolute",
+                top: 1,
+                left: -1,
+                zIndex: 500,
+                backgroundColor: "transparent",
+                display: { xs: "none", md: "block" },
               }}
-            />
-          </Paper>
-          <Map />
-        </CardMedia>
-      </Card>
+            >
+              <img
+                src={CurvedMap}
+                alt="map drawing"
+                style={{
+                  width: "100px",
+                  height: "400px",
+                }}
+              />
+            </Paper>
+            <Map />
+          </CardMedia>
+        </Card>
+      </Box>
     </Box>
   );
 }

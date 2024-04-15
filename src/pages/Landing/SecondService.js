@@ -30,7 +30,7 @@ export default function SecondService() {
         }}
       >
         <Box
-          data-aos="fade-up"
+          data-aos="custom-fade"
           data-aos-once="true"
           sx={{
             display: "flex",
@@ -64,7 +64,7 @@ export default function SecondService() {
           sx={{ width: "90%", marginBottom: "80px" }}
         >
           <Grid
-            data-aos="fade-up"
+            data-aos="custom-fade"
             data-aos-delay="0"
             data-aos-once="true"
             data-a0s-offset="100"
@@ -101,7 +101,7 @@ export default function SecondService() {
             </Typography>
           </Grid>
           <Grid
-            data-aos="fade-up"
+            data-aos="custom-fade"
             data-aos-delay="100"
             data-aos-once="true"
             data-a0s-offset="100"
@@ -138,7 +138,8 @@ export default function SecondService() {
             </Typography>
           </Grid>
           <Grid
-            data-aos="fade-up"
+            data-aos="custom-fade"
+            // data-aos="fade-up"
             data-aos-delay="200"
             data-aos-once="true"
             data-a0s-offset="100"
@@ -175,7 +176,8 @@ export default function SecondService() {
             </Typography>
           </Grid>
           <Grid
-            data-aos="fade-up"
+            data-aos="custom-fade"
+            // data-aos="fade-up"
             data-aos-delay="300"
             data-aos-once="true"
             data-a0s-offset="100"
@@ -212,10 +214,39 @@ export default function SecondService() {
           </Grid>
         </Grid>
 
-        <Button
+        <Box
+          data-aos="custom-fade"
+          data-aos-once="true"
+          style={{ width: "100%" }}
+          display="flex"
+          justifyContent="center"
+        >
+          <Button
+            component={Link}
+            to="/services"
+            data-aos-once="true"
+            variant="contained"
+            sx={{
+              width: { xs: "90%", sm: "auto" },
+              bgcolor: "#F14C48",
+              fontSize: { xs: 16, sm: 17, md: 18, lg: 20 },
+              mb: "80px",
+              "&:hover": {
+                backgroundColor: "#d84440",
+              },
+            }}
+            disableElevation
+            aria-label="learn more about our handyman services"
+          >
+            EXPLORE OUR SERVICES
+          </Button>
+        </Box>
+        {/* <Button
           component={Link}
           to="/services"
-          data-aos="fade-up"
+          // data-aos="fade-right"
+          // data-aos="custom-fade"
+          // data-aos="fade-up"
           data-aos-once="true"
           variant="contained"
           sx={{
@@ -231,7 +262,7 @@ export default function SecondService() {
           aria-label="learn more about our handyman services"
         >
           EXPLORE OUR SERVICES
-        </Button>
+        </Button> */}
       </Box>
     </Container>
   );

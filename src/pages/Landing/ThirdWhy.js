@@ -45,7 +45,7 @@ export default function ThirdWhy() {
       }}
     >
       <Box
-        data-aos="fade-up"
+        data-aos="custom-fade"
         data-aos-once="true"
         sx={{
           display: "flex",
@@ -84,7 +84,7 @@ export default function ThirdWhy() {
           sx={{ width: "90%", marginBottom: "80px" }}
         >
           <Grid
-            data-aos="fade-up"
+            data-aos="custom-fade"
             data-aos-delay="0"
             data-aos-once="true"
             data-a0s-offset="100"
@@ -131,7 +131,7 @@ export default function ThirdWhy() {
             </Card>
           </Grid>
           <Grid
-            data-aos="fade-up"
+            data-aos="custom-fade"
             data-aos-delay="100"
             data-aos-once="true"
             data-a0s-offset="100"
@@ -178,7 +178,7 @@ export default function ThirdWhy() {
             </Card>
           </Grid>
           <Grid
-            data-aos="fade-up"
+            data-aos="custom-fade"
             data-aos-delay="200"
             data-aos-once="true"
             data-a0s-offset="100"
@@ -225,7 +225,7 @@ export default function ThirdWhy() {
             </Card>
           </Grid>
           <Grid
-            data-aos="fade-up"
+            data-aos="custom-fade"
             data-aos-delay="300"
             data-aos-once="true"
             data-a0s-offset="100"
@@ -273,27 +273,33 @@ export default function ThirdWhy() {
           </Grid>
         </Grid>
       </ThemeProvider>
-      <Button
-        component={Link}
-        to="/aboutus"
-        data-aos="fade-up"
+      <Box
+        data-aos="custom-fade"
         data-aos-once="true"
-        variant="outlined"
-        sx={{
-          width: { xs: "90%", sm: "auto" },
-          borderColor: "#F14C48",
-          color: "#F14C48",
-          fontSize: { xs: 16, sm: 17, md: 18, lg: 20 },
-          marginBottom: "80px",
-          "&:hover": {
-            backgroundColor: "rgba(241, 76, 72, 0.04)",
-            borderColor: "#d84440",
-          },
-        }}
-        disableElevation
+        style={{ width: "100%" }}
+        display="flex"
+        justifyContent="center"
       >
-        MEET OUR TEAM
-      </Button>
+        <Button
+          component={Link}
+          to="/aboutus"
+          variant="outlined"
+          sx={{
+            width: { xs: "90%", sm: "auto" },
+            borderColor: "#F14C48",
+            color: "#F14C48",
+            fontSize: { xs: 16, sm: 17, md: 18, lg: 20 },
+            marginBottom: "80px",
+            "&:hover": {
+              backgroundColor: "rgba(241, 76, 72, 0.04)",
+              borderColor: "#d84440",
+            },
+          }}
+          disableElevation
+        >
+          MEET OUR TEAM
+        </Button>
+      </Box>
     </Box>
   );
 }

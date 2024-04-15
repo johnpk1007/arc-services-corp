@@ -33,7 +33,7 @@ export default function SecondServices() {
       }}
     >
       <Box
-        data-aos="fade-up"
+        data-aos="custom-fade"
         data-aos-once="true"
         sx={{
           display: "flex",
@@ -66,7 +66,7 @@ export default function SecondServices() {
         <Grid item xs={10} sm={11} md={7} lg={10} xl={8}>
           <Grid container spacing={3} justifyContent="center">
             <Grid
-              data-aos="fade-up"
+              data-aos="custom-fade"
               data-aos-delay="0"
               data-aos-once="true"
               data-a0s-offset="100"
@@ -116,7 +116,7 @@ export default function SecondServices() {
               </Card>
             </Grid>
             <Grid
-              data-aos="fade-up"
+              data-aos="custom-fade"
               data-aos-delay="100"
               data-aos-once="true"
               data-a0s-offset="100"
@@ -166,7 +166,7 @@ export default function SecondServices() {
               </Card>
             </Grid>
             <Grid
-              data-aos="fade-up"
+              data-aos="custom-fade"
               data-aos-delay="200"
               data-aos-once="true"
               data-a0s-offset="100"
@@ -215,7 +215,7 @@ export default function SecondServices() {
               </Card>
             </Grid>
             <Grid
-              data-aos="fade-up"
+              data-aos="custom-fade"
               data-aos-delay="300"
               data-aos-once="true"
               data-a0s-offset="100"
@@ -264,7 +264,7 @@ export default function SecondServices() {
               </Card>
             </Grid>
             <Grid
-              data-aos="fade-up"
+              data-aos="custom-fade"
               data-aos-delay="400"
               data-aos-once="true"
               data-a0s-offset="100"
@@ -314,7 +314,7 @@ export default function SecondServices() {
               </Card>
             </Grid>
             <Grid
-              data-aos="fade-up"
+              data-aos="custom-fade"
               data-aos-delay="500"
               data-aos-once="true"
               data-a0s-offset="100"
@@ -363,7 +363,7 @@ export default function SecondServices() {
               </Card>
             </Grid>
             <Grid
-              data-aos="fade-up"
+              data-aos="custom-fade"
               data-aos-delay="600"
               data-aos-once="true"
               data-a0s-offset="100"
@@ -412,7 +412,7 @@ export default function SecondServices() {
               </Card>
             </Grid>
             <Grid
-              data-aos="fade-up"
+              data-aos="custom-fade"
               data-aos-delay="700"
               data-aos-once="true"
               data-a0s-offset="100"

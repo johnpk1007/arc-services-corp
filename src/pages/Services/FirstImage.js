@@ -31,7 +31,7 @@ export default function FirstImage() {
       />
       <Box
         data-aos-delay="700"
-        data-aos="fade-up"
+        data-aos="custom-fade"
         data-aos-once="true"
         sx={{
           boxSizing: "border-box",
@@ -42,7 +42,7 @@ export default function FirstImage() {
           width: "100%",
           display: "flex",
           flexDirection: "column",
-          alignItems: { xs: "flex-start", sm: "center" },
+          alignItems: "center",
           justifyContent: { xs: "flex-end", sm: "center" },
           paddingX: 3,
           paddingBottom: { xs: 20, sm: 0 },
@@ -60,18 +60,24 @@ export default function FirstImage() {
         </Typography>
         <Typography
           variant="h2"
-          sx={{ fontSize: { xs: 18, sm: 20, md: 22, lg: 24 } }}
+          sx={{
+            fontSize: { xs: 18, sm: 20, md: 22, lg: 24 },
+          }}
           fontWeight="400"
           color="white"
+          textAlign="center"
         >
           At
           <span style={{ color: "#F14C48" }}> ANG Service Corp, </span>
           it's About More Than Just Services.
         </Typography>
         <Typography
-          sx={{ fontSize: { xs: 18, sm: 20, md: 22, lg: 24 } }}
+          sx={{
+            fontSize: { xs: 18, sm: 20, md: 22, lg: 24 },
+          }}
           fontWeight="400"
           color="white"
+          textAlign="center"
         >
           Explore our Process and Hear from Satisfied Clients
         </Typography>

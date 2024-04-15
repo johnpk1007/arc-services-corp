@@ -22,7 +22,7 @@ export default function SecondDescription() {
       <Grid container justifyContent="center" sx={{ width: "100%" }}>
         <Grid item xs={10}>
           <Grid container spacing={2}>
-            <Grid item xs={12} data-aos="fade-up" data-aos-once="true">
+            <Grid item xs={12} data-aos="custom-fade" data-aos-once="true">
               <Typography
                 variant="h2"
                 fontWeight="bold"
@@ -31,7 +31,13 @@ export default function SecondDescription() {
                 More About Our Company
               </Typography>
             </Grid>
-            <Grid item xs={12} md={8} data-aos="fade-up" data-aos-once="true">
+            <Grid
+              item
+              xs={12}
+              md={8}
+              data-aos="custom-fade"
+              data-aos-once="true"
+            >
               <Typography
                 sx={{ fontSize: { xs: 16, sm: 17, md: 18, lg: 20 } }}
                 color="text.secondary"
@@ -95,7 +101,7 @@ export default function SecondDescription() {
               />
             </Grid>
 
-            <Grid item xs={12} data-aos="fade-up" data-aos-once="true">
+            <Grid item xs={12} data-aos="custom-fade" data-aos-once="true">
               <Typography
                 sx={{ fontSize: { xs: 16, sm: 17, md: 18, lg: 20 } }}
                 color="text.secondary"
@@ -107,7 +113,7 @@ export default function SecondDescription() {
                 our own, ensuring your satisfaction every step of the way.
               </Typography>
             </Grid>
-            <Grid item xs={12} data-aos="fade-up" data-aos-once="true">
+            <Grid item xs={12} data-aos="custom-fade" data-aos-once="true">
               <Typography
                 sx={{ fontSize: { xs: 16, sm: 17, md: 18, lg: 20 } }}
                 color="text.secondary"
@@ -120,7 +126,7 @@ export default function SecondDescription() {
                 precision and care.
               </Typography>
             </Grid>
-            <Grid item xs={12} data-aos="fade-up" data-aos-once="true">
+            <Grid item xs={12} data-aos="custom-fade" data-aos-once="true">
               <Typography
                 sx={{ fontSize: { xs: 16, sm: 17, md: 18, lg: 20 } }}
                 color="text.secondary"
