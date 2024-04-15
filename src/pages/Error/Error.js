@@ -38,8 +38,6 @@ export default function Error() {
           property="og:description"
           content="The page you are looking for might have been removed or had its name changed"
         />
-        {/* <meta property="og:url" content="https://www.angservices.com" />
-<meta property="og:image" content="https://www.angservices.com/images/firstImage/landing.jpg" /> */}
       </Helmet>
       <Typography
         sx={{

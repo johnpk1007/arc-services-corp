@@ -16,11 +16,10 @@ export default function Map() {
       center={[25.76223780295944, -80.19810798220898]}
       zoom={11}
       scrollWheelZoom={false}
+      maxZoom={13}
     >
       <TileLayer
-        // attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles style by <a href="https://www.hotosm.org/" target="_blank">Humanitarian OpenStreetMap Team</a> hosted by <a href="https://openstreetmap.fr/" target="_blank">OpenStreetMap France</a>'
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-        // url="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       <Marker
