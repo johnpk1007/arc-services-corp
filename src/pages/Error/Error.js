@@ -23,21 +23,6 @@ export default function Error() {
         <title data-react-helmet="true">
           Page not found - ANG Services Corp
         </title>
-        <meta
-          name="description"
-          data-react-helmet="true"
-          content="The page you are looking for might have been removed or had its name changed"
-        />
-        <meta name="keywords" data-react-helmet="true" content="404, error" />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:title"
-          content="Page not found - ANG Services Corp"
-        />
-        <meta
-          property="og:description"
-          content="The page you are looking for might have been removed or had its name changed"
-        />
       </Helmet>
       <Typography
         sx={{

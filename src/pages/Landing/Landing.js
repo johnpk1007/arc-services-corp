@@ -15,27 +15,6 @@ export default function Landing() {
           General Repairs, Handyman & Cleaning Services in Miami and South
           Florida
         </title>
-        <meta
-          name="description"
-          data-react-helmet="true"
-          content="Look no further! We offer an array of handyman and repair services under the meticulous care of our licensed professionals. Call or email to get your free quote today!"
-        />
-        <meta
-          name="keywords"
-          data-react-helmet="true"
-          content="handyman,installation,remodeling,repair,cleaning,miami,florida"
-        />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:title"
-          content="  General Repairs, Handyman & Cleaning Services in Miami and South Florida"
-        />
-        <meta
-          property="og:description"
-          content="Look no further! We offer an array of handyman and repair services under the meticulous care of our licensed professionals. Call or email to get your free quote today!"
-        />
-        <meta property="og:url" content="https://www.angservicescorp.com" />
-        <meta property="og:image" content="https://angservicescorp.com/static/media/landing.a10133056275f79dd81a.jpg" />
       </Helmet>
       <LogoAppBar />
       <FirstImage />
