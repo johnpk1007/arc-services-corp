@@ -165,20 +165,6 @@ export default function Contact() {
     >
       <Helmet>
         <title data-react-helmet="true">Contact us - ARC Services Corp</title>
-        <meta
-          name="description"
-          data-react-helmet="true"
-          content="Don’t hesitate to reach out to us for your complimentary estimate or any general inquiries."
-        />
-        <meta name="keywords" data-react-helmet="true" content="phone, email" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Contact us - ARC Services Corp" />
-        <meta
-          property="og:description"
-          content="Don’t hesitate to reach out to us for your complimentary estimate or any general inquiries."
-        />
-        <meta property="og:url" content="https://www.angservicescorp.com/contactus" />
-        <meta property="og:image:secure_url" content="https://www.angservicescorp.com/static/media/contactusMobile.4034ec345ada096125f6.jpeg" />
       </Helmet>
       <LogoAppBar color="black" location="contactus" />
       <Grid container>
