@@ -4,22 +4,120 @@ import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-
-import Drywall from "../../images/realImage/drywall.jpeg";
-import Floor from "../../images/realImage/floor.jpeg";
-import Janitorial from "../../images/realImage/janitorial.jpeg";
-import Painting from "../../images/realImage/painting.jpeg";
-import Wallpaper from "../../images/realImage/wallpaper.jpeg";
-import GeneralRepair from "../../images/realImage/general.jpeg";
-import Plumbing from "../../images/realImage/plumbing.jpeg";
-import Pressure from "../../images/realImage/pressure.jpeg";
+import Modal from "@mui/material/Modal";
+import { useState } from "react";
+import { CardActionArea } from "@mui/material";
 
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+import Slider from "react-slick";
+import {
+  drywall1,
+  drywall2,
+  drywall3,
+  drywall4,
+  floor1,
+  floor2,
+  floor3,
+  floor4,
+  wallpaper1,
+  wallpaper2,
+  wallpaper3,
+  wallpaper4,
+  painting1,
+  painting2,
+  painting3,
+  painting4,
+  repair1,
+  repair2,
+  repair3,
+  repair4,
+  pressure1,
+  pressure2,
+  pressure3,
+  pressure4,
+  janitorial1,
+  janitorial2,
+  janitorial3,
+  janitorial4,
+  plumbing1,
+  plumbing2,
+  plumbing3,
+  plumbing4,
+} from "../../images/realImage";
+
+const style = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: "500px",
+  maxWidth: "80%",
+};
+
+const settings = {
+  dots: true,
+  lazyLoad: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+};
+
+const wallpaperList = [wallpaper1, wallpaper2, wallpaper3, wallpaper4];
+const drywallList = [drywall1, drywall2, drywall3, drywall4];
+const paintingList = [painting1, painting2, painting3, painting4];
+const floorList = [floor1, floor2, floor3, floor4];
+const repairList = [repair1, repair2, repair3, repair4];
+const pressureList = [pressure1, pressure2, pressure3, pressure4];
+const janitorialList = [janitorial1, janitorial2, janitorial3, janitorial4];
+const plumbingList = [plumbing1, plumbing2, plumbing3, plumbing4];
+
 export default function SecondServices() {
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+  const [imageList, setImageList] = useState([]);
+
+  const handleFloorImageClick = () => {
+    setImageList(floorList);
+    handleOpen();
+  };
+  const handleWallpaperImageClick = () => {
+    setImageList(wallpaperList);
+    handleOpen();
+  };
+  const handleDrywallImageClick = () => {
+    setImageList(drywallList);
+    handleOpen();
+  };
+  const handlePaintingImageClick = () => {
+    setImageList(paintingList);
+    handleOpen();
+  };
+  const handleRepairImageClick = () => {
+    setImageList(repairList);
+    handleOpen();
+  };
+  const handlePressureImageClick = () => {
+    setImageList(pressureList);
+    handleOpen();
+  };
+  const handleJanitorialImageClick = () => {
+    setImageList(janitorialList);
+    handleOpen();
+  };
+  const handlePlumbingImageClick = () => {
+    setImageList(plumbingList);
+    handleOpen();
+  };
+
   return (
     <Box
       sx={{
@@ -77,42 +175,44 @@ export default function SecondServices() {
               lg={3}
             >
               <Card>
-                <CardMedia
-                  sx={{ height: 200 }}
-                  image={Floor}
-                  title="floor installation"
-                  component="img"
-                  loading="lazy"
-                />
-                <CardContent
-                  sx={{
-                    height: 150,
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
-                  <Typography
-                    fontSize={16}
-                    component="div"
-                    textAlign="center"
-                    fontWeight="medium"
-                    sx={{ mb: 2 }}
+                <CardActionArea onClick={handleFloorImageClick}>
+                  <CardMedia
+                    sx={{ height: 200 }}
+                    image={floor1}
+                    title="floor installation"
+                    component="img"
+                    loading="lazy"
+                  />
+                  <CardContent
+                    sx={{
+                      height: 150,
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
                   >
-                    FLOOR INSTALLATION
-                  </Typography>
-                  <Typography
-                    fontSize={14}
-                    color="text.secondary"
-                    fontWeight="regular"
-                    textAlign="center"
-                    lineHeight="19px"
-                  >
-                    Installation services for wood, vinyl tile, tile, and gym
-                    floors.
-                  </Typography>
-                </CardContent>
+                    <Typography
+                      fontSize={16}
+                      component="div"
+                      textAlign="center"
+                      fontWeight="medium"
+                      sx={{ mb: 2 }}
+                    >
+                      FLOOR INSTALLATION
+                    </Typography>
+                    <Typography
+                      fontSize={14}
+                      color="text.secondary"
+                      fontWeight="regular"
+                      textAlign="center"
+                      lineHeight="19px"
+                    >
+                      Installation services for wood, vinyl tile, tile, and gym
+                      floors.
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
               </Card>
             </Grid>
             <Grid
@@ -127,42 +227,44 @@ export default function SecondServices() {
               lg={3}
             >
               <Card>
-                <CardMedia
-                  sx={{ height: 200 }}
-                  image={Wallpaper}
-                  title="wallpaper installation"
-                  component="img"
-                  loading="lazy"
-                />
-                <CardContent
-                  sx={{
-                    height: 150,
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
-                  <Typography
-                    fontSize={16}
-                    component="div"
-                    textAlign="center"
-                    fontWeight="medium"
-                    sx={{ mb: 2 }}
+                <CardActionArea onClick={handleWallpaperImageClick}>
+                  <CardMedia
+                    sx={{ height: 200 }}
+                    image={wallpaper2}
+                    title="wallpaper installation"
+                    component="img"
+                    loading="lazy"
+                  />
+                  <CardContent
+                    sx={{
+                      height: 150,
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
                   >
-                    WALLPAPER INSTALLATION
-                  </Typography>
-                  <Typography
-                    fontSize={14}
-                    color="text.secondary"
-                    fontWeight="regular"
-                    textAlign="center"
-                    lineHeight="19px"
-                  >
-                    Removal of old wallpaper, patching, and installation of new
-                    wallpaper.
-                  </Typography>
-                </CardContent>
+                    <Typography
+                      fontSize={16}
+                      component="div"
+                      textAlign="center"
+                      fontWeight="medium"
+                      sx={{ mb: 2 }}
+                    >
+                      WALLPAPER INSTALLATION
+                    </Typography>
+                    <Typography
+                      fontSize={14}
+                      color="text.secondary"
+                      fontWeight="regular"
+                      textAlign="center"
+                      lineHeight="19px"
+                    >
+                      Removal of old wallpaper, patching, and installation of
+                      new wallpaper.
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
               </Card>
             </Grid>
             <Grid
@@ -177,41 +279,43 @@ export default function SecondServices() {
               lg={3}
             >
               <Card>
-                <CardMedia
-                  sx={{ height: 200 }}
-                  image={Painting}
-                  title="painting service"
-                  component="img"
-                  loading="lazy"
-                />
-                <CardContent
-                  sx={{
-                    height: 150,
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
-                  <Typography
-                    fontSize={16}
-                    component="div"
-                    textAlign="center"
-                    fontWeight="medium"
-                    sx={{ mb: 2 }}
+                <CardActionArea onClick={handlePaintingImageClick}>
+                  <CardMedia
+                    sx={{ height: 200 }}
+                    image={painting2}
+                    title="painting service"
+                    component="img"
+                    loading="lazy"
+                  />
+                  <CardContent
+                    sx={{
+                      height: 150,
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
                   >
-                    PAINTING SERVICES
-                  </Typography>
-                  <Typography
-                    fontSize={14}
-                    color="text.secondary"
-                    fontWeight="regular"
-                    textAlign="center"
-                    lineHeight="19px"
-                  >
-                    Patching, Sanding, and applying fresh coats of paint.
-                  </Typography>
-                </CardContent>
+                    <Typography
+                      fontSize={16}
+                      component="div"
+                      textAlign="center"
+                      fontWeight="medium"
+                      sx={{ mb: 2 }}
+                    >
+                      PAINTING SERVICES
+                    </Typography>
+                    <Typography
+                      fontSize={14}
+                      color="text.secondary"
+                      fontWeight="regular"
+                      textAlign="center"
+                      lineHeight="19px"
+                    >
+                      Patching, Sanding, and applying fresh coats of paint.
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
               </Card>
             </Grid>
             <Grid
@@ -226,41 +330,43 @@ export default function SecondServices() {
               lg={3}
             >
               <Card>
-                <CardMedia
-                  sx={{ height: 200 }}
-                  image={Drywall}
-                  title="drywall repair"
-                  component="img"
-                  loading="lazy"
-                />
-                <CardContent
-                  sx={{
-                    height: 150,
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
-                  <Typography
-                    fontSize={16}
-                    component="div"
-                    textAlign="center"
-                    fontWeight="medium"
-                    sx={{ mb: 2 }}
+                <CardActionArea onClick={handleDrywallImageClick}>
+                  <CardMedia
+                    sx={{ height: 200 }}
+                    image={drywall1}
+                    title="drywall repair"
+                    component="img"
+                    loading="lazy"
+                  />
+                  <CardContent
+                    sx={{
+                      height: 150,
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
                   >
-                    DRYWAL REPAIR
-                  </Typography>
-                  <Typography
-                    fontSize={14}
-                    color="text.secondary"
-                    fontWeight="regular"
-                    textAlign="center"
-                    lineHeight="19px"
-                  >
-                    Partial repair or total drywall replacement.
-                  </Typography>
-                </CardContent>
+                    <Typography
+                      fontSize={16}
+                      component="div"
+                      textAlign="center"
+                      fontWeight="medium"
+                      sx={{ mb: 2 }}
+                    >
+                      DRYWAL REPAIR
+                    </Typography>
+                    <Typography
+                      fontSize={14}
+                      color="text.secondary"
+                      fontWeight="regular"
+                      textAlign="center"
+                      lineHeight="19px"
+                    >
+                      Partial repair or total drywall replacement.
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
               </Card>
             </Grid>
             <Grid
@@ -275,42 +381,44 @@ export default function SecondServices() {
               lg={3}
             >
               <Card>
-                <CardMedia
-                  sx={{ height: 200 }}
-                  image={GeneralRepair}
-                  title="general repair"
-                  component="img"
-                  loading="lazy"
-                />
-                <CardContent
-                  sx={{
-                    height: 150,
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
-                  <Typography
-                    fontSize={16}
-                    component="div"
-                    textAlign="center"
-                    fontWeight="medium"
-                    sx={{ mb: 2 }}
+                <CardActionArea onClick={handleRepairImageClick}>
+                  <CardMedia
+                    sx={{ height: 200 }}
+                    image={repair2}
+                    title="general repair"
+                    component="img"
+                    loading="lazy"
+                  />
+                  <CardContent
+                    sx={{
+                      height: 150,
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
                   >
-                    GENERAL REPAIR
-                  </Typography>
-                  <Typography
-                    fontSize={14}
-                    color="text.secondary"
-                    fontWeight="regular"
-                    textAlign="center"
-                    lineHeight="19px"
-                  >
-                    General handyman services and janitorial & maintenance
-                    services for condos under contract.
-                  </Typography>
-                </CardContent>
+                    <Typography
+                      fontSize={16}
+                      component="div"
+                      textAlign="center"
+                      fontWeight="medium"
+                      sx={{ mb: 2 }}
+                    >
+                      GENERAL REPAIR
+                    </Typography>
+                    <Typography
+                      fontSize={14}
+                      color="text.secondary"
+                      fontWeight="regular"
+                      textAlign="center"
+                      lineHeight="19px"
+                    >
+                      General handyman services and janitorial & maintenance
+                      services for condos under contract.
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
               </Card>
             </Grid>
             <Grid
@@ -325,41 +433,43 @@ export default function SecondServices() {
               lg={3}
             >
               <Card>
-                <CardMedia
-                  sx={{ height: 200 }}
-                  image={Pressure}
-                  title="pressure cleaning"
-                  component="img"
-                  loading="lazy"
-                />
-                <CardContent
-                  sx={{
-                    height: 150,
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
-                  <Typography
-                    fontSize={16}
-                    component="div"
-                    textAlign="center"
-                    fontWeight="medium"
-                    sx={{ mb: 2 }}
+                <CardActionArea onClick={handlePressureImageClick}>
+                  <CardMedia
+                    sx={{ height: 200 }}
+                    image={pressure2}
+                    title="pressure cleaning"
+                    component="img"
+                    loading="lazy"
+                  />
+                  <CardContent
+                    sx={{
+                      height: 150,
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
                   >
-                    PRESSURE CLEANING
-                  </Typography>
-                  <Typography
-                    fontSize={14}
-                    color="text.secondary"
-                    fontWeight="regular"
-                    textAlign="center"
-                    lineHeight="19px"
-                  >
-                    Commercial and residential pressure cleaning services.
-                  </Typography>
-                </CardContent>
+                    <Typography
+                      fontSize={16}
+                      component="div"
+                      textAlign="center"
+                      fontWeight="medium"
+                      sx={{ mb: 2 }}
+                    >
+                      PRESSURE CLEANING
+                    </Typography>
+                    <Typography
+                      fontSize={14}
+                      color="text.secondary"
+                      fontWeight="regular"
+                      textAlign="center"
+                      lineHeight="19px"
+                    >
+                      Commercial and residential pressure cleaning services.
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
               </Card>
             </Grid>
             <Grid
@@ -374,41 +484,43 @@ export default function SecondServices() {
               lg={3}
             >
               <Card>
-                <CardMedia
-                  sx={{ height: 200 }}
-                  image={Janitorial}
-                  title="janitorial services"
-                  component="img"
-                  loading="lazy"
-                />
-                <CardContent
-                  sx={{
-                    height: 150,
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
-                  <Typography
-                    fontSize={16}
-                    component="div"
-                    textAlign="center"
-                    fontWeight="medium"
-                    sx={{ mb: 2 }}
+                <CardActionArea onClick={handleJanitorialImageClick}>
+                  <CardMedia
+                    sx={{ height: 200 }}
+                    image={janitorial1}
+                    title="janitorial services"
+                    component="img"
+                    loading="lazy"
+                  />
+                  <CardContent
+                    sx={{
+                      height: 150,
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
                   >
-                    JANITORIAL SERVICES
-                  </Typography>
-                  <Typography
-                    fontSize={14}
-                    color="text.secondary"
-                    fontWeight="regular"
-                    textAlign="center"
-                    lineHeight="19px"
-                  >
-                    Commercial and residential janitorial services.
-                  </Typography>
-                </CardContent>
+                    <Typography
+                      fontSize={16}
+                      component="div"
+                      textAlign="center"
+                      fontWeight="medium"
+                      sx={{ mb: 2 }}
+                    >
+                      JANITORIAL SERVICES
+                    </Typography>
+                    <Typography
+                      fontSize={14}
+                      color="text.secondary"
+                      fontWeight="regular"
+                      textAlign="center"
+                      lineHeight="19px"
+                    >
+                      Commercial and residential janitorial services.
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
               </Card>
             </Grid>
             <Grid
@@ -423,46 +535,62 @@ export default function SecondServices() {
               lg={3}
             >
               <Card>
-                <CardMedia
-                  sx={{ height: 200, backgroundColor: "gray" }}
-                  image={Plumbing}
-                  title="plumbing"
-                  component="img"
-                  loading="lazy"
-                />
-                <CardContent
-                  sx={{
-                    height: 150,
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
-                  <Typography
-                    fontSize={16}
-                    component="div"
-                    textAlign="center"
-                    fontWeight="medium"
-                    sx={{ mb: 2 }}
+                <CardActionArea onClick={handlePlumbingImageClick}>
+                  <CardMedia
+                    sx={{ height: 200, backgroundColor: "gray" }}
+                    image={plumbing2}
+                    title="plumbing"
+                    component="img"
+                    loading="lazy"
+                  />
+                  <CardContent
+                    sx={{
+                      height: 150,
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
                   >
-                    PLUMBING
-                  </Typography>
-                  <Typography
-                    fontSize={14}
-                    color="text.secondary"
-                    fontWeight="regular"
-                    textAlign="center"
-                    lineHeight="19px"
-                  >
-                    All plumbing installation and repairs
-                  </Typography>
-                </CardContent>
+                    <Typography
+                      fontSize={16}
+                      component="div"
+                      textAlign="center"
+                      fontWeight="medium"
+                      sx={{ mb: 2 }}
+                    >
+                      PLUMBING
+                    </Typography>
+                    <Typography
+                      fontSize={14}
+                      color="text.secondary"
+                      fontWeight="regular"
+                      textAlign="center"
+                      lineHeight="19px"
+                    >
+                      All plumbing installation and repairs
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
               </Card>
             </Grid>
           </Grid>
         </Grid>
       </Grid>
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style}>
+          <Slider {...settings}>
+            {imageList.map((imageName, index) => (
+              <img key={index} src={imageName} alt={imageName} />
+            ))}
+          </Slider>
+        </Box>
+      </Modal>
     </Box>
   );
 }
