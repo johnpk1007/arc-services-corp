@@ -63,7 +63,7 @@ const style = {
 
 const settings = {
   dots: true,
-  lazyLoad: "progressive",
+  // lazyLoad: "progressive",
   infinite: true,
   speed: 500,
   slidesToShow: 1,
@@ -81,8 +81,14 @@ const plumbingList = [plumbing1, plumbing2, plumbing3, plumbing4];
 
 export default function SecondServices() {
   const [open, setOpen] = useState(false);
+  const [loading, setLoading] = useState(true);
+
   const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  const handleClose = () => {
+    setOpen(false);
+    setImageList([]);
+    setLoading(true);
+  };
   const [imageList, setImageList] = useState([]);
 
   const handleFloorImageClick = () => {
@@ -117,6 +123,12 @@ export default function SecondServices() {
     setImageList(plumbingList);
     handleOpen();
   };
+
+  const handleImageLoaded = () => {
+    console.log("loading done");
+    setLoading(false);
+  };
+  console.log("loading:", loading);
 
   return (
     <Box
@@ -230,7 +242,7 @@ export default function SecondServices() {
                 <CardActionArea onClick={handleWallpaperImageClick}>
                   <CardMedia
                     sx={{ height: 200 }}
-                    image={wallpaper2}
+                    image={wallpaper1}
                     title="wallpaper installation"
                     component="img"
                     loading="lazy"
@@ -282,7 +294,7 @@ export default function SecondServices() {
                 <CardActionArea onClick={handlePaintingImageClick}>
                   <CardMedia
                     sx={{ height: 200 }}
-                    image={painting2}
+                    image={painting1}
                     title="painting service"
                     component="img"
                     loading="lazy"
@@ -384,7 +396,7 @@ export default function SecondServices() {
                 <CardActionArea onClick={handleRepairImageClick}>
                   <CardMedia
                     sx={{ height: 200 }}
-                    image={repair2}
+                    image={repair1}
                     title="general repair"
                     component="img"
                     loading="lazy"
@@ -436,7 +448,7 @@ export default function SecondServices() {
                 <CardActionArea onClick={handlePressureImageClick}>
                   <CardMedia
                     sx={{ height: 200 }}
-                    image={pressure2}
+                    image={pressure1}
                     title="pressure cleaning"
                     component="img"
                     loading="lazy"
@@ -538,7 +550,7 @@ export default function SecondServices() {
                 <CardActionArea onClick={handlePlumbingImageClick}>
                   <CardMedia
                     sx={{ height: 200, backgroundColor: "gray" }}
-                    image={plumbing2}
+                    image={plumbing1}
                     title="plumbing"
                     component="img"
                     loading="lazy"
@@ -586,7 +598,12 @@ export default function SecondServices() {
         <Box sx={style}>
           <Slider {...settings}>
             {imageList.map((imageName, index) => (
-              <img key={index} src={imageName} alt={imageName} />
+              <img
+                key={index}
+                src={imageName}
+                alt={imageName}
+                onLoad={handleImageLoaded}
+              />
             ))}
           </Slider>
         </Box>
