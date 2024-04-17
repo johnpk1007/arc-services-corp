@@ -118,7 +118,6 @@ export default function SecondServices() {
         >
           <Box sx={{ height: "100%" }}>
             <Box
-              data-aos-anchor="#parent"
               data-aos="grow-animation-column"
               data-aos-delay="200"
               data-aos-duration="400"
@@ -191,7 +190,6 @@ export default function SecondServices() {
         >
           <Box sx={{ height: "100%" }}>
             <Box
-              data-aos-anchor="#parent"
               data-aos="grow-animation-column"
               data-aos-delay="600"
               data-aos-duration="400"
@@ -264,7 +262,6 @@ export default function SecondServices() {
         >
           <Box sx={{ height: "100%" }}>
             <Box
-              data-aos-anchor="#parent"
               data-aos="grow-animation-column"
               data-aos-delay="1000"
               data-aos-duration="400"
@@ -337,7 +334,6 @@ export default function SecondServices() {
         >
           <Box sx={{ height: "100%" }}>
             <Box
-              data-aos-anchor="#parent"
               data-aos="grow-animation-column"
               data-aos-delay="1400"
               data-aos-duration="400"
