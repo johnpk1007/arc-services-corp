@@ -63,6 +63,7 @@ const style = {
 
 const settings = {
   dots: true,
+  lazyLoad: "progressive",
   infinite: true,
   speed: 500,
   slidesToShow: 1,
