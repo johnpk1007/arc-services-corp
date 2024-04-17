@@ -63,7 +63,6 @@ const style = {
 
 const settings = {
   dots: true,
-  // lazyLoad: "progressive",
   infinite: true,
   speed: 500,
   slidesToShow: 1,
@@ -81,13 +80,10 @@ const plumbingList = [plumbing1, plumbing2, plumbing3, plumbing4];
 
 export default function SecondServices() {
   const [open, setOpen] = useState(false);
-  const [loading, setLoading] = useState(true);
-
   const handleOpen = () => setOpen(true);
   const handleClose = () => {
     setOpen(false);
     setImageList([]);
-    setLoading(true);
   };
   const [imageList, setImageList] = useState([]);
 
@@ -123,12 +119,6 @@ export default function SecondServices() {
     setImageList(plumbingList);
     handleOpen();
   };
-
-  const handleImageLoaded = () => {
-    console.log("loading done");
-    setLoading(false);
-  };
-  console.log("loading:", loading);
 
   return (
     <Box
@@ -598,12 +588,7 @@ export default function SecondServices() {
         <Box sx={style}>
           <Slider {...settings}>
             {imageList.map((imageName, index) => (
-              <img
-                key={index}
-                src={imageName}
-                alt={imageName}
-                onLoad={handleImageLoaded}
-              />
+              <img key={index} src={imageName} alt={imageName} />
             ))}
           </Slider>
         </Box>
