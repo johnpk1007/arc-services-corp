@@ -6,6 +6,7 @@ import FourthArea from "./FourthArea";
 import LastPart from "../../components/LastPart";
 import LogoAppBar from "../../components/LogoAppBar";
 import { Helmet } from "react-helmet-async";
+import Ogimage from "../../images/firstImage/ogimage.jpeg";
 
 export default function Landing() {
   return (
