@@ -8,12 +8,7 @@ import "@fontsource/roboto/700.css";
 
 export default function FirstImage() {
   return (
-    <Box
-      sx={{
-        height: 800,
-        width: "100%",
-      }}
-    >
+    <Box>
       <Box
         sx={{
           height: 800,
