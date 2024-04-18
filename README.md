@@ -1,11 +1,5 @@
 ## ANG Services Corp Static Website
 
-## 목차
-- [프로젝트 소개](##-프로젝트-소개)
-- [프로젝트 기간](##-프로젝트-기간)
-- [기술 스택](##-기술-스택)
-- [페이지 소개](##-페이지-소개)
-
 ## 프로젝트 소개
 <div>
   <img width="600" alt="image" src="./public/ogimage.jpeg">
