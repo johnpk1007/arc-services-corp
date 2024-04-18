@@ -5,7 +5,7 @@
   <img width="600" alt="image" src="./public/ogimage.jpeg">
 </div>
 
-#### ANG Services Corp는 미국 플로리다 주의 마이애미에 위치한 실제 인테리어 업체입니다.
+#### ANG Services Corp는 미국 플로리다 주의 마이애미에 위치한 인테리어 업체로서 의뢰를 받아 정적 웹사이트를 개발하였습니다.
 #### [ANG Services Corp 바로가기](https://angservicescorp.com/)
 
 ## 프로젝트 기간
