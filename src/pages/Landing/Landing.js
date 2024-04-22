@@ -15,6 +15,10 @@ export default function Landing() {
           General Repairs, Handyman & Cleaning Services in Miami and South
           Florida
         </title>
+        <meta
+          name="description"
+          content="We offer an array of handyman and repair services under the meticulous care of our licensed professionals. Call or email to get your free quote today!"
+        />
       </Helmet>
       <LogoAppBar />
       <FirstImage />

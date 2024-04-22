@@ -14,6 +14,10 @@ export default function AboutUs() {
     <Box>
       <Helmet>
         <title data-react-helmet="true">About us - ARC Services Corp</title>
+        <meta
+          name="description"
+          content="At ANG Services Corp, we are more than just a handyman service. We're your trusted partner in creating the home of your dreams."
+        />
       </Helmet>
       <LogoAppBar location="aboutus" />
       <FirstImage />
