@@ -14,7 +14,11 @@ export default function Services() {
   return (
     <Box>
       <Helmet>
-        <title data-react-helmet="true">Services - ANG Services Corp</title>
+        <title>Services - ANG Services Corp</title>
+        <meta
+          name="description"
+          content="At ANG Service Corp, it's About More Than Just Services. Explore our Process and Hear from Satisfied Clients"
+        />
       </Helmet>
       <LogoAppBar location="services" />
       <FirstImage />
