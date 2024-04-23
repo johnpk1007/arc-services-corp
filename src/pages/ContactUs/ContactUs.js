@@ -164,7 +164,7 @@ export default function Contact() {
       }}
     >
       <Helmet>
-        <title data-react-helmet="true">Contact us - ARC Services Corp</title>
+        <title>Contact us - ARC Services Corp</title>
         <meta
           name="description"
           content="Don’t hesitate to reach out to us for your complimentary estimate or any general inquiries."

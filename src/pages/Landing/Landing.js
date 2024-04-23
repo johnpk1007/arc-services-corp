@@ -11,7 +11,7 @@ export default function Landing() {
   return (
     <Box>
       <Helmet>
-        <title data-react-helmet="true">
+        <title>
           General Repairs, Handyman & Cleaning Services in Miami and South
           Florida
         </title>
