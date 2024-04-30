@@ -11,10 +11,7 @@ export default function Landing() {
   return (
     <Box>
       <Helmet>
-        <title>
-          General Repairs, Handyman & Cleaning Services in Miami and South
-          Florida
-        </title>
+        <title>Handyman Services in Miami, FL</title>
         <meta
           name="description"
           content="We offer an array of handyman and repair services under the meticulous care of our licensed professionals. Call or email to get your free quote today!"
