@@ -14,7 +14,7 @@ export default function Landing() {
         <title>Handyman Services in Miami, FL</title>
         <meta
           name="description"
-          content="We offer an array of handyman and repair services under the meticulous care of our licensed professionals. Call or email to get your free quote today!"
+          content="We offer an array of handyman and repair services in Miami, FL under the meticulous care of our licensed professionals. Call or email to get your free quote today!"
         />
       </Helmet>
       <LogoAppBar />
