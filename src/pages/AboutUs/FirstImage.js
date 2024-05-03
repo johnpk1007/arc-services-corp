@@ -41,7 +41,7 @@ export default function FirstImage() {
         }}
       >
         <Typography
-          variant="h1"
+          variant="h2"
           sx={{
             marginRight: { xs: 5, sm: 10 },
             fontSize: { xs: 32, sm: 40, md: 48, lg: 64 },
@@ -57,7 +57,7 @@ export default function FirstImage() {
         </Typography>
 
         <Typography
-          variant="h2"
+          variant="h1"
           sx={{
             marginRight: { xs: 5, sm: 10 },
             fontSize: { xs: 18, sm: 20, md: 22, lg: 24 },

@@ -49,7 +49,7 @@ export default function FirstImage() {
         }}
       >
         <Typography
-          variant="h1"
+          variant="h2"
           sx={{ fontSize: { xs: 32, sm: 40, md: 48, lg: 64 } }}
           fontWeight="700"
           color="white"
@@ -72,6 +72,7 @@ export default function FirstImage() {
           it's About More Than Just Services.
         </Typography>
         <Typography
+          variant="h1"
           sx={{
             fontSize: { xs: 18, sm: 20, md: 22, lg: 24 },
           }}
