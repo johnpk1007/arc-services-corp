@@ -164,7 +164,7 @@ export default function Contact() {
       }}
     >
       <Helmet>
-        <title>Contact us - ARC Services Corp</title>
+        <title>Contact Us | Handyman & Repair Services in Miami, FL</title>
         <meta
           name="description"
           content="Don’t hesitate to reach out to us for your complimentary estimate or any general inquiries."

@@ -13,7 +13,7 @@ export default function AboutUs() {
   return (
     <Box>
       <Helmet>
-        <title>About us - ARC Services Corp</title>
+        <title>About Us | Handyman & Repair Services in Miami, FL</title>
         <meta
           name="description"
           content="At ANG Services Corp, we are more than just a handyman service. We're your trusted partner in creating the home of your dreams."
