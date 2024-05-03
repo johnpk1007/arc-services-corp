@@ -11,10 +11,10 @@ export default function Landing() {
   return (
     <Box>
       <Helmet>
-        <title>Home - ANG Services Corp</title>
+        <title>Handyman Services in Miami, FL</title>
         <meta
           name="description"
-          content="Trust ANG Services Corp for all your repair and renovation needs, with comprehensive expertise in services tailored to you"
+          content="Trust ANG Services Corp for all your repair and renovation needs, with comprehensive expertise in services tailored to you. We offer an array of handyman and repair services that you need in Miami, FL"
         />
       </Helmet>
       <LogoAppBar />
