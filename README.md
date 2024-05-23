@@ -13,7 +13,7 @@
 > 2024. 02 ~ 2024. 04
 
 ## 기술 스택
-- Design: Figma [Figma 프로토타입 바로가기](https://www.figma.com/proto/kWHx6JobUET8md1GvhlbYC/Untitled?node-id=427-5&t=68Ezd1Z5hbNa26u8-1)
+- Design: Figma
 - Core:React18
 - CSS: MaterialUI
 - Code Management:Git, GitHub
