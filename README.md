@@ -1,7 +1,5 @@
 ## ANG Services Corp Static Website
 
----
-
 ## Project Overview
 <div>
   <img width="600" alt="image" src="./public/ogimage.jpeg">
