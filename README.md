@@ -13,25 +13,39 @@
 
 ---
 
-## 기술 스택
-- Design: Figma
-- Core:React18
-- CSS: MaterialUI
-- Code Management:Git, GitHub
-- Deploy: Netlify
+## Technical Stack
 
-## 페이지 소개
+This project was developed independently, handling both the design and front-end implementation.
 
-#### 메인페이지 
-- 회사 소개
-- 다른 페이지 링크 연결
-#### Services 페이지 
-- 회사가 제공하는 서비스 소개
-- 모달을 통한 다양 서비스 이미지 제공
-#### About us 페이지
-- 회사 연락처, 회사 위치, 회사 팀원 소개
-- OpenStreetMap을 이용해 회사 위치를 지도에 표시
-#### Contact us 페이지 
-- 회사 연락 방법 제공
-- Web3Forms를 이용해 Form에 입력하여 회사에 이메일을 보냄
-- hCaptcha를 이용해 스팸 방지
+| Category | Tools & Technologies |
+| :--- | :--- |
+| **Core** | React 18, JavaScript |
+| **Styling** | Material UI (MUI) |
+| **Design** | Figma |
+| **Code Management** | Git, GitHub |
+| **Deployment** | Netlify |
+
+---
+
+## Key Features & Page Breakdown
+
+The site is divided into four main sections, each demonstrating specific front-end capabilities:
+
+### 1. Main Page (Landing Page)
+* **Content:** Features a professional company introduction and navigation links to other pages.
+* **Highlight:** Focuses on clean, modern design and intuitive navigation.
+
+### 2. Services Page
+* **Content:** Detailed introduction to the various services offered (Installation, Remodeling, Repair, Cleaning).
+* **Highlight:** Implements a **Modal component** to display various high-quality service images without leaving the page, improving the user experience.
+
+### 3. About Us Page
+* **Content:** Provides company contact information, physical location, and an introduction to the team.
+* **Technical Highlight:** Integrated **OpenStreetMap** to accurately display the company's location on an interactive map.
+
+### 4. Contact Us Page
+* **Content:** Offers multiple methods for users to contact the company.
+* **Technical Highlight:**
+    * Implemented a functioning contact form using **Web3Forms** for reliable email delivery.
+    * Integrated **hCaptcha** to prevent spam submissions, ensuring form security and data integrity.
+
