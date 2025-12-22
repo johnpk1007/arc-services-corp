@@ -1,5 +1,7 @@
 ## ANG Services Corp Static Website
 
+---
+
 ## Project Overview
 <div>
   <img width="600" alt="image" src="./public/ogimage.jpeg">
@@ -51,7 +53,7 @@ The site is divided into four main sections, each demonstrating specific front-e
 
 ---
 
-## 💻 Local Development
+## Local Development
 
 Follow these steps to run the project locally:
 
