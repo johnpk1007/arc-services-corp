@@ -5,7 +5,7 @@
   <img width="600" alt="image" src="./public/ogimage.jpeg">
 </div>
 
-**ANG Services Corp** is a handyman and interior contracting business based in Miami, Florida, USA. This project was a professional engagement to design, develop, and deploy a responsive static website for the company.
+#### **ANG Services Corp** is a handyman and interior contracting business based in Miami, Florida, USA. This project was a professional engagement to design, develop, and deploy a responsive static website for the company.
 #### [ANG Services Corp 바로가기](https://angservicescorp.com/)
 
 ## 프로젝트 기간
