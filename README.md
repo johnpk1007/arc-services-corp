@@ -1,4 +1,4 @@
-## ANG Services Corp Static Website
+# ANG Services Corp Static Website
 
 ## Project Overview
 <div>
