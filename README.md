@@ -1,11 +1,11 @@
 ## ANG Services Corp Static Website
 
-## 프로젝트 소개
+## Project Overview
 <div>
   <img width="600" alt="image" src="./public/ogimage.jpeg">
 </div>
 
-#### ANG Services Corp는 미국 플로리다 주의 마이애미에 위치한 인테리어 업체로서 의뢰를 받아 정적 웹사이트를 개발하였습니다.
+**ANG Services Corp** is a handyman and interior contracting business based in Miami, Florida, USA. This project was a professional engagement to design, develop, and deploy a responsive static website for the company.
 #### [ANG Services Corp 바로가기](https://angservicescorp.com/)
 
 ## 프로젝트 기간
