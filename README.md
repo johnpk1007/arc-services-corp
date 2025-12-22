@@ -49,3 +49,23 @@ The site is divided into four main sections, each demonstrating specific front-e
     * Implemented a functioning contact form using **Web3Forms** for reliable email delivery.
     * Integrated **hCaptcha** to prevent spam submissions, ensuring form security and data integrity.
 
+---
+
+## 💻 Local Development
+
+Follow these steps to run the project locally:
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/johnpk1007/arc-services-corp.git](https://github.com/johnpk1007/arc-services-corp.git)
+    cd arc-services-corp
+    ```
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+3.  **Start the development server:**
+    ```bash
+    npm start
+    ```
+    The application will open in your browser at `http://localhost:3000`.
