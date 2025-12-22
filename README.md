@@ -5,12 +5,13 @@
   <img width="600" alt="image" src="./public/ogimage.jpeg">
 </div>
 
-#### **ANG Services Corp** is a handyman and interior contracting business based in Miami, Florida, USA. This project was a professional engagement to design, develop, and deploy a responsive static website for the company.
-#### [ANG Services Corp 바로가기](https://angservicescorp.com/)
+#### ANG Services Corp is a handyman and interior contracting business based in Miami, Florida, USA. This project was a professional engagement to design, develop, and deploy a responsive static website for the company.
 
-## 프로젝트 기간
+| Live Site | Project Duration | Status |
+| :--- | :--- | :--- |
+| [angservicescorp.com](https://angservicescorp.com/) | 2024. 02 – 2024. 04 | Deployed and Maintained |
 
-> 2024. 02 ~ 2024. 04
+---
 
 ## 기술 스택
 - Design: Figma
